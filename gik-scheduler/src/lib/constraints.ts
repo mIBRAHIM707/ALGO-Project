@@ -56,10 +56,14 @@ export function evaluateSoftConstraints(
   // Track daily assignments for sections and teachers
   const sectionDailyCounts: Record<string, Record<string, Set<string>>> = {};
   const teacherDailyCounts: Record<string, Record<string, number>> = {};
+  const daySessionCounts: Record<string, number> = {};
   
   for (const a of schedule) {
     const ts = timeSlots.find(t => t.id === a.timeSlotId);
     if (!ts) continue;
+
+    // Track total sessions per day
+    daySessionCounts[ts.day] = (daySessionCounts[ts.day] || 0) + 1;
     
     // Teacher daily setup
     if (!teacherDailyCounts[a.teacherId]) teacherDailyCounts[a.teacherId] = {};
@@ -92,6 +96,21 @@ export function evaluateSoftConstraints(
         score += 10; // Reward reasonable daily workload
       } else {
         score -= (classes - 3) * 5; // Penalize heavy daily workload
+      }
+    }
+  }
+
+  // Evaluate Day Balance Check
+  const activeDays = Object.keys(daySessionCounts);
+  if (activeDays.length > 0) {
+    const totalSessions = Object.values(daySessionCounts).reduce((sum, count) => sum + count, 0);
+    const avgSessionsPerDay = totalSessions / activeDays.length;
+    const threshold = avgSessionsPerDay * 1.2; // 20% above average
+
+    for (const day of activeDays) {
+      if (daySessionCounts[day] > threshold) {
+        const excess = daySessionCounts[day] - threshold;
+        score -= (excess * 3);
       }
     }
   }

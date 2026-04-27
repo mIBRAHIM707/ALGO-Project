@@ -145,16 +145,22 @@ export class CSPEngine {
    */
   private buildVariables(): VarNode[] {
     const variables: VarNode[] = [];
-    const maxSlotIndex = this.data.timeSlots.reduce(
-      (max, ts) => Math.max(max, ts.slotIndex),
-      0
+    
+    // Find max slotIndex among regular (non-lab) timeslots per day
+    const maxRegularSlotIndex = Math.max(
+      ...this.data.timeSlots
+        .filter(t => t.dayType !== 'lab')
+        .map(t => t.slotIndex)
     );
 
     for (const section of this.data.sections) {
       for (const courseId of section.courseIds) {
         const course = this.data.courses.find(c => c.id === courseId);
         if (!course) continue; // silently skip orphaned references
-        const isLab = (course.type || '').toLowerCase().includes('lab');
+        
+        // For lab courses, exclude the last 2 slot indices of the day
+        // so labs never start at a time that would run past end of day
+        const isLabCourse = (course.type || '').toLowerCase().includes('lab');
 
         const teacher = this.data.teachers.find(t => t.courseIds.includes(courseId));
         const tId = teacher?.id ?? 'TBA';
@@ -170,9 +176,7 @@ export class CSPEngine {
         const baseDomain: Value[] = [];
 
         for (const ts of this.data.timeSlots) {
-          if (isLab && ts.slotIndex >= maxSlotIndex - 1) {
-            continue;
-          }
+          if (isLabCourse && ts.slotIndex >= maxRegularSlotIndex - 1) continue;
           for (const r of rooms) {
             baseDomain.push({ timeSlot: ts, room: r });
           }
