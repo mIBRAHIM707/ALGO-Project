@@ -1,6 +1,6 @@
 import json
 
-with open('gik-data-fixed.json', 'r') as f:
+with open('data/gik-data-fixed.json', 'r') as f:
     data = json.load(f)
 
 valid_course_ids = set()
@@ -53,7 +53,7 @@ for s in data['sections']:
     s['courseIds'] = [cid for cid in s.get('courseIds', []) if cid in valid_course_ids]
 
 # Write back
-with open('gik-data-fixed.json', 'w') as f:
+with open('data/gik-data-fixed.json', 'w') as f:
     json.dump(data, f, indent=2)
 
 print(f"Total courses: {len(data['courses'])}")

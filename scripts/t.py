@@ -1,6 +1,6 @@
 import openpyxl, json, re
 
-wb = openpyxl.load_workbook(r'data\List of Offered Courses Spring 2025.xlsx')
+wb = openpyxl.load_workbook('data/List of Offered Courses Spring 2025.xlsx')
 ws = wb['Sheet1']
 rows = list(ws.iter_rows(values_only=True))[1:]
 

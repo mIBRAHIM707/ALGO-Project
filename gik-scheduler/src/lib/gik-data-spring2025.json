@@ -2067,8 +2067,8 @@
       "name": "Dr. Khurram Jadoon",
       "department": "BAI",
       "courseIds": [
-        "AI319",
-        "AI361"
+        "AI361",
+        "AI319"
       ]
     },
     {
@@ -2076,9 +2076,9 @@
       "name": "Mr. Talha Ashfaq",
       "department": "GEN",
       "courseIds": [
-        "CS112",
         "CS112 L",
-        "AI420"
+        "AI420",
+        "CS112"
       ]
     },
     {
@@ -2094,8 +2094,8 @@
       "name": "Dr. Rashid Jillani",
       "department": "BCE",
       "courseIds": [
-        "CS464",
-        "CE222"
+        "CE222",
+        "CS464"
       ]
     },
     {
@@ -2129,8 +2129,8 @@
       "name": "Dr. Muhammad Hanif",
       "department": "GEN",
       "courseIds": [
-        "CY3xx",
         "CE318",
+        "CY3xx",
         "CS419"
       ]
     },
@@ -2156,8 +2156,8 @@
       "name": "Engr. Abdul Wahab",
       "department": "BAI",
       "courseIds": [
-        "CH101",
-        "CH322"
+        "CH322",
+        "CH101"
       ]
     },
     {
@@ -2183,10 +2183,10 @@
       "name": "Engr. Hamza Nasir",
       "department": "CYS",
       "courseIds": [
-        "CH201",
-        "CH353 Lab",
+        "CH361",
         "CH161",
-        "CH361"
+        "CH353 Lab",
+        "CH201"
       ]
     },
     {
@@ -2218,8 +2218,8 @@
       "name": "Dr. Hammad Khan",
       "department": "CME",
       "courseIds": [
-        "CH342",
-        "CH253 Lab"
+        "CH253 Lab",
+        "CH342"
       ]
     },
     {
@@ -2278,9 +2278,9 @@
       "name": "Mr. Abdullah Bin Zarshaid",
       "department": "BME",
       "courseIds": [
-        "CS112",
+        "CS112 L",
         "CY201",
-        "CS112 L"
+        "CS112"
       ]
     },
     {
@@ -2288,9 +2288,9 @@
       "name": "Mr. Qasim Riaz",
       "department": "CVE",
       "courseIds": [
-        "CS112",
         "CS232",
-        "CS112 L"
+        "CS112 L",
+        "CS112"
       ]
     },
     {
@@ -2298,8 +2298,8 @@
       "name": "Dr. Sarah Iqbal",
       "department": "BEE II",
       "courseIds": [
-        "CS112",
-        "CS452"
+        "CS452",
+        "CS112"
       ]
     },
     {
@@ -2307,8 +2307,8 @@
       "name": "Ms. Beenish Urooj",
       "department": "BAI",
       "courseIds": [
-        "CS112",
-        "CS112 L"
+        "CS112 L",
+        "CS112"
       ]
     },
     {
@@ -2316,9 +2316,9 @@
       "name": "Mr. Badre Munir",
       "department": "CYS",
       "courseIds": [
-        "CS112",
+        "CS112 L",
         "CS312",
-        "CS112 L"
+        "CS112"
       ]
     },
     {
@@ -2326,8 +2326,8 @@
       "name": "Mr. Ahmed Nawaz",
       "department": "SWE",
       "courseIds": [
-        "CS112",
-        "CS112 L"
+        "CS112 L",
+        "CS112"
       ]
     },
     {
@@ -2335,9 +2335,9 @@
       "name": "Mr. Sajid Ali",
       "department": "BCS",
       "courseIds": [
-        "CS112",
         "CS224",
-        "CS112 L"
+        "CS112 L",
+        "CS112"
       ]
     },
     {
@@ -2345,9 +2345,9 @@
       "name": "Ms. Nazia Shahzadi",
       "department": "BDS",
       "courseIds": [
-        "CS112",
+        "CS112 L",
         "CS378",
-        "CS112 L"
+        "CS112"
       ]
     },
     {
@@ -2355,8 +2355,8 @@
       "name": "Mr. Huzaifa Shah",
       "department": "BCE",
       "courseIds": [
-        "CS112",
-        "SE211"
+        "SE211",
+        "CS112"
       ]
     },
     {
@@ -2374,8 +2374,8 @@
       "name": "Engr. Ahsan Shah",
       "department": "BCE",
       "courseIds": [
-        "CS325",
         "CS232",
+        "CS325",
         "CS232L"
       ]
     },
@@ -2402,9 +2402,9 @@
       "name": "Mr. Waheed Ahmed",
       "department": "GEN",
       "courseIds": [
-        "CS424",
+        "CS317",
         "CS317L",
-        "CS317"
+        "CS424"
       ]
     },
     {
@@ -2420,9 +2420,9 @@
       "name": "Hafiz Syed Muhammad Muslim",
       "department": "BDS",
       "courseIds": [
-        "CS482",
+        "CY381",
         "CS325",
-        "CY381"
+        "CS482"
       ]
     },
     {
@@ -2464,8 +2464,8 @@
       "name": "Dr. Ayaz Umer",
       "department": "GEN",
       "courseIds": [
-        "DS341",
-        "CS437"
+        "CS437",
+        "DS341"
       ]
     },
     {
@@ -2489,10 +2489,10 @@
       "name": "Engr. Zeeshan",
       "department": "CVE",
       "courseIds": [
-        "CV305L",
         "CV305",
+        "CV324",
         "CV202",
-        "CV324"
+        "CV305L"
       ]
     },
     {
@@ -2500,10 +2500,10 @@
       "name": "Engr. Azeem",
       "department": "CVE",
       "courseIds": [
-        "CV213",
         "CV314",
-        "CV202L",
-        "CV212L"
+        "CV213",
+        "CV212L",
+        "CV202L"
       ]
     },
     {
@@ -2511,8 +2511,8 @@
       "name": "Dr. Shiraz Ahmad",
       "department": "CVE",
       "courseIds": [
-        "CV241",
-        "CV202L"
+        "CV202L",
+        "CV241"
       ]
     },
     {
@@ -2599,8 +2599,8 @@
       "name": "Dr. Zubair (New Hire)",
       "department": "CYS",
       "courseIds": [
-        "CY321",
-        "ES221"
+        "ES221",
+        "CY321"
       ]
     },
     {
@@ -2624,8 +2624,8 @@
       "name": "Dr. Farhan Khan",
       "department": "BDS",
       "courseIds": [
-        "DS211",
-        "DS4xx"
+        "DS4xx",
+        "DS211"
       ]
     },
     {
@@ -2938,8 +2938,8 @@
       "name": "Dr. Shakir Sardar",
       "department": "MGS",
       "courseIds": [
-        "EM434",
-        "MS333"
+        "MS333",
+        "EM434"
       ]
     },
     {
@@ -2947,8 +2947,8 @@
       "name": "Dr Babar Zaman",
       "department": "BME",
       "courseIds": [
-        "ES111",
-        "ES325"
+        "ES325",
+        "ES111"
       ]
     },
     {
@@ -2988,8 +2988,8 @@
       "name": "Dr Zahid Ahmad",
       "department": "BDS",
       "courseIds": [
-        "ES111",
-        "MT102"
+        "MT102",
+        "ES111"
       ]
     },
     {
@@ -2997,8 +2997,8 @@
       "name": "Dr Tahir Naseem",
       "department": "BCE",
       "courseIds": [
-        "ES111",
-        "ES371"
+        "ES371",
+        "ES111"
       ]
     },
     {
@@ -3022,9 +3022,9 @@
       "name": "Engr Muhammad Sadiq",
       "department": "BES",
       "courseIds": [
+        "ES213",
         "ES213L",
-        "ES214",
-        "ES213"
+        "ES214"
       ]
     },
     {
@@ -3032,10 +3032,10 @@
       "name": "Engr. Muhammad Saqib",
       "department": "BES",
       "courseIds": [
-        "ES322L",
-        "ES231L",
         "ES322",
-        "ES231"
+        "ES322L",
+        "ES231",
+        "ES231L"
       ]
     },
     {
@@ -3043,8 +3043,8 @@
       "name": "Mr. Aamir Shahzad",
       "department": "BES",
       "courseIds": [
-        "ES341L",
-        "ES341"
+        "ES341",
+        "ES341L"
       ]
     },
     {
@@ -3076,8 +3076,8 @@
       "name": "Dr Muhammad Usman",
       "department": "BES",
       "courseIds": [
-        "ES361L",
-        "ES361"
+        "ES361",
+        "ES361L"
       ]
     },
     {
@@ -3096,9 +3096,9 @@
       "department": "BES",
       "courseIds": [
         "PH101",
-        "ES447",
         "ES447L",
-        "PH101L"
+        "PH101L",
+        "ES447"
       ]
     },
     {
@@ -3114,8 +3114,8 @@
       "name": "Dr Nasir Javed",
       "department": "BES",
       "courseIds": [
-        "MT102",
-        "ES475"
+        "ES475",
+        "MT102"
       ]
     },
     {
@@ -3131,8 +3131,8 @@
       "name": "Mr. Abrar Ahmad",
       "department": "BME",
       "courseIds": [
-        "HM102",
         "HM222",
+        "HM102",
         "HM102-L"
       ]
     },
@@ -3161,8 +3161,8 @@
       "department": "BDS",
       "courseIds": [
         "HM102",
-        "HM304",
-        "HM102-L"
+        "HM102-L",
+        "HM304"
       ]
     },
     {
@@ -3179,8 +3179,8 @@
       "name": "Mr. Fida Ur Rahman",
       "department": "MGS",
       "courseIds": [
-        "HM112",
-        "HM211"
+        "HM211",
+        "HM112"
       ]
     },
     {
@@ -3275,8 +3275,8 @@
       "name": "Mr. Muhammad Shoaib Ijaz",
       "department": "BME I",
       "courseIds": [
-        "ME322",
-        "ME347"
+        "ME347",
+        "ME322"
       ]
     },
     {
@@ -3292,8 +3292,8 @@
       "name": "Dr. Shahzad Ahmad",
       "department": "BME I",
       "courseIds": [
-        "ME419",
-        "ME364"
+        "ME364",
+        "ME419"
       ]
     },
     {
@@ -3357,8 +3357,8 @@
       "name": "Engr. Abdullah",
       "department": "BME",
       "courseIds": [
-        "MM497",
         "MM141",
+        "MM497",
         "MM447L"
       ]
     },
@@ -3377,8 +3377,8 @@
       "name": "Dr. Rashid Ali",
       "department": "MTM",
       "courseIds": [
-        "MM455",
-        "MM222"
+        "MM222",
+        "MM455"
       ]
     },
     {
@@ -3402,10 +3402,10 @@
       "name": "Engr. Umair Naseer",
       "department": "GEN",
       "courseIds": [
-        "MM495",
-        "MM244L",
+        "MM243L",
         "MM345L",
-        "MM243L"
+        "MM244L",
+        "MM495"
       ]
     },
     {
@@ -3535,8 +3535,8 @@
       "name": "Dr. Sami Farooq",
       "department": "MGS",
       "courseIds": [
-        "MS472",
-        "SC463"
+        "SC463",
+        "MS472"
       ]
     },
     {
@@ -4016,271 +4016,271 @@
       "id": "BME-A",
       "program": "BME",
       "courseIds": [
-        "ME404",
-        "ME453",
+        "ME474",
+        "ME494",
+        "CS112 L",
+        "MM101",
+        "ME468",
         "ME471",
         "MM141",
-        "CS112",
-        "ME494",
         "ME347",
-        "MM101",
-        "CS112 L",
+        "HM102",
+        "HM102-L",
+        "ME404",
+        "ES111",
+        "ME453",
         "IF102",
         "AI102",
-        "HM102-L",
-        "ES111",
-        "ME474",
-        "HM102",
         "ME419",
-        "ME468"
+        "CS112"
       ]
     },
     {
       "id": "CVE-B",
       "program": "CVE",
       "courseIds": [
-        "CV213",
-        "MM141",
-        "CV361L",
-        "CS112",
         "MM101",
-        "CV241",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "MM141",
+        "CV231",
+        "CV361L",
+        "CV213",
+        "HM102",
         "CV212",
         "HM102-L",
+        "CV241",
         "ES111",
-        "HM102",
-        "CV231",
-        "CV202"
+        "IF102",
+        "CV202",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "CME-C",
       "program": "CME",
       "courseIds": [
-        "HM322",
-        "PH101",
-        "CS112",
-        "PH101L",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "PH101",
+        "HM322",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "PH101L",
+        "CS112"
       ]
     },
     {
       "id": "MTE-C",
       "program": "MTE",
       "courseIds": [
-        "HM322",
-        "PH101",
-        "CS112",
-        "PH101L",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "PH101",
+        "HM322",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "PH101L",
+        "CS112"
       ]
     },
     {
       "id": "BEE I-D",
       "program": "BEE I",
       "courseIds": [
-        "CS112",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "BEE II-E",
       "program": "BEE II",
       "courseIds": [
-        "CS112",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "BAI-F",
       "program": "BAI",
       "courseIds": [
-        "CH101",
-        "CS112",
         "CS112 L",
-        "IF102",
+        "CH101",
         "CH161",
-        "AI102",
+        "HM102",
         "HM102-L",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "CYS-G1",
       "program": "CYS",
       "courseIds": [
-        "CS112",
         "AI102",
-        "CS112 L"
+        "CS112 L",
+        "CS112"
       ]
     },
     {
       "id": "SWE-G2",
       "program": "SWE",
       "courseIds": [
-        "CS112",
         "AI102",
-        "CS112 L"
+        "CS112 L",
+        "CS112"
       ]
     },
     {
       "id": "BCS-H",
       "program": "BCS",
       "courseIds": [
-        "CH101",
-        "CS112",
         "CS112 L",
-        "IF102",
+        "CH101",
         "CH161",
-        "AI102",
+        "HM102",
         "HM102-L",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "BDS-I",
       "program": "BDS",
       "courseIds": [
-        "CH101",
-        "CS112",
         "CS112 L",
-        "IF102",
-        "CH161",
-        "AI102",
+        "CH101",
         "MT102",
+        "CH161",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "BCE-J",
       "program": "BCE",
       "courseIds": [
-        "MM141",
-        "CS112",
         "MM101",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "MM141",
         "MT102",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "BES-J",
       "program": "BES",
       "courseIds": [
-        "MM141",
-        "CS112",
         "MM101",
         "CS112 L",
-        "IF102",
-        "AI102",
+        "MM141",
         "MT102",
+        "HM102",
         "HM102-L",
         "ES111",
-        "HM102"
+        "IF102",
+        "AI102",
+        "CS112"
       ]
     },
     {
       "id": "BAI-A",
       "program": "BAI",
       "courseIds": [
+        "CS232",
         "HM211",
-        "CE222",
-        "ES205",
-        "HM304",
-        "CS482",
-        "CS232L",
-        "CS323",
         "CS464",
+        "CE222",
+        "CS482",
+        "ES205",
+        "CS323",
         "CE222L",
-        "CS232"
+        "HM304",
+        "CS232L"
       ]
     },
     {
       "id": "BCE-B",
       "program": "BCE",
       "courseIds": [
+        "CS232",
         "CS325",
         "CE222",
         "CS482",
-        "CS232L",
         "CE222L",
-        "CS232"
+        "CS232L"
       ]
     },
     {
       "id": "BCS-C",
       "program": "BCS",
       "courseIds": [
+        "CS232",
         "CS325",
+        "CS464",
         "CE222",
         "CS482",
-        "CS232L",
-        "CS464",
         "CE222L",
-        "CS232"
+        "CS232L"
       ]
     },
     {
       "id": "BDS-D",
       "program": "BDS",
       "courseIds": [
+        "CS232",
         "CS325",
+        "CS464",
         "CE222",
         "CS482",
-        "CS232L",
-        "CS464",
         "CE222L",
-        "CS232"
+        "CS232L"
       ]
     },
     {
       "id": "CYS-E",
       "program": "CYS",
       "courseIds": [
+        "CS232",
         "CS325",
         "CE222",
-        "CS232L",
         "CE222L",
-        "CS232"
+        "CS232L"
       ]
     },
     {
       "id": "SWE-F",
       "program": "SWE",
       "courseIds": [
-        "CE222L",
         "CS232",
-        "CS232L",
-        "CE222"
+        "CE222L",
+        "CE222",
+        "CS232L"
       ]
     },
     {
@@ -4288,12 +4288,12 @@
       "program": "CYS",
       "courseIds": [
         "CH101",
-        "IF102",
-        "CH161",
         "MT102",
+        "CH161",
         "HM102-L",
+        "HM102",
         "ES111",
-        "HM102"
+        "IF102"
       ]
     },
     {
@@ -4301,37 +4301,37 @@
       "program": "SWE",
       "courseIds": [
         "CH101",
-        "IF102",
-        "CH161",
         "MT102",
+        "CH161",
         "HM102-L",
+        "HM102",
         "ES111",
-        "HM102"
+        "IF102"
       ]
     },
     {
       "id": "CVE-A",
       "program": "CVE",
       "courseIds": [
-        "CV213",
-        "CV314",
-        "CV305L",
-        "CV361L",
-        "CV457",
-        "CV443",
-        "CV351",
-        "CV412",
-        "CV231",
-        "CV202",
-        "CV425",
-        "MS496",
-        "CV361",
-        "CV324",
         "CV305",
-        "CV241",
-        "CV212",
+        "CV202",
+        "CV305L",
         "CV433",
-        "CV413"
+        "CV413",
+        "CV213",
+        "CV361",
+        "CV314",
+        "CV412",
+        "CV241",
+        "CV457",
+        "CV324",
+        "CV231",
+        "CV425",
+        "CV361L",
+        "CV443",
+        "MS496",
+        "CV212",
+        "CV351"
       ]
     },
     {
@@ -4339,8 +4339,8 @@
       "program": "CVE",
       "courseIds": [
         "CV231L",
-        "CV202L",
-        "CV212L"
+        "CV212L",
+        "CV202L"
       ]
     },
     {
@@ -4348,8 +4348,8 @@
       "program": "CVE",
       "courseIds": [
         "CV231L",
-        "CV202L",
-        "CV212L"
+        "CV212L",
+        "CV202L"
       ]
     },
     {
@@ -4357,8 +4357,8 @@
       "program": "CVE",
       "courseIds": [
         "CV231L",
-        "CV202L",
-        "CV212L"
+        "CV212L",
+        "CV202L"
       ]
     },
     {
@@ -4373,36 +4373,36 @@
       "id": "BEE I-A",
       "program": "BEE I",
       "courseIds": [
-        "EE351",
-        "EE371",
-        "EE314",
-        "EE223",
         "EE332",
+        "EE371",
+        "EE223",
+        "EE314",
+        "EE351",
+        "EE231",
         "EE361",
-        "EE212",
-        "EE231"
+        "EE212"
       ]
     },
     {
       "id": "BEE II-B",
       "program": "BEE II",
       "courseIds": [
-        "EE351",
-        "EE371",
-        "EE314",
-        "EE223",
         "EE332",
+        "EE371",
+        "EE223",
+        "EE314",
+        "EE351",
+        "EE231",
         "EE361",
-        "EE212",
-        "EE231"
+        "EE212"
       ]
     },
     {
       "id": "BEE III-C",
       "program": "BEE III",
       "courseIds": [
-        "EE223",
         "EE231",
+        "EE223",
         "EE212"
       ]
     },
@@ -4410,31 +4410,31 @@
       "id": "C1-A",
       "program": "C1",
       "courseIds": [
-        "EE351",
-        "EE314",
-        "EE361",
         "EE332",
-        "EE371"
+        "EE371",
+        "EE314",
+        "EE351",
+        "EE361"
       ]
     },
     {
       "id": "C2-B",
       "program": "C2",
       "courseIds": [
-        "EE351",
-        "EE314",
-        "EE361",
         "EE332",
-        "EE371"
+        "EE371",
+        "EE314",
+        "EE351",
+        "EE361"
       ]
     },
     {
       "id": "EEP-C",
       "program": "EEP",
       "courseIds": [
-        "EE413L",
+        "EE421",
         "EE413",
-        "EE421"
+        "EE413L"
       ]
     },
     {
@@ -4462,34 +4462,34 @@
       "id": "MTE-B",
       "program": "MTE",
       "courseIds": [
-        "ES111",
+        "ES341",
         "MS291",
-        "ES341"
+        "ES111"
       ]
     },
     {
       "id": "BAI-F+H",
       "program": "BAI",
       "courseIds": [
-        "ES111",
-        "MT102"
+        "MT102",
+        "ES111"
       ]
     },
     {
       "id": "BCS-F+H",
       "program": "BCS",
       "courseIds": [
-        "ES111",
-        "MT102"
+        "MT102",
+        "ES111"
       ]
     },
     {
       "id": "BCE-A",
       "program": "BCE",
       "courseIds": [
-        "HM322",
         "HM211",
-        "ES205"
+        "ES205",
+        "HM322"
       ]
     },
     {
@@ -4503,9 +4503,9 @@
       "id": "BDS-B",
       "program": "BDS",
       "courseIds": [
-        "HM322",
         "HM211",
-        "ES205"
+        "ES205",
+        "HM322"
       ]
     },
     {
@@ -4533,8 +4533,8 @@
       "id": "CME-B",
       "program": "CME",
       "courseIds": [
-        "MS291",
-        "ES341"
+        "ES341",
+        "MS291"
       ]
     },
     {
@@ -4571,26 +4571,26 @@
       "id": "MGS-A+B",
       "program": "MGS",
       "courseIds": [
+        "HM222",
         "HM121",
-        "HM223",
         "HM112",
-        "HM222"
+        "HM223"
       ]
     },
     {
       "id": "BCS-A",
       "program": "BCS",
       "courseIds": [
-        "HM322",
-        "HM211"
+        "HM211",
+        "HM322"
       ]
     },
     {
       "id": "CYS-B",
       "program": "CYS",
       "courseIds": [
-        "HM322",
-        "HM211"
+        "HM211",
+        "HM322"
       ]
     },
     {
@@ -4611,8 +4611,8 @@
       "id": "CVE-C",
       "program": "CVE",
       "courseIds": [
-        "HM322",
-        "HM211"
+        "HM211",
+        "HM322"
       ]
     },
     {
@@ -4626,46 +4626,46 @@
       "id": "BME I-A",
       "program": "BME I",
       "courseIds": [
+        "ME212",
+        "ME213",
         "ME467",
+        "ME243",
         "ME482",
-        "ME333",
         "ME315",
         "ME322",
-        "ME212",
         "ME364",
-        "ME203",
-        "ME213",
-        "ME316",
         "ME232",
-        "ME243"
+        "ME203",
+        "ME333",
+        "ME316"
       ]
     },
     {
       "id": "BME II-B",
       "program": "BME II",
       "courseIds": [
+        "ME212",
+        "ME213",
         "ME467",
-        "ME333",
         "ME315",
         "ME322",
         "ME364",
-        "ME203",
-        "ME213",
-        "ME316",
         "ME232",
-        "ME212"
+        "ME203",
+        "ME333",
+        "ME316"
       ]
     },
     {
       "id": "MGS I-A",
       "program": "MGS I",
       "courseIds": [
-        "MS254",
-        "MS151",
+        "MS232",
         "MS224",
         "MS253",
+        "MS254",
+        "MS151",
         "MS141",
-        "MS232",
         "MS102"
       ]
     },
@@ -4673,12 +4673,12 @@
       "id": "MGS II-B",
       "program": "MGS II",
       "courseIds": [
-        "MS254",
-        "MS151",
+        "MS232",
         "MS224",
         "MS253",
+        "MS254",
+        "MS151",
         "MS141",
-        "MS232",
         "MS102"
       ]
     },
@@ -4742,9 +4742,9 @@
       "id": "BEE-D+E",
       "program": "BEE",
       "courseIds": [
+        "MT102",
         "PH101",
-        "PH101L",
-        "MT102"
+        "PH101L"
       ]
     }
   ],

@@ -1,6 +1,6 @@
 import json
 
-with open('gik-data.json', 'r') as f:
+with open('data/gik-data.json', 'r') as f:
     data = json.load(f)
 
 report = []
@@ -98,7 +98,7 @@ if courses_with_invalid_teachers:
 with open("report.txt", "w") as f:
     f.write("\\n".join(report))
 
-with open("gik-data-fixed.json", "w") as f:
+with open("data/gik-data-fixed.json", "w") as f:
     json.dump(data, f, indent=2)
 
 print("Done")

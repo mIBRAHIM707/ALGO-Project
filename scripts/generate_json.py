@@ -17,8 +17,8 @@ def clean_int(val, default=0):
         return default
 
 # Load data
-courses_df = pd.read_csv('courses.csv').fillna("MISSING")
-timeslots_df = pd.read_csv('timeslots.csv').fillna("MISSING")
+courses_df = pd.read_csv('data/courses.csv').fillna("MISSING")
+timeslots_df = pd.read_csv('data/timeslots.csv').fillna("MISSING")
 rooms_df = pd.read_excel('rooms.xlsx').fillna("MISSING")
 
 # Clean strings
@@ -126,7 +126,7 @@ final_json = {
     "timeSlots": timeslots
 }
 
-with open('gik-data.json', 'w') as f:
+with open('data/gik-data.json', 'w') as f:
     json.dump(final_json, f, indent=2)
 
 print("Created gik-data.json successfully.")

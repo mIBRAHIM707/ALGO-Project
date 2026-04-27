@@ -1,8 +1,8 @@
 import * as fs from 'fs';
-import { CSPEngine } from './src/lib/csp';
-import { FullData, Section, Course } from './src/lib/types';
+import { CSPEngine } from '../gik-scheduler/src/lib/csp';
+import { FullData, Section, Course } from '../gik-scheduler/src/lib/types';
 
-const dataFile = fs.readFileSync('./src/lib/gik-data-with-sections.json', 'utf8');
+const dataFile = fs.readFileSync('../gik-scheduler/src/lib/gik-data-spring2025.json', 'utf8');
 const data: FullData = JSON.parse(dataFile);
 
 // ─────────────────────────────────────────────
