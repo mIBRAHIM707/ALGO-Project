@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, Database, CalendarDays, BarChart3, Settings } from "lucide-react";
+import { LayoutDashboard, Database, CalendarDays, BarChart3 } from "lucide-react";
 
 const routes = [
   { label: "Dashboard", icon: LayoutDashboard, href: "/" },

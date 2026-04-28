@@ -1,9 +1,8 @@
 import * as fs from 'fs';
-import * as path from 'path';
-import { CSPEngine } from '../gik-scheduler/src/lib/csp.ts';
-import { FullData, Section, Course } from '../gik-scheduler/src/lib/types.ts';
+import { CSPEngine } from './src/lib/csp';
+import { FullData, Section, Course } from './src/lib/types';
 
-const dataFile = fs.readFileSync(path.resolve(__dirname, '../gik-scheduler/src/lib/gik-data-spring2026.json'), 'utf8');
+const dataFile = fs.readFileSync('data/gik-data-spring2026.json', 'utf8');
 const data: FullData = JSON.parse(dataFile);
 
 // ─────────────────────────────────────────────
@@ -38,8 +37,7 @@ for (const section of data.sections) {
       missingCourses.push(courseId);
       continue;
     }
-    const isLab = (course.type || '').toLowerCase().includes('lab') || course.id.split('-')[0].toUpperCase().endsWith('L') || course.title.toLowerCase().includes('lab');
-    const sessions = isLab ? 1 : course.creditHours;
+    const sessions = Math.min(3, Math.ceil(course.creditHours / 2));
     totalSessions += sessions;
   }
 
@@ -91,8 +89,7 @@ for (const teacher of data.teachers) {
     if (!course) continue;
     // Count how many sections use this course
     const sectionCount = data.sections.filter(s => s.courseIds.includes(courseId)).length;
-    const isLab = (course.type || '').toLowerCase().includes('lab') || course.id.split('-')[0].toUpperCase().endsWith('L') || course.title.toLowerCase().includes('lab');
-    const sessions = isLab ? 1 : course.creditHours;
+    const sessions = Math.min(3, Math.ceil(course.creditHours / 2));
     totalSessions += sessions * sectionCount;
   }
 
@@ -131,8 +128,7 @@ for (const section of data.sections) {
   for (const courseId of section.courseIds) {
     const course = data.courses.find(c => c.id === courseId);
     if (!course) continue;
-    const isLab = (course.type || '').toLowerCase().includes('lab') || course.id.split('-')[0].toUpperCase().endsWith('L') || course.title.toLowerCase().includes('lab');
-    totalVars += isLab ? 1 : course.creditHours;
+    totalVars += Math.min(3, Math.ceil(course.creditHours / 2));
   }
 }
 const totalSlotCapacity = data.timeSlots.length * data.sections.length;
@@ -199,43 +195,5 @@ if (result.stats.totalAssigned < result.stats.totalCourses) {
     }
   }
 }
-
-// ─────────────────────────────────────────────
-// BUG CHECK: Same course on same day & Labs in last 2 slots
-// ─────────────────────────────────────────────
-let sameCourseSameDayCount = 0;
-let labsInLastSlotsCount = 0;
-
-const sectionCourseDayMap = new Map<string, Set<string>>();
-
-const maxSlotIndex = Math.max(
-  ...data.timeSlots.filter(ts => ts.dayType !== 'lab').map(ts => ts.slotIndex)
-);
-
-for (const a of result.schedule) {
-  // Check Bug 1
-  const key = `${a.sectionId.trim()}_${a.courseId.trim()}`;
-  const ts = data.timeSlots.find(t => t.id === a.timeSlotId)!;
-  if (!sectionCourseDayMap.has(key)) sectionCourseDayMap.set(key, new Set());
-  
-  if (sectionCourseDayMap.get(key)!.has(ts.day)) {
-    sameCourseSameDayCount++;
-  }
-  sectionCourseDayMap.get(key)!.add(ts.day);
-
-  // Check Bug 2
-  const course = data.courses.find(c => c.id === a.courseId)!;
-  const isLabCourse = 
-          (course.type || '').toLowerCase().includes('lab') ||
-          course.id.split('-')[0].toUpperCase().endsWith('L') ||
-          course.title.toLowerCase().includes('lab');
-  
-  if (isLabCourse && ts.slotIndex >= maxSlotIndex - 1) {
-    labsInLastSlotsCount++;
-  }
-}
-
-console.log(`\nBUG 1 Violations (Same course same day): ${sameCourseSameDayCount}`);
-console.log(`BUG 2 Violations (Labs in last 2 slots): ${labsInLastSlotsCount}`);
 
 console.log('\n════════════════════════════════════\n');

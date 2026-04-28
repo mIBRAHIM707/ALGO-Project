@@ -35,8 +35,7 @@ export default function DashboardPage() {
       toast.success("Schedule generated successfully!", { id: toastId, duration: 3000 });
       router.push("/schedule");
 
-    } catch (error) {
-      console.error(error);
+    } catch {
       toast.error("Failed to generate schedule. Algorithm timed out or failed.", { id: toastId, duration: 4000 });
     } finally {
       setIsGenerating(false);

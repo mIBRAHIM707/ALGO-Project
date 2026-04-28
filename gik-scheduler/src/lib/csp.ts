@@ -37,7 +37,7 @@ interface Value {
 /**
  * A CSP variable representing one session of a course for a section.
  * One variable = one scheduled class meeting.
- * Sessions per course = min(3, ceil(creditHours / 2))
+ * Sessions per course: labs = 1 session, lectures = creditHours sessions
  */
 interface VarNode {
   id: string;
@@ -147,57 +147,65 @@ export class CSPEngine {
     const variables: VarNode[] = [];
     
     // Find max slotIndex among regular (non-lab) timeslots per day
-    const maxRegularSlotIndex = Math.max(
-      ...this.data.timeSlots
-        .filter(t => t.dayType !== 'lab')
-        .map(t => t.slotIndex)
-    );
+    const allSlotIndices = this.data.timeSlots
+      .filter(ts => ts.dayType !== 'lab')
+      .map(ts => ts.slotIndex);
+    const maxSlotIndex = Math.max(...allSlotIndices);
 
+    // Collect unique courseIds across ALL sections (deduplicate shared courses)
+    const allCourseIds = new Set<string>();
     for (const section of this.data.sections) {
-      for (const courseId of section.courseIds) {
-        const course = this.data.courses.find(c => c.id === courseId);
-        if (!course) continue; // silently skip orphaned references
-        
-        // For lab courses, exclude the last 2 slot indices of the day
-        // so labs never start at a time that would run past end of day
-        const isLabCourse = (course.type || '').toLowerCase().includes('lab');
+      for (const cid of section.courseIds) allCourseIds.add(cid);
+    }
 
-        const teacher = this.data.teachers.find(t => t.courseIds.includes(courseId));
-        const tId = teacher?.id ?? 'TBA';
+    // Map courseId → first section that contains it (for sectionId field)
+    const courseToFirstSection = new Map<string, string>();
+    for (const section of this.data.sections) {
+      for (const cid of section.courseIds) {
+        if (!courseToFirstSection.has(cid)) courseToFirstSection.set(cid, section.id);
+      }
+    }
 
-        // LCV: smallest fitting room first — avoids wasting large rooms on small classes
-        const validRooms = this.data.rooms
-          .filter(r => r.capacity >= course.capacity)
-          .sort((a, b) => a.capacity - b.capacity);
+    for (const courseId of allCourseIds) {
+      const course = this.data.courses.find(c => c.id === courseId);
+      if (!course) continue;
+      
+      const baseCode = course.id.split('-')[0];
+      const isLabCourse = 
+        (course.type || '').toLowerCase().includes('lab') ||
+        baseCode.toUpperCase().endsWith('L') ||
+        course.title.toLowerCase().includes('lab');
 
-        const rooms = validRooms.length > 0 ? validRooms : [...this.data.rooms];
+      const teacher = this.data.teachers.find(t => t.courseIds.includes(courseId));
+      const tId = teacher?.id ?? 'TBA';
 
-        // Build full domain for this course-section pair
-        const baseDomain: Value[] = [];
+      const validRooms = this.data.rooms
+        .filter(r => r.capacity >= course.capacity)
+        .sort((a, b) => a.capacity - b.capacity);
+      const rooms = validRooms.length > 0 ? validRooms : [...this.data.rooms];
 
-        for (const ts of this.data.timeSlots) {
-          if (isLabCourse && ts.slotIndex >= maxRegularSlotIndex - 1) continue;
-          for (const r of rooms) {
-            baseDomain.push({ timeSlot: ts, room: r });
-          }
+      const baseDomain: Value[] = [];
+      for (const ts of this.data.timeSlots) {
+        if (isLabCourse && ts.slotIndex >= maxSlotIndex - 1) continue;
+        for (const r of rooms) {
+          baseDomain.push({ timeSlot: ts, room: r });
         }
-        // Shuffle: prevents always hitting the same dead-ends deterministically
-        this.shuffle(baseDomain);
+      }
 
-        // sessions = how many weekly meetings this course needs
-        const sessions = Math.min(3, Math.ceil(course.creditHours / 2));
+      this.shuffle(baseDomain);
+      const sessions = isLabCourse ? 1 : course.creditHours;
+      const primarySection = courseToFirstSection.get(courseId) || 'UNKNOWN';
 
-        for (let i = 0; i < sessions; i++) {
-          variables.push({
-            id: `${section.id}_${courseId}_${i}`,
-            courseId,
-            sectionId: section.id,
-            teacherId: tId,
-            domain: [...baseDomain], // each session gets its own copy
-            neighbors: [],
-            degree: 0,
-          });
-        }
+      for (let i = 0; i < sessions; i++) {
+        variables.push({
+          id: `${primarySection}_${courseId}_${i}`,
+          courseId,
+          sectionId: primarySection,
+          teacherId: tId,
+          domain: [...baseDomain],
+          neighbors: [],
+          degree: 0,
+        });
       }
     }
 
@@ -214,13 +222,31 @@ export class CSPEngine {
    * O(n²) once — for 500 variables that's ~125k pair checks, negligible.
    */
   private computeConflictGraph(variables: VarNode[]) {
+    // Build courseId → set of sectionIds for fast membership lookup
+    const courseToSections = new Map<string, Set<string>>();
+    for (const section of this.data.sections) {
+      for (const cid of section.courseIds) {
+        if (!courseToSections.has(cid)) courseToSections.set(cid, new Set());
+        courseToSections.get(cid)!.add(section.id);
+      }
+    }
+
     for (let i = 0; i < variables.length; i++) {
       for (let j = i + 1; j < variables.length; j++) {
         const a = variables[i];
         const b = variables[j];
 
         const sharesTeacher = a.teacherId === b.teacherId && a.teacherId !== 'TBA';
-        const sharesSection = a.sectionId === b.sectionId;
+
+        // Check if any section contains BOTH courseIds (same students attend both)
+        let sharesSection = false;
+        const aSections = courseToSections.get(a.courseId);
+        const bSections = courseToSections.get(b.courseId);
+        if (aSections && bSections) {
+          for (const sid of aSections) {
+            if (bSections.has(sid)) { sharesSection = true; break; }
+          }
+        }
 
         if (sharesTeacher || sharesSection) {
           a.neighbors.push(j);
@@ -244,12 +270,15 @@ export class CSPEngine {
     this.data.teachers.forEach(t => this.teacherBusy.set(t.id, new Set()));
     this.teacherBusy.set('TBA', new Set());
     this.data.rooms.forEach(r => this.roomBusy.set(r.id, new Set()));
-    this.data.sections.forEach(s => {
-      this.sectionBusy.set(s.id, new Set());
-      s.courseIds.forEach(c =>
-        this.sectionCourseDay.set(`${s.id}_${c}`, new Set())
-      );
-    });
+    this.data.sections.forEach(s => this.sectionBusy.set(s.id, new Set()));
+
+    this.sectionCourseDay.clear();
+    for (const section of this.data.sections) {
+      for (const courseId of section.courseIds) {
+        const key = `${section.id.trim()}_${courseId.trim()}`;
+        this.sectionCourseDay.set(key, new Set<string>());
+      }
+    }
   }
 
   // ---------------------------------------------------------------------------
@@ -296,7 +325,7 @@ export class CSPEngine {
     const v = variables[varIdx];
 
     // Lazy-init sectionCourseDay for dynamically encountered keys
-    const scKey = `${v.sectionId}_${v.courseId}`;
+    const scKey = `${v.sectionId.trim()}_${v.courseId.trim()}`;
     if (!this.sectionCourseDay.has(scKey)) this.sectionCourseDay.set(scKey, new Set());
     if (!this.sectionBusy.has(v.sectionId)) this.sectionBusy.set(v.sectionId, new Set());
 
@@ -403,7 +432,8 @@ export class CSPEngine {
     if (v.teacherId !== 'TBA' && this.teacherBusy.get(v.teacherId)?.has(ts.id)) return false;
     if (this.sectionBusy.get(v.sectionId)?.has(ts.id)) return false;
     if (this.roomBusy.get(r.id)?.has(ts.id)) return false;
-    if (this.sectionCourseDay.get(scKey)?.has(ts.day)) return false;
+    const scDays = this.sectionCourseDay.get(scKey);
+    if (scDays && scDays.has(ts.day)) return false;
     return true;
   }
 
@@ -437,7 +467,7 @@ export class CSPEngine {
     for (const nIdx of v.neighbors) {
       if (assigned[nIdx]) continue;
       const n = variables[nIdx];
-      const nScKey = `${n.sectionId}_${n.courseId}`;
+      const nScKey = `${n.sectionId.trim()}_${n.courseId.trim()}`;
       const pruned: Value[] = [];
       const remaining: Value[] = [];
 
@@ -463,8 +493,8 @@ export class CSPEngine {
         // Same course, same section, same day (no repeated course on one day)
         if (
           !conflict &&
-          n.sectionId === v.sectionId &&
-          n.courseId === v.courseId &&
+          n.sectionId.trim() === v.sectionId.trim() &&
+          n.courseId.trim() === v.courseId.trim() &&
           nTs.day === ts.day
         ) conflict = true;
 

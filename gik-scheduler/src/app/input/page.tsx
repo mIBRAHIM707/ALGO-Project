@@ -29,7 +29,7 @@ export default function InputPage() {
         } else {
           toast.error("Invalid dataset structure. Core arrays are missing.");
         }
-      } catch (error) {
+      } catch {
         toast.error("Failed to parse JSON file.");
       }
     };

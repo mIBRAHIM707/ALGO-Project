@@ -58,7 +58,7 @@ export default function StatsPage() {
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Soft Soft Efficiency</CardTitle>
+              <CardTitle className="text-sm font-medium">Soft Constraint Efficiency</CardTitle>
               <ZapIcon className="h-4 w-4 text-amber-500" />
             </CardHeader>
             <CardContent>
