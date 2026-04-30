@@ -1,7 +1,7 @@
 // lib/store.ts
 import { create } from 'zustand';
 import { FullData, Assignment, GenerationStats } from './types';
-import defaultData from './gik-data-spring2025.json';
+import defaultData from './gik-data-spring2026.json';
 
 interface AppState {
   data: FullData;

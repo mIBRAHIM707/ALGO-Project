@@ -1,0 +1,8254 @@
+{
+  "courses": [
+    {
+      "id": "CV443-A",
+      "title": "Traffic Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muntazir Abbas"
+    },
+    {
+      "id": "HM213-A",
+      "title": "History",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Dr. Izhar Ali"
+    },
+    {
+      "id": "CS323-F",
+      "title": "Object Oriented Analysis and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Waqas"
+    },
+    {
+      "id": "CS112-N",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Engr. Badre Munir"
+    },
+    {
+      "id": "CS424L-C",
+      "title": "Compiler Construction Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Sadiq Shah"
+    },
+    {
+      "id": "AI361-A",
+      "title": "Natural Language Processing",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Dr. Shahabuddin Ansari"
+    },
+    {
+      "id": "CE222L-A",
+      "title": "Computer Organization & Assembly Language Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Abbas Khan"
+    },
+    {
+      "id": "AI102-I",
+      "title": "L-Python Programming and Freelancing Essentials",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Noor"
+    },
+    {
+      "id": "CS417-A",
+      "title": "Parallel Processing",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Dr. Masroor Hussain"
+    },
+    {
+      "id": "AI321-A",
+      "title": "Machine Learning",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ali Imran Sandhu"
+    },
+    {
+      "id": "CS112-A",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Qasim Riaz"
+    },
+    {
+      "id": "DS417-A",
+      "title": "Parallel Processing and Distributed Computing",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Masroor Hussain"
+    },
+    {
+      "id": "CS478-A",
+      "title": "Design and Analysis of Algorithms",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Salman"
+    },
+    {
+      "id": "CS224-A",
+      "title": "Formal Languages and Automata Theory",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zoya"
+    },
+    {
+      "id": "MS101-A",
+      "title": "Business Mathematics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 1,
+      "instructor": "Mr. Muhammad Umer Saeed"
+    },
+    {
+      "id": "MS232-A",
+      "title": "Marketing Management",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 1,
+      "instructor": "Mr. Muhammad Sarim Jalal"
+    },
+    {
+      "id": "CS331-D",
+      "title": "Software Engineering\u00a0and Project Management",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 1,
+      "instructor": "Ms. Umm-e-Rubab Hashmi"
+    },
+    {
+      "id": "DS341L-A",
+      "title": "Data Mining",
+      "program": "BDS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 1,
+      "instructor": "Engr. Anas Raza Aslam"
+    },
+    {
+      "id": "ME244L-A",
+      "title": "Statics and Dynamics Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 5,
+      "instructor": "Dr. Massab Junaid"
+    },
+    {
+      "id": "EE331L-F",
+      "title": "Electronic Circuit Design Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Aqib Safi"
+    },
+    {
+      "id": "EE221L-F",
+      "title": "Digital Logic Design Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Rizwan Ali"
+    },
+    {
+      "id": "AI319-A",
+      "title": "Computer Vision",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Dr. Ali Imran Sandhu"
+    },
+    {
+      "id": "ME213-A",
+      "title": "Mechanics of Solids-1",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Dr. Khalid Rehman"
+    },
+    {
+      "id": "ME202-A",
+      "title": "Measurement and Instrumentation",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Mr. Muhammad Shahab Alam"
+    },
+    {
+      "id": "AI319L-A",
+      "title": "Computer Vision Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 5,
+      "instructor": "Mr. Asim Shah"
+    },
+    {
+      "id": "AI361L-A",
+      "title": "Natural Language Processing Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 5,
+      "instructor": "Mr. Asim Shah"
+    },
+    {
+      "id": "AI202-A",
+      "title": "Trends and Techniques in AI",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Talha Ashfaq"
+    },
+    {
+      "id": "CV241-A",
+      "title": "Transportation Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Sheraz Ahmed"
+    },
+    {
+      "id": "CV230-A",
+      "title": "Engineering Geology",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Sheraz Ahmed"
+    },
+    {
+      "id": "CS378-D",
+      "title": "Design & Analysis of Algorithms",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 1,
+      "instructor": "Dr. Muhammad Salman"
+    },
+    {
+      "id": "AI321L-A",
+      "title": "Machine Learning Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Maham Shehzadi"
+    },
+    {
+      "id": "HM221-A",
+      "title": "International Relations & Current Affairs",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Mr. Abrar Ahmad"
+    },
+    {
+      "id": "MS254-A",
+      "title": "Cost and Management Accounting",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 4,
+      "instructor": "Mr. Muhammad Ahmad Zaka"
+    },
+    {
+      "id": "MS312-A",
+      "title": "ogic",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Mr. Ayman Habib"
+    },
+    {
+      "id": "MS223-A",
+      "title": "Business Policy",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 5,
+      "instructor": "Mr. Haroon Ur Rashid"
+    },
+    {
+      "id": "DS325-D",
+      "title": "Software Engineering",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 2,
+      "instructor": "Ms. Umm-e-Rubab Hashmi"
+    },
+    {
+      "id": "ME447L-A",
+      "title": "Mechatronics Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 10,
+      "instructor": "Dr. Arsalan Arif"
+    },
+    {
+      "id": "ME446L-A",
+      "title": "Mechanical vibration and control systems lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 10,
+      "instructor": "Dr. Muhammad Shakeel Afzal"
+    },
+    {
+      "id": "CV202L-A",
+      "title": "Advanced Surveying Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Dr. Sheraz Ahmed"
+    },
+    {
+      "id": "CV436-A",
+      "title": "Tunneling and Underground Space Structures",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Syed Aizaz Haider"
+    },
+    {
+      "id": "CS342-A",
+      "title": "Numerical Analysis & Computational Methods",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Prof. Dr. Sirajul Haq"
+    },
+    {
+      "id": "ES446-A",
+      "title": "Heat Transfer and Modeling",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Sheharyar Pervaiz"
+    },
+    {
+      "id": "ES221-A",
+      "title": "Data Structures and Algorithms",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Sheharyar Pervaiz"
+    },
+    {
+      "id": "CY312-E",
+      "title": "Cryptography",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Ahmad Nawaz"
+    },
+    {
+      "id": "CV418-A",
+      "title": "Introduction to Earthquake Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Faisal Javed"
+    },
+    {
+      "id": "CV202-A",
+      "title": "Advanced Surveying",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Zeeshan Asghar"
+    },
+    {
+      "id": "CV473-A",
+      "title": "Watershed Modeling using GIS",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Waseem"
+    },
+    {
+      "id": "ME243L-A",
+      "title": "Electronics and Instrumentation Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 5,
+      "instructor": "Dr. Abid Imran"
+    },
+    {
+      "id": "EE472-A",
+      "title": "Antenna Theory and Design",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Waleed Tairq Sethi"
+    },
+    {
+      "id": "ES443-A",
+      "title": "aser Engineering",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Usman"
+    },
+    {
+      "id": "ES466-A",
+      "title": "Microelectronic Manufacturing Engineering",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Usman Habib"
+    },
+    {
+      "id": "MS291-A",
+      "title": "Engineering Economics",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 10,
+      "instructor": "Prof. Dr. Muhammad Sabir"
+    },
+    {
+      "id": "MS434-A",
+      "title": "Entrepreneurship and Marketing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Ayman Habib"
+    },
+    {
+      "id": "CS473-A",
+      "title": "Digital Image Processing",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Omer Bin Saeed"
+    },
+    {
+      "id": "EE486-A",
+      "title": "Powert System Operation & Control",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ammar Arshad"
+    },
+    {
+      "id": "MM455-A",
+      "title": "Finite Element Methods",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Rashid Ali"
+    },
+    {
+      "id": "ME451-A",
+      "title": "Applied Robotic Vision",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Abid Imran"
+    },
+    {
+      "id": "IF102L-L",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "CH419-A",
+      "title": "Water Treatment and Purification",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 7,
+      "instructor": "Mr. Muhammad waqar shaukat"
+    },
+    {
+      "id": "CH462-A",
+      "title": "Fuel and Clean Technology",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 7,
+      "instructor": "Engr. Qaiser Abbas"
+    },
+    {
+      "id": "IF102L-K",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "ME232-A",
+      "title": "Thermodynamics-2",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 10,
+      "instructor": "Dr. Ahmad Abbas"
+    },
+    {
+      "id": "EM434-A",
+      "title": "Services Marketing",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 20,
+      "instructor": "Dr. Shakir Sardar"
+    },
+    {
+      "id": "EM433-A",
+      "title": "Corporate Entrepreneurship and Innovation",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 20,
+      "instructor": "Dr. Abid Ullah"
+    },
+    {
+      "id": "MM451-A",
+      "title": "Manufacturing Processes-II",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Syed Zameer Abbas"
+    },
+    {
+      "id": "HM211-A",
+      "title": "Pakistan and Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 10,
+      "instructor": "Mr. Fida Ur Rahman"
+    },
+    {
+      "id": "MM447L-B",
+      "title": "Materials Lab-VII",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Dr. Mohsin Ali Marwat"
+    },
+    {
+      "id": "CH471-A",
+      "title": "Industrial Waste Management",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 8,
+      "instructor": "Dr. Hammad Amjad Khan"
+    },
+    {
+      "id": "ME405-A",
+      "title": "Structural Health Monitoring Using AI",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Mr. Muhammad Shahab Alam"
+    },
+    {
+      "id": "CS354-A",
+      "title": "Deep Learning",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Khurram Khan Jadoon"
+    },
+    {
+      "id": "ES361-A",
+      "title": "Solid State Electronics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Usman"
+    },
+    {
+      "id": "MM392-A",
+      "title": "Nanomaterials and Nanotechnology-II",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Mohsin Ali Marwat"
+    },
+    {
+      "id": "ES361L-A",
+      "title": "Solid State Electronics Lab",
+      "program": "BES",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Rao Uzair Ahmad"
+    },
+    {
+      "id": "MM345L-A",
+      "title": "Materials Lab-V",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Dr. Muhammad Ramzan Abdul Karim"
+    },
+    {
+      "id": "CS101-A",
+      "title": "Computing and AI",
+      "program": "BCE",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Rabbia Hassan"
+    },
+    {
+      "id": "CV361L-C",
+      "title": "Environmental Engineering I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Prof. Dr. Muhammad Ashraf Tanoli"
+    },
+    {
+      "id": "CV361L-D",
+      "title": "Environmental Engineering I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Prof. Dr. Muhammad Ashraf Tanoli"
+    },
+    {
+      "id": "IF102L-M",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "CE323-A",
+      "title": "General Purpose Computing with GPU",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Taj Muhammad"
+    },
+    {
+      "id": "ME363-A",
+      "title": "I",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 15,
+      "instructor": "Dr. Shahzad Ahmad"
+    },
+    {
+      "id": "CE454-B",
+      "title": "Edge AI",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Hanif"
+    },
+    {
+      "id": "CV314L-C",
+      "title": "Reinforced Concrete Design I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Mr. Muntazir Abbas"
+    },
+    {
+      "id": "SC464-A",
+      "title": "ean & Six Sigma in Supply Chain Management",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 25,
+      "instructor": "Mr. Hassaan Tariq"
+    },
+    {
+      "id": "SC463-A",
+      "title": "Sustainability in Supply Chain Management",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 25,
+      "instructor": "Dr. Sami Farooq"
+    },
+    {
+      "id": "CY326-E",
+      "title": "Block Chain",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahab Haider"
+    },
+    {
+      "id": "MM345L-B",
+      "title": "Materials Lab-V",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Dr. Muhammad Ramzan Abdul Karim"
+    },
+    {
+      "id": "CV314L-D",
+      "title": "Reinforced Concrete Design I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Dr. Adnan Akmal"
+    },
+    {
+      "id": "MM497-A",
+      "title": "Biomaterials",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Imran Khan"
+    },
+    {
+      "id": "CE408-B",
+      "title": "Cloud and Distributed Computing",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 15,
+      "instructor": "Ms. Safia Baloch"
+    },
+    {
+      "id": "CE446-B",
+      "title": "Digital Design Verification",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Waqar Ahmad"
+    },
+    {
+      "id": "ES447-A",
+      "title": "Financial Engineering Models",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Minhaj Zaheer"
+    },
+    {
+      "id": "ME468-A",
+      "title": "Mechanical Engineering Design",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Massab Junaid"
+    },
+    {
+      "id": "MM499-A",
+      "title": "Nanotechnology for Energy",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Mohsin Ali Marwat"
+    },
+    {
+      "id": "MM495-A",
+      "title": "Nanosystems and Devices",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Mr. Atteeq Uz Zaman"
+    },
+    {
+      "id": "MM352-A",
+      "title": "Manufacturing Processes-I",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Syed Zameer Abbas"
+    },
+    {
+      "id": "CV361L-A",
+      "title": "Environmental Engineering I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Mr. Zeeshan Asghar"
+    },
+    {
+      "id": "MM447L-A",
+      "title": "Materials Lab-VII",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Dr. Mohsin Ali Marwat"
+    },
+    {
+      "id": "CV314L-B",
+      "title": "Reinforced Concrete Design I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Dr. Adnan Akmal"
+    },
+    {
+      "id": "CS343-F",
+      "title": "Data Science",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Huzaifa Shah"
+    },
+    {
+      "id": "CV314L-A",
+      "title": "Reinforced Concrete Design I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Mr. Muntazir Abbas"
+    },
+    {
+      "id": "CV361L-B",
+      "title": "Environmental Engineering I Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 20,
+      "instructor": "Mr. Zeeshan Asghar"
+    },
+    {
+      "id": "CS411-A",
+      "title": "Block Chain",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahab Haider"
+    },
+    {
+      "id": "DS364-A",
+      "title": "Full Stack Development",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Noor"
+    },
+    {
+      "id": "MM222-A",
+      "title": "Strength of Materials",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Rashid Ali"
+    },
+    {
+      "id": "CS416-C",
+      "title": "Deep Learning",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Khurram Khan Jadoon"
+    },
+    {
+      "id": "EE413-C",
+      "title": "High voltage engineering",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahid Alam"
+    },
+    {
+      "id": "CS316-F",
+      "title": "Development Operations (DevOps)",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Waqas"
+    },
+    {
+      "id": "EE413L-A",
+      "title": "High voltage engineering lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Usman Anjum"
+    },
+    {
+      "id": "MM244L-A",
+      "title": "Computational Tools in Materials Science",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Mr. Atteeq Uz Zaman"
+    },
+    {
+      "id": "MM243L-A",
+      "title": "Materials Lab-III",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Mr. Abdullah"
+    },
+    {
+      "id": "MT101-A",
+      "title": "Calculus I",
+      "program": "BES",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Nayab Khan"
+    },
+    {
+      "id": "MM201-A",
+      "title": "Materials Chemistry",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Hamza Mohsin"
+    },
+    {
+      "id": "MM233-A",
+      "title": "Alloy Production and Casting Design",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Mr. Abdullah"
+    },
+    {
+      "id": "MM232-A",
+      "title": "Phase Equilibria and Microstructures",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Muhammad Imran Khan"
+    },
+    {
+      "id": "CS452-E",
+      "title": "Artificial Neural Network",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zubair Ahmad"
+    },
+    {
+      "id": "CS455-A",
+      "title": "Natural Language Processing Using Deep Learning",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahabuddin Ansari"
+    },
+    {
+      "id": "EE425-A",
+      "title": "Embedded Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Irfan"
+    },
+    {
+      "id": "ES482-A",
+      "title": "Senior Design Project Part II",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Muhammmad Sadiq"
+    },
+    {
+      "id": "ES325-A",
+      "title": "Advanced Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Babar Zaman"
+    },
+    {
+      "id": "AF454-A",
+      "title": "Financial Risk Management",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 20,
+      "instructor": "Ms. Noshaba Zulfiqar"
+    },
+    {
+      "id": "AF453-A",
+      "title": "Investment and Portfolio Management",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 20,
+      "instructor": "Dr. Muhammad Shariq"
+    },
+    {
+      "id": "ME471-A",
+      "title": "Power Plants",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "MM362-A",
+      "title": "Ceramics and Glasses",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Hamza Mohsin"
+    },
+    {
+      "id": "CH412-A",
+      "title": "Transport Phenomena",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Shozab Mehdi"
+    },
+    {
+      "id": "CH441-A",
+      "title": "Chemical Engineering Plant Design",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ahsan Jalal"
+    },
+    {
+      "id": "CV315-B",
+      "title": "Design of Steel Structures",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muntazir Abbas"
+    },
+    {
+      "id": "CH482-A",
+      "title": "Chemical Engineering Project Design II",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Khurram Imran Khan"
+    },
+    {
+      "id": "CH452L-A",
+      "title": "Process Modelling and Simulation Lab.",
+      "program": "CHE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Dr. Khurram Imran Khan"
+    },
+    {
+      "id": "MM365-A",
+      "title": "Polymers and Composites",
+      "program": "MTE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Muhammad Ramzan Abdul Karim"
+    },
+    {
+      "id": "ME213-B",
+      "title": "Mechanics of Solids-1",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Dr. Khalid Rehman"
+    },
+    {
+      "id": "CV202L-B",
+      "title": "Advanced Engineering Surveying Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Dr. Sheraz Ahmed"
+    },
+    {
+      "id": "CS439-A",
+      "title": "Data Science",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Minhaj Zaheer"
+    },
+    {
+      "id": "ME205-B",
+      "title": "Electrical Machines and Drives",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Mr. Syed Salman Shah"
+    },
+    {
+      "id": "CH201-A",
+      "title": "Inorganic and Organic Chemistry",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Sajjad Hussain"
+    },
+    {
+      "id": "CH212-A",
+      "title": "Energy Engineering",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Javaid Rabbani Khan"
+    },
+    {
+      "id": "CH214-A",
+      "title": "Chemical Engineering Thermodynamics I",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Mohammad Hamza Nasir"
+    },
+    {
+      "id": "DS411-A",
+      "title": "Edge AI",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Hanif"
+    },
+    {
+      "id": "EE452-A",
+      "title": "Industrial Process Control",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Dur-e-Zehra Baig"
+    },
+    {
+      "id": "ME453-A",
+      "title": "Additive Manufacturing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 30,
+      "instructor": "Dr. Muhammad Qasim Zafar"
+    },
+    {
+      "id": "CV361-B",
+      "title": "Environmental Engineering I",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Mr. Muhammad Sayyam Asif"
+    },
+    {
+      "id": "CV305-B",
+      "title": "Geo Informatics",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Mr. Zeeshan Asghar"
+    },
+    {
+      "id": "CV314-B",
+      "title": "Reinforced Concrete Design I",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Adnan Akmal"
+    },
+    {
+      "id": "CH253L-A",
+      "title": "Fluid Mechanics Lab.",
+      "program": "CHE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Dr. Ahsan Jalal"
+    },
+    {
+      "id": "ES341L-A",
+      "title": "Numerical Analysis Lab",
+      "program": "BES",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Wajahat Ali Khan"
+    },
+    {
+      "id": "CV305L-B",
+      "title": "Geo Informatics Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 40,
+      "instructor": "Mr. Muhammad Sayyam Asif"
+    },
+    {
+      "id": "EE332L-C",
+      "title": "Power Electronics Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Adeel"
+    },
+    {
+      "id": "CH252L-A",
+      "title": "Energy and Thermodynamic Lab.",
+      "program": "CHE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Qaiser Abbas"
+    },
+    {
+      "id": "CH342-A",
+      "title": "Fluid Mechanics II",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ahsan Jalal"
+    },
+    {
+      "id": "CH331-A",
+      "title": "Process Modelling and Simulation",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Khurram Imran Khan"
+    },
+    {
+      "id": "MT203-A",
+      "title": "Complex Variables and Transforms",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Asif Ahmad"
+    },
+    {
+      "id": "CV351-B",
+      "title": "Construction Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Mr. Shahzad Ahmed"
+    },
+    {
+      "id": "ME202-B",
+      "title": "Instrumentation and Digital Twin",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Mr. Muhammad Shahab Alam"
+    },
+    {
+      "id": "MS303-A",
+      "title": "Business Research Methods",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Saima Aftab"
+    },
+    {
+      "id": "ME232-B",
+      "title": "Thermodynamics-2",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Dr. Ahmad Abbas"
+    },
+    {
+      "id": "EE332-C",
+      "title": "Power Electronics",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Umar Waleed"
+    },
+    {
+      "id": "CV231L-B",
+      "title": "Soil Mechanics Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Engr. Syed Aizaz Haider"
+    },
+    {
+      "id": "CH322-A",
+      "title": "Reaction Kinetics and Reactor Design",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Abdul Wahab"
+    },
+    {
+      "id": "CH361-A",
+      "title": "Environmental Engineering",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Mohammad Hamza Nasir"
+    },
+    {
+      "id": "CH241-A",
+      "title": "Fluid Mechanics-I",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Hammad Amjad Khan"
+    },
+    {
+      "id": "CH353L-A",
+      "title": "Environment and Reaction Engineering Lab",
+      "program": "CHE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Abdul Wahab"
+    },
+    {
+      "id": "CV315-A",
+      "title": "Design of Steel Structures",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Dr. Hafiz Ahmed Waqas"
+    },
+    {
+      "id": "ES322-A",
+      "title": "Instrumentation",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Saqib"
+    },
+    {
+      "id": "MS333-A",
+      "title": "Consumer Behavior",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Abid Ullah"
+    },
+    {
+      "id": "ME212-B",
+      "title": "Dynamics",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Mr. Hamza Abbas"
+    },
+    {
+      "id": "EE361-C",
+      "title": "Communication Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Waleed Tairq Sethi"
+    },
+    {
+      "id": "ES322L-A",
+      "title": "Instrumentation Lab",
+      "program": "BES",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Huzaifa"
+    },
+    {
+      "id": "CV314-A",
+      "title": "Reinforced Concrete Design I",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Dr. Adnan Akmal"
+    },
+    {
+      "id": "ES371-A",
+      "title": "Engineering Electromagnetism",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Mazhar Javed"
+    },
+    {
+      "id": "ME364-B",
+      "title": "Design of machine Elements-2",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Shahzad Ahmad"
+    },
+    {
+      "id": "EE361-B",
+      "title": "Communication Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ahmad Kamal Hassan"
+    },
+    {
+      "id": "EE351-B",
+      "title": "inear Control Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Prof. Dr. Nisar Ahmed"
+    },
+    {
+      "id": "CV425-A",
+      "title": "Hydraulic and Irrigation Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Waseem"
+    },
+    {
+      "id": "CV408-A",
+      "title": "Machine Learning Applications in Civil Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Faisal Javed"
+    },
+    {
+      "id": "CV452-A",
+      "title": "Construction Management",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Shahzad Ahmed"
+    },
+    {
+      "id": "CV305-A",
+      "title": "Geo Informatics",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Mr. Zeeshan Asghar"
+    },
+    {
+      "id": "CV351-A",
+      "title": "Construction Engineering",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Mr. Shahzad Ahmed"
+    },
+    {
+      "id": "CV361-A",
+      "title": "Environmental Engineering I",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Mr. Muhammad Sayyam Asif"
+    },
+    {
+      "id": "ME467-A",
+      "title": "Finite Element Analysis",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Dr. Muhammad Shakeel Afzal"
+    },
+    {
+      "id": "ME474-A",
+      "title": "I. C. Engines",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 31,
+      "instructor": "Dr. Ali Turab Jafry"
+    },
+    {
+      "id": "EE313-A",
+      "title": "Power System Analysis",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahid Alam"
+    },
+    {
+      "id": "EE332-B",
+      "title": "Power Electronics",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Hadeed Ahmed Sher"
+    },
+    {
+      "id": "EE351-C",
+      "title": "inear Control Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Dur-e-Zehra Baig"
+    },
+    {
+      "id": "CV305L-A",
+      "title": "Geo Informatics Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 40,
+      "instructor": "Mr. Muhammad Sayyam Asif"
+    },
+    {
+      "id": "CV231L-A",
+      "title": "Soil Mechanics Lab",
+      "program": "CVE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 30,
+      "instructor": "Engr. Syed Aizaz Haider"
+    },
+    {
+      "id": "EE313L-A",
+      "title": "Power System Analysis Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Abdul Haseeb"
+    },
+    {
+      "id": "CE408L-B",
+      "title": "Cloud and Distributed Computing Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Safia Baloch"
+    },
+    {
+      "id": "MS356-A",
+      "title": "Money and Banking",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Furqan"
+    },
+    {
+      "id": "ME364-A",
+      "title": "Design of machine Elements-2",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Shahzad Ahmad"
+    },
+    {
+      "id": "ME205-A",
+      "title": "Electrical Machines and Drives",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Mr. Syed Salman Shah"
+    },
+    {
+      "id": "ME212-A",
+      "title": "Dynamics",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 35,
+      "instructor": "Mr. Hamza Abbas"
+    },
+    {
+      "id": "EE361-A",
+      "title": "Communication Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ahmad Kamal Hassan"
+    },
+    {
+      "id": "EE421-B",
+      "title": "Programming Tools for Optimization",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zaiwar Ali"
+    },
+    {
+      "id": "ME333-A",
+      "title": "Heat Transfer",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Taqi Ahmad Cheema"
+    },
+    {
+      "id": "ME315-A",
+      "title": "Mechanical Vibration",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Syed Taimoor Hassan Shah"
+    },
+    {
+      "id": "MS303-B",
+      "title": "Business Research Methods",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Saima Aftab"
+    },
+    {
+      "id": "EE241-B",
+      "title": "Numerical Methods for Electrical Engineering",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Husnul Maab"
+    },
+    {
+      "id": "EE421-A",
+      "title": "Programming Tools for Optimization",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zaiwar Ali"
+    },
+    {
+      "id": "MS325-A",
+      "title": "Organizational Behaviour",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Haroon Ur Rashid"
+    },
+    {
+      "id": "ME322-A",
+      "title": "Fluid Mechanics-2",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Omer Ahmed Qureshi"
+    },
+    {
+      "id": "ME316-A",
+      "title": "Computer Aided Engineering",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Muhammad Qasim Zafar"
+    },
+    {
+      "id": "EE212-A",
+      "title": "Electrical Network Analysis",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Umar Waleed"
+    },
+    {
+      "id": "MS333-B",
+      "title": "Consumer Behavior",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Abid Ullah"
+    },
+    {
+      "id": "MS356-B",
+      "title": "Money and Banking",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Furqan"
+    },
+    {
+      "id": "EE223-B",
+      "title": "Microprocessor Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Memoon Sajid"
+    },
+    {
+      "id": "CS316-A",
+      "title": "Development Operations (DevOps)",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Sajid Ali"
+    },
+    {
+      "id": "EE241-A",
+      "title": "Numerical Methods for Electrical Engineering",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Husnul Maab"
+    },
+    {
+      "id": "ME406-A",
+      "title": "Electric Vehicle Technology",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 40,
+      "instructor": "Dr. Arsalan Arif"
+    },
+    {
+      "id": "EE231-A",
+      "title": "Electronic Devices and Circuits",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Muqeet Rehman"
+    },
+    {
+      "id": "ME316-B",
+      "title": "Computer Aided Engineering",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Muhammad Qasim Zafar"
+    },
+    {
+      "id": "CY315-E",
+      "title": "Wireless and Mobile Security",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Fawad Khan"
+    },
+    {
+      "id": "MM141L-J",
+      "title": "Materials and Nanotechnology",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 120,
+      "instructor": "Mr. Abdullah"
+    },
+    {
+      "id": "EE351-A",
+      "title": "inear Control Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Prof. Dr. Nisar Ahmed"
+    },
+    {
+      "id": "HM223-B",
+      "title": "Sociology",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Mr. Haroon Ur Rashid"
+    },
+    {
+      "id": "MS203-B",
+      "title": "Business Research Methods",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Mr. Muhammad Sarim Jalal"
+    },
+    {
+      "id": "ME322-B",
+      "title": "Fluid Mechanics-2",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Omer Ahmed Qureshi"
+    },
+    {
+      "id": "EE212-B",
+      "title": "Electrical Network Analysis",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Umar Waleed"
+    },
+    {
+      "id": "EE231-B",
+      "title": "Electronic Devices and Circuits",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Muqeet Rehman"
+    },
+    {
+      "id": "CS112-J",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Badre Munir"
+    },
+    {
+      "id": "HM102-J",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Ms. Hira Ahad"
+    },
+    {
+      "id": "AI102-J",
+      "title": "L-Python Programming and Freelancing Essentials",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Noor"
+    },
+    {
+      "id": "CS112L-J",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Umm-e-Rubab Hashmi"
+    },
+    {
+      "id": "CS112L-K",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "SE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Memoona Amjad"
+    },
+    {
+      "id": "CS112L-N",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Himna Shahzad"
+    },
+    {
+      "id": "CS361-B",
+      "title": "Computer Architecture",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Noor"
+    },
+    {
+      "id": "MS211-B",
+      "title": "Environmental Sciences",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Dr. Shakir Sardar"
+    },
+    {
+      "id": "MS253-B",
+      "title": "Business Finance",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Ms. Noshaba Zulfiqar"
+    },
+    {
+      "id": "MS234-B",
+      "title": "Entrepreneurship",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Dr. Sajid Khan"
+    },
+    {
+      "id": "MS233-B",
+      "title": "Consumer Behavior",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Ms. Naveen Gul Yousafzai"
+    },
+    {
+      "id": "CE313-C",
+      "title": "Computer Communication and Networks",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Qamar Abbas"
+    },
+    {
+      "id": "CS112-G",
+      "title": "Object Oriented Programming and Design",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahab Haider"
+    },
+    {
+      "id": "AI102L-G",
+      "title": "Python Programming and Freelancing Essentials",
+      "program": "CYS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Arooba Saeed"
+    },
+    {
+      "id": "AI102L-K",
+      "title": "Python Programming and Freelancing Essentials",
+      "program": "SE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Mah Rukh"
+    },
+    {
+      "id": "CS392-B",
+      "title": "Professional Issues in IT",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Hafiz Syed Muhammad Muslim"
+    },
+    {
+      "id": "CE363-B",
+      "title": "Digital Signal Processing",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Hanif"
+    },
+    {
+      "id": "CE342-B",
+      "title": "Computational Methods and Techniques",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Omer Bin Saeed"
+    },
+    {
+      "id": "ME315-B",
+      "title": "Mechanical Vibration",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Syed Taimoor Hassan Shah"
+    },
+    {
+      "id": "ME333-B",
+      "title": "Heat Transfer",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 45,
+      "instructor": "Dr. Taqi Ahmad Cheema"
+    },
+    {
+      "id": "CS392-C",
+      "title": "Professional Issues in IT",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Waheed Ahmad"
+    },
+    {
+      "id": "CE313-E",
+      "title": "Computer Communication and Networks",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Ahmad Nawaz"
+    },
+    {
+      "id": "CE222-E",
+      "title": "Computer Organization and Assembly Language",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ghulam Abbas"
+    },
+    {
+      "id": "CE363L-B",
+      "title": "Digital Signal Processing Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Irfan ullah"
+    },
+    {
+      "id": "CS112L-B",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 80,
+      "instructor": "Engr. Anas Raza Aslam"
+    },
+    {
+      "id": "CE222L-E",
+      "title": "Computer Organization & Assembly Language Lab",
+      "program": "CYS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Muhammad Shakaib Khan"
+    },
+    {
+      "id": "CS112L-G",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "CYS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Arooba Saeed"
+    },
+    {
+      "id": "CS112L-H",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Khizar Khan"
+    },
+    {
+      "id": "CE342L-B",
+      "title": "Computational Methods and Techniques Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Ali Husnain"
+    },
+    {
+      "id": "EE223-A",
+      "title": "Microprocessor Systems",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Irfan"
+    },
+    {
+      "id": "CS378-C",
+      "title": "Design & Analysis of Algorithms",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Ahsan Shah"
+    },
+    {
+      "id": "CS324-C",
+      "title": "HCI and UI/UX Graphics",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Israr Ahmad"
+    },
+    {
+      "id": "HM211-G",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Nasir Amin"
+    },
+    {
+      "id": "CS112-H",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Qamar Abbas"
+    },
+    {
+      "id": "HM102L-J",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Ms. Hira Ahad"
+    },
+    {
+      "id": "CS444-A",
+      "title": "Information Retrieval",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zoya"
+    },
+    {
+      "id": "CS464-A",
+      "title": "Data and Networks Security",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Muhammad Salman Saeed"
+    },
+    {
+      "id": "EE428-A",
+      "title": "Internet of Things IoT",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Adnan Noor"
+    },
+    {
+      "id": "EE332-A",
+      "title": "Power Electronics",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Hadeed Ahmed Sher"
+    },
+    {
+      "id": "MS291-B",
+      "title": "Engineering Economy",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Prof. Dr. Muhammad Sabir"
+    },
+    {
+      "id": "CY461-E",
+      "title": "Penetration Testing",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Rashad Maqbool Jillani"
+    },
+    {
+      "id": "CY321-E",
+      "title": "Secure Software Design and Development",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zubair Ahmad"
+    },
+    {
+      "id": "CS378-E",
+      "title": "Design & Analysis of Algorithms",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Salman Ashraf"
+    },
+    {
+      "id": "CS392-E",
+      "title": "Professional Issues in IT",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Afzal"
+    },
+    {
+      "id": "CS232-E",
+      "title": "Database Management Systems",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Said Nabi"
+    },
+    {
+      "id": "CS112-K",
+      "title": "Object Oriented Programming and Design",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Said Nabi"
+    },
+    {
+      "id": "CY483-E",
+      "title": "Design Project (Part-III)",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Afzal"
+    },
+    {
+      "id": "CY402L-E",
+      "title": "Cyber Security Capstone Lab",
+      "program": "CYS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Khizar Khan"
+    },
+    {
+      "id": "CY321L-E",
+      "title": "Secure Software Design and Development",
+      "program": "CYS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Hadia Abbas"
+    },
+    {
+      "id": "HM102L-N",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Mr. Haseeb Ahsan"
+    },
+    {
+      "id": "CS375-A",
+      "title": "Cyber Security",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Salman Ahmed"
+    },
+    {
+      "id": "ME467-B",
+      "title": "Finite Element Analysis",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 41,
+      "instructor": "Dr. Muhammad Shakeel Afzal"
+    },
+    {
+      "id": "CY201-E",
+      "title": "Cyber Security Principles and Concepts",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Ahmad Nawaz"
+    },
+    {
+      "id": "MM101-J",
+      "title": "Materials and Nanotechnology",
+      "program": "MTE",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Mr. Abdullah"
+    },
+    {
+      "id": "HM102-N",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Haseeb Ahsan"
+    },
+    {
+      "id": "CE231L-A",
+      "title": "Electronics-I Lab.",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Irfan ullah"
+    },
+    {
+      "id": "CE222L-B",
+      "title": "Computer Organization & Assembly Language Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Abbas Khan"
+    },
+    {
+      "id": "CS232L-B",
+      "title": "Database Management Systems Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Basma Nasir"
+    },
+    {
+      "id": "CS232L-E",
+      "title": "Database Management Systems Lab",
+      "program": "CYS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Mah Rukh"
+    },
+    {
+      "id": "CS112L-O",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Hafsa Nayyab"
+    },
+    {
+      "id": "CE231-A",
+      "title": "Electronics-I",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Memoon Sajid"
+    },
+    {
+      "id": "MS211-A",
+      "title": "Environmental Sciences",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Dr. Shakir Sardar"
+    },
+    {
+      "id": "CE222-B",
+      "title": "Computer Organization and Assembly Language",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Fahad Bin Muslim"
+    },
+    {
+      "id": "CS232-B",
+      "title": "Database Management Systems",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ayaz Umer"
+    },
+    {
+      "id": "HM211-B",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Fida Ur Rahman"
+    },
+    {
+      "id": "MT102-F",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Asif Ahmad"
+    },
+    {
+      "id": "EE314L-A",
+      "title": "Instrumentation & Measurements Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Syed Imran Mukhtiar"
+    },
+    {
+      "id": "CE313-B",
+      "title": "Computer Communication and Networks",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Muhammad Salman Saeed"
+    },
+    {
+      "id": "CS232-A",
+      "title": "Database Management Systems",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Qasim Riaz"
+    },
+    {
+      "id": "MS358-A",
+      "title": "Corporate Finance",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Shariq"
+    },
+    {
+      "id": "MS203-A",
+      "title": "Business Research Methods",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Mr. Muhammad Sarim Jalal"
+    },
+    {
+      "id": "SE202L-C",
+      "title": "Development Operations Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Naeem"
+    },
+    {
+      "id": "ES111-F",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Engr. Muhammmad Sadiq"
+    },
+    {
+      "id": "CS232L-A",
+      "title": "Database Management Systems Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Sadiq Shah"
+    },
+    {
+      "id": "ES205-A",
+      "title": "Advanced Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Dr. Zahid Ahmed"
+    },
+    {
+      "id": "MS233-A",
+      "title": "Consumer Behavior",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Ms. Naveen Gul Yousafzai"
+    },
+    {
+      "id": "MS447-A",
+      "title": "Accounting and Finance",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Muhammad Shariq"
+    },
+    {
+      "id": "EE314-A",
+      "title": "Instrumentation & Measurements",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Memoon Sajid"
+    },
+    {
+      "id": "CS272-C",
+      "title": "HCI and Computer Graphics",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Israr Ahmad"
+    },
+    {
+      "id": "HM102-C",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 80,
+      "instructor": "Dr. Noreen Shah"
+    },
+    {
+      "id": "HM211-E",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Nasir Amin"
+    },
+    {
+      "id": "CS478-E",
+      "title": "Design and Analysis of Algorithms",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Salman"
+    },
+    {
+      "id": "CS112-F",
+      "title": "Object Oriented Programming and Design",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Sajid Ali"
+    },
+    {
+      "id": "CS112-O",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Hafiz Syed Ahmed Qasim"
+    },
+    {
+      "id": "AI407L-A",
+      "title": "Artificial Intelligence Capstone Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Naeem"
+    },
+    {
+      "id": "CS424L-A",
+      "title": "Compiler Construction Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Sadiq Shah"
+    },
+    {
+      "id": "CS112L-A",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Imad"
+    },
+    {
+      "id": "CS112L-F",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 60,
+      "instructor": "Engr. Zaheer Ahmed"
+    },
+    {
+      "id": "CE222L-F",
+      "title": "Computer Organization & Assembly Language Lab",
+      "program": "SE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Samiullah Hussain"
+    },
+    {
+      "id": "CE222-A",
+      "title": "Computer Assembly and Organization Language",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Asad Mahmood"
+    },
+    {
+      "id": "AI102L-H",
+      "title": "Python Programming and Freelancing Essentials",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Waheed Iqblal"
+    },
+    {
+      "id": "AI221-A",
+      "title": "Machine Learning",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Ali Imran Sandhu"
+    },
+    {
+      "id": "AI204-A",
+      "title": "Concepts in AI",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Talha Ashfaq"
+    },
+    {
+      "id": "CS424-A",
+      "title": "Compiler Construction",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Waheed Ahmad"
+    },
+    {
+      "id": "DS462-A",
+      "title": "Generative AI with Large Language Models",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Khurram Khan Jadoon"
+    },
+    {
+      "id": "HM223-A",
+      "title": "Sociology",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Mr. Haroon Ur Rashid"
+    },
+    {
+      "id": "MS234-A",
+      "title": "Entrepreneurship",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Dr. Sajid Khan"
+    },
+    {
+      "id": "CE222-C",
+      "title": "Computer Organization and Assembly Language",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Taj Muhammad"
+    },
+    {
+      "id": "CS413-C",
+      "title": "Internet of Things",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Salman"
+    },
+    {
+      "id": "ES111-D",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Mr. Mazhar Javed"
+    },
+    {
+      "id": "CS378-F",
+      "title": "Design & Analysis of Algorithms",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Salman Ashraf"
+    },
+    {
+      "id": "SE351-F",
+      "title": "Web Engineering",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Waqas"
+    },
+    {
+      "id": "CE313-F",
+      "title": "Computer Communication and Networks",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Ahmad Nawaz"
+    },
+    {
+      "id": "CS392-F",
+      "title": "Professional Issues in IT",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Laraib Afzal"
+    },
+    {
+      "id": "HM211-H",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Nasir Amin"
+    },
+    {
+      "id": "DS351L-A",
+      "title": "Data Visualization",
+      "program": "BDS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Anmol Sanaullah Khan"
+    },
+    {
+      "id": "HM102L-C",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 80,
+      "instructor": "Dr. Noreen Shah"
+    },
+    {
+      "id": "SE351L-F",
+      "title": "Web Engineering Lab",
+      "program": "SE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Hafsa Nayyab"
+    },
+    {
+      "id": "HM404-A",
+      "title": "Advance Oral Communication",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Noreen Shah"
+    },
+    {
+      "id": "MS253-A",
+      "title": "Business Finance",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Ms. Noshaba Zulfiqar"
+    },
+    {
+      "id": "CS112-D",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Aneeqa Ramzan"
+    },
+    {
+      "id": "CH161-F",
+      "title": "Occupational Health and Safety",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Dr. Sajjad Hussain"
+    },
+    {
+      "id": "SE211-F",
+      "title": "Software Requirement Engineering",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Huzaifa Shah"
+    },
+    {
+      "id": "HM102-I",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Ms. Hira Ahad"
+    },
+    {
+      "id": "AI221L-A",
+      "title": "Machine Learning",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 60,
+      "instructor": "Ms. Maham Shehzadi"
+    },
+    {
+      "id": "CE222L-C",
+      "title": "Computer Organization & Assembly Language Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Waheed Iqblal"
+    },
+    {
+      "id": "CS232L-C",
+      "title": "Database Management Systems Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Maham Shehzadi"
+    },
+    {
+      "id": "CS112L-D",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Engr. Muhammad Shakaib Khan"
+    },
+    {
+      "id": "HM102L-I",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Ms. Hira Ahad"
+    },
+    {
+      "id": "DS351-A",
+      "title": "Data Visualization",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Farah Saeed"
+    },
+    {
+      "id": "CS392-A",
+      "title": "Professional Issues in IT",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Hafiz Syed Muhammad Muslim"
+    },
+    {
+      "id": "CS232-C",
+      "title": "Database Management Systems",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Ahsan Shah"
+    },
+    {
+      "id": "CS112-C",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Hafiz Syed Ahmed Qasim"
+    },
+    {
+      "id": "MT102-D",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Dr. Minhaj Zaheer"
+    },
+    {
+      "id": "HM102-F",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Atta Ur Rehman Jadoon"
+    },
+    {
+      "id": "CS232-F",
+      "title": "Database Management Systems",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Said Nabi"
+    },
+    {
+      "id": "CH101-I",
+      "title": "Chemistry, Environment and Climate Change",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Abdul Wahab"
+    },
+    {
+      "id": "CH161-I",
+      "title": "Occupational Health and Safety",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad waqar shaukat"
+    },
+    {
+      "id": "CS112-I",
+      "title": "Object Oriented Programming and Design",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Rabbia Hassan"
+    },
+    {
+      "id": "MS472-A",
+      "title": "Research Project II",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Sami Farooq"
+    },
+    {
+      "id": "AI102L-A",
+      "title": "Python Programming and Freelancing Essentials",
+      "program": "BDS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Mr. Adnan Haider"
+    },
+    {
+      "id": "AI102L-F",
+      "title": "Python Programming and Freelancing Essentials",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 60,
+      "instructor": "Ms. Noor Nayyer"
+    },
+    {
+      "id": "HM102L-F",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Mr. Atta Ur Rehman Jadoon"
+    },
+    {
+      "id": "CS232L-F",
+      "title": "Database Management Systems Lab",
+      "program": "SE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Noor Nayyer"
+    },
+    {
+      "id": "CS112L-I",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BDS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Rabbia Hassan"
+    },
+    {
+      "id": "DS322-A",
+      "title": "Design & Analysis of Algorithms",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Masroor Hussain"
+    },
+    {
+      "id": "CE308-A",
+      "title": "Introduction to Cloud Computing",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Ms. Safia Baloch"
+    },
+    {
+      "id": "DS221-A",
+      "title": "Inferential Statistics and Applied Probability",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Ahmar Rashid"
+    },
+    {
+      "id": "SE202L-A",
+      "title": "Development Operations Lab",
+      "program": "BDS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Umm-e-Rubab Hashmi"
+    },
+    {
+      "id": "HM121-B",
+      "title": "Civics and Community Engagement",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Rubeena Slamat"
+    },
+    {
+      "id": "MS151-B",
+      "title": "Financial Accounting",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Ahmad Zaka"
+    },
+    {
+      "id": "CH101-F",
+      "title": "Chemistry, Environment and Climate Change",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad waqar shaukat"
+    },
+    {
+      "id": "HM211-F",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Nasir Amin"
+    },
+    {
+      "id": "CE222-F",
+      "title": "Computer Organization and Assembly Language",
+      "program": "SE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Rashad Maqbool Jillani"
+    },
+    {
+      "id": "CS202-F",
+      "title": "Information and Communication Technologies",
+      "program": "SE",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Adnan Shah"
+    },
+    {
+      "id": "CS112L-C",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Iqra Mueed"
+    },
+    {
+      "id": "SE202L-F",
+      "title": "Development Operations Lab",
+      "program": "SE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Memoona Amjad"
+    },
+    {
+      "id": "HM102L-L",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "MGS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 60,
+      "instructor": "Ms. Syeda Bakhtawar Rubab"
+    },
+    {
+      "id": "CE313-A",
+      "title": "Computer Communication and Networks",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Sarah Iqbal"
+    },
+    {
+      "id": "DS211-A",
+      "title": "Theory of Data Science",
+      "program": "BDS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Shahabuddin Ansari"
+    },
+    {
+      "id": "MS102-A",
+      "title": "Business Statistics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Amin Ullah"
+    },
+    {
+      "id": "HM112-B",
+      "title": "Ideology and Constitution of Pakistan",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Abrar Ahmad"
+    },
+    {
+      "id": "MS141-B",
+      "title": "Micro Economics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Umer Saeed"
+    },
+    {
+      "id": "MS102-B",
+      "title": "Business Statistics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Amin Ullah"
+    },
+    {
+      "id": "HM211-D",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Fida Ur Rahman"
+    },
+    {
+      "id": "CY211-E",
+      "title": "Information Security",
+      "program": "CYS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Muhammad Fawad Khan"
+    },
+    {
+      "id": "HM102-L",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Ms. Syeda Bakhtawar Rubab"
+    },
+    {
+      "id": "CS112L-M",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 55,
+      "instructor": "Mr. Amjad Khalil"
+    },
+    {
+      "id": "AI102L-P",
+      "title": "Python Programming and Freelancing Essentials",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 50,
+      "instructor": "Ms. Ayesha Jamshaid"
+    },
+    {
+      "id": "CV213-A",
+      "title": "Basic Structural Analysis",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muntazir Abbas"
+    },
+    {
+      "id": "CV231-A",
+      "title": "Soil Mechanics",
+      "program": "CVE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Engr. Syed Aizaz Haider"
+    },
+    {
+      "id": "CS224-C",
+      "title": "Formal Languages and Automata Theory",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Dr. Zoya"
+    },
+    {
+      "id": "CS112-P",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 50,
+      "instructor": "Mr. Muhammad Sajid Ali"
+    },
+    {
+      "id": "HM102L-D",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Mr. Atta Ur Rehman Jadoon"
+    },
+    {
+      "id": "IF102L-D",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "CS378-A",
+      "title": "Design & Analysis of Algorithms",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Ahsan Shah"
+    },
+    {
+      "id": "AI341-A",
+      "title": "Deep Neural Networks",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Mr. Muhammad Talha Ashfaq"
+    },
+    {
+      "id": "ME244-A",
+      "title": "Mechanics and Design Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 70,
+      "instructor": "Dr. Massab Junaid"
+    },
+    {
+      "id": "HM102-D",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Atta Ur Rehman Jadoon"
+    },
+    {
+      "id": "AI341L-A",
+      "title": "Deep Neural Networks Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 55,
+      "instructor": "Mr. Asim Shah"
+    },
+    {
+      "id": "CS112L-P",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 55,
+      "instructor": "Mr. Muhammad Asadullah Amin"
+    },
+    {
+      "id": "ME243-A",
+      "title": "Electronics and Electrical Machines Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 70,
+      "instructor": "Dr. Abid Imran"
+    },
+    {
+      "id": "HM112-A",
+      "title": "Ideology and Constitution of Pakistan",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Abrar Ahmad"
+    },
+    {
+      "id": "MS151-A",
+      "title": "Financial Accounting",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Ahmad Zaka"
+    },
+    {
+      "id": "HM121-A",
+      "title": "Civics and Community Engagement",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Rubeena Slamat"
+    },
+    {
+      "id": "MS491-B",
+      "title": "Supply Chain Management",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Hassaan Tariq"
+    },
+    {
+      "id": "MS102-C",
+      "title": "Business Statistics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Amin Ullah"
+    },
+    {
+      "id": "MS151-C",
+      "title": "Financial Accounting",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Ahmad Zaka"
+    },
+    {
+      "id": "HM121-C",
+      "title": "Civics and Community Engagement",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Dr. Rubeena Slamat"
+    },
+    {
+      "id": "HM102-K",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Ms. Syeda Bakhtawar Rubab"
+    },
+    {
+      "id": "AI391L-A",
+      "title": "Associate in AI Training Lab",
+      "program": "BAI",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 52,
+      "instructor": "Ms. Ayesha Jamshaid"
+    },
+    {
+      "id": "MS141-A",
+      "title": "Micro Economics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Umer Saeed"
+    },
+    {
+      "id": "MS434-B",
+      "title": "Entrepreneurship and Marketing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Ayman Habib"
+    },
+    {
+      "id": "HM102L-K",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "MGS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 60,
+      "instructor": "Ms. Syeda Bakhtawar Rubab"
+    },
+    {
+      "id": "MS361-A",
+      "title": "Operations & Production Management",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 55,
+      "instructor": "Dr. Suhaib"
+    },
+    {
+      "id": "HM112-C",
+      "title": "Ideology and Constitution of Pakistan",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Abrar Ahmad"
+    },
+    {
+      "id": "HM211-C",
+      "title": "Islamic Studies",
+      "program": "BME",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Fida Ur Rahman"
+    },
+    {
+      "id": "HM102L-M",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "MGS",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 60,
+      "instructor": "Ms. Syeda Bakhtawar Rubab"
+    },
+    {
+      "id": "MS141-C",
+      "title": "Micro Economics",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Mr. Muhammad Umer Saeed"
+    },
+    {
+      "id": "HM322-B",
+      "title": "Corporate Law and Professional Ethics",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Izhar Ali"
+    },
+    {
+      "id": "HM324-A",
+      "title": "Sociology",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 65,
+      "instructor": "Mr. Ayman Habib"
+    },
+    {
+      "id": "ES111-E",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Dr. Zia ul Haq Abbas"
+    },
+    {
+      "id": "HM102-M",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "MGS",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 60,
+      "instructor": "Ms. Syeda Bakhtawar Rubab"
+    },
+    {
+      "id": "CS112L-E",
+      "title": "Object Oriented Programming and Design Lab",
+      "program": "BCE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 70,
+      "instructor": "Mr. Ali Husnain"
+    },
+    {
+      "id": "CS112-E",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Engr. Badre Munir"
+    },
+    {
+      "id": "MT102-E",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 70,
+      "instructor": "Dr. Danyal Ahmad"
+    },
+    {
+      "id": "HM102-E",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Atta Ur Rehman Jadoon"
+    },
+    {
+      "id": "HM102L-E",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Mr. Atta Ur Rehman Jadoon"
+    },
+    {
+      "id": "IF102L-E",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "MS492-A",
+      "title": "Operations Management",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Suhaib"
+    },
+    {
+      "id": "EE332L-A",
+      "title": "Power Electronics Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad Adeel"
+    },
+    {
+      "id": "ME482-A",
+      "title": "Senior year Design Project-II",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Dr. Muhammad Qasim Zafar"
+    },
+    {
+      "id": "ME347L-A",
+      "title": "Thermo Fluid 2 Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 75,
+      "instructor": "Dr. Ahmad Abbas"
+    },
+    {
+      "id": "CH161-G",
+      "title": "Occupational Health and Safety",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Mr. Mohammad Hamza Nasir"
+    },
+    {
+      "id": "IF102L-G",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "MS491-A",
+      "title": "Supply Chain Management",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 75,
+      "instructor": "Mr. Hassaan Tariq"
+    },
+    {
+      "id": "CH101-G",
+      "title": "Chemistry, Environment and Climate Change",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Sajjad Hussain"
+    },
+    {
+      "id": "ES111-G",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Muhammad Tahir Naseem"
+    },
+    {
+      "id": "EE231L-A",
+      "title": "Electronic Devices and Circuits Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 80,
+      "instructor": "Mr. Aqib Safi"
+    },
+    {
+      "id": "EE223L-A",
+      "title": "Microprocessor Systems Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Ms. Samina Yasmin"
+    },
+    {
+      "id": "CS112-B",
+      "title": "Object Oriented Programming and Design",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 80,
+      "instructor": "Engr. Badre Munir"
+    },
+    {
+      "id": "MS130-B",
+      "title": "Entrepreneurship and Freelancing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad Sarim Jalal"
+    },
+    {
+      "id": "MT102-G",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Danyal Ahmad"
+    },
+    {
+      "id": "MM141L-B",
+      "title": "Materials and Nanotechnology",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 120,
+      "instructor": "Mr. Abdullah"
+    },
+    {
+      "id": "DS463-B",
+      "title": "Data Engineering",
+      "program": "BCE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 76,
+      "instructor": "Dr. Farah Saeed"
+    },
+    {
+      "id": "MM101-B",
+      "title": "Materials and Nanotechnology",
+      "program": "MTE",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Mr. Atteeq Uz Zaman"
+    },
+    {
+      "id": "HM102-G",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Haseeb Ahsan"
+    },
+    {
+      "id": "HM102L-G",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Haseeb Ahsan"
+    },
+    {
+      "id": "IF102L-B",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "HM102L-B",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 80,
+      "instructor": "Dr. Noreen Shah"
+    },
+    {
+      "id": "IF102L-J",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "HM102-B",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 80,
+      "instructor": "Dr. Noreen Shah"
+    },
+    {
+      "id": "MT102-I",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Mr. Asif Ahmad"
+    },
+    {
+      "id": "HM322-A",
+      "title": "Corporate Law and Professional Ethics",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 85,
+      "instructor": "Dr. Izhar Ali"
+    },
+    {
+      "id": "ES111-I",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Mr. Muhammad Muti Ur Rehman"
+    },
+    {
+      "id": "HM425-A",
+      "title": "Intellectual Property and Cyber Law",
+      "program": "BAI",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 95,
+      "instructor": "Dr. Izhar Ali"
+    },
+    {
+      "id": "MT102-B",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Dr. Nasir Javed"
+    },
+    {
+      "id": "ES341-A",
+      "title": "Numerical Analysis",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Prof. Dr. Sirajul Haq"
+    },
+    {
+      "id": "ES111-A",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Babar Zaman"
+    },
+    {
+      "id": "EE321-A",
+      "title": "Artificial Intelligence",
+      "program": "BEE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Dr. Ali Imran Sandhu"
+    },
+    {
+      "id": "MS130-C",
+      "title": "Entrepreneurship and Freelancing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Ms. Naveen Gul Yousafzai"
+    },
+    {
+      "id": "PH101L-B",
+      "title": "Applied Physics Laboratory",
+      "program": "BES",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Engr. Hamza Naeem"
+    },
+    {
+      "id": "ES111-B",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad Muti Ur Rehman"
+    },
+    {
+      "id": "MT102-C",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Dr. Zahid Ahmed"
+    },
+    {
+      "id": "ES111-H",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Engr. Muhammmad Sadiq"
+    },
+    {
+      "id": "EE361L-A",
+      "title": "Communication Systems Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Asad Khaliq"
+    },
+    {
+      "id": "HM102L-H",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Ms. Hira Ahad"
+    },
+    {
+      "id": "IF102L-C",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "IF102L-H",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "ES111-C",
+      "title": "Probability and Statistics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Dr. Muhammad Tahir Naseem"
+    },
+    {
+      "id": "CH161-H",
+      "title": "Occupational Health and Safety",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 110,
+      "instructor": "Mr. Mohammad Hamza Nasir"
+    },
+    {
+      "id": "MT102-H",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Sheharyar Pervaiz"
+    },
+    {
+      "id": "HM102-H",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Ms. Hira Ahad"
+    },
+    {
+      "id": "IF102L-I",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "HM102-A",
+      "title": "Critical Thinking and Expository Writing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Abrar Ahmad"
+    },
+    {
+      "id": "CH101-H",
+      "title": "Chemistry, Environment and Climate Change",
+      "program": "CHE",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 110,
+      "instructor": "Engr. Qaiser Abbas"
+    },
+    {
+      "id": "HM102L-A",
+      "title": "Critical Thinking and Expository Writing Lab",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Abrar Ahmad"
+    },
+    {
+      "id": "EE351L-A",
+      "title": "Linear Control Systems Lab",
+      "program": "BEE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Basit Ali"
+    },
+    {
+      "id": "IF102L-F",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "MT102-A",
+      "title": "Differential Equations and Linear Algebra",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Mahnoor Sarfraz"
+    },
+    {
+      "id": "MS130-A",
+      "title": "Entrepreneurship and Freelancing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad Sarim Jalal"
+    },
+    {
+      "id": "IF102L-A",
+      "title": "Innovation and maker Lab 2",
+      "program": "BME",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 100,
+      "instructor": "Mr. Faheem Ahmed"
+    },
+    {
+      "id": "MM141L-A",
+      "title": "Materials and Nanotechnology",
+      "program": "MTE",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 120,
+      "instructor": "Mr. Abdullah"
+    },
+    {
+      "id": "MM101-A",
+      "title": "Materials and Nanotechnology",
+      "program": "MTE",
+      "creditHours": 2,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Shanza Rehan"
+    },
+    {
+      "id": "PH101-B",
+      "title": "Applied Physics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 100,
+      "instructor": "Mr. Muhammad Saqib"
+    },
+    {
+      "id": "MS130-D",
+      "title": "Entrepreneurship and Freelancing",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 102,
+      "instructor": "Ms. Naveen Gul Yousafzai"
+    },
+    {
+      "id": "HM321-A",
+      "title": "Sociology and Human Behavior",
+      "program": "BME",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 110,
+      "instructor": "Dr. Sajid Khan"
+    },
+    {
+      "id": "PH101L-A",
+      "title": "Applied Physics Laboratory",
+      "program": "BES",
+      "creditHours": 1,
+      "type": "lab",
+      "capacity": 120,
+      "instructor": "Mr. Hasan Ali Khan"
+    },
+    {
+      "id": "PH101-A",
+      "title": "Applied Physics",
+      "program": "BES",
+      "creditHours": 3,
+      "type": "lecture",
+      "capacity": 120,
+      "instructor": "Dr. Nasir Javed"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "T001",
+      "name": "Mr. Muntazir Abbas",
+      "department": "CVE",
+      "courseIds": [
+        "CV443-A",
+        "CV314L-C",
+        "CV315-B",
+        "CV314L-A",
+        "CV213-A"
+      ]
+    },
+    {
+      "id": "T002",
+      "name": "Dr. Izhar Ali",
+      "department": "MGS",
+      "courseIds": [
+        "HM322-A",
+        "HM425-A",
+        "HM213-A",
+        "HM322-B"
+      ]
+    },
+    {
+      "id": "T003",
+      "name": "Dr. Muhammad Waqas",
+      "department": "BCE",
+      "courseIds": [
+        "CS316-F",
+        "SE351-F",
+        "CS323-F"
+      ]
+    },
+    {
+      "id": "T004",
+      "name": "Engr. Badre Munir",
+      "department": "BCE",
+      "courseIds": [
+        "CS112-N",
+        "CS112-J",
+        "CS112-E",
+        "CS112-B"
+      ]
+    },
+    {
+      "id": "T005",
+      "name": "Mr. Muhammad Sadiq Shah",
+      "department": "BCS",
+      "courseIds": [
+        "CS424L-A",
+        "CS424L-C",
+        "CS232L-A"
+      ]
+    },
+    {
+      "id": "T006",
+      "name": "Dr. Shahabuddin Ansari",
+      "department": "BAI",
+      "courseIds": [
+        "AI361-A",
+        "CS455-A",
+        "DS211-A"
+      ]
+    },
+    {
+      "id": "T007",
+      "name": "Mr. Abbas Khan",
+      "department": "BCE",
+      "courseIds": [
+        "CE222L-B",
+        "CE222L-A"
+      ]
+    },
+    {
+      "id": "T008",
+      "name": "Ms. Laraib Noor",
+      "department": "BCE",
+      "courseIds": [
+        "AI102-J",
+        "AI102-I",
+        "DS364-A",
+        "CS361-B"
+      ]
+    },
+    {
+      "id": "T009",
+      "name": "Dr. Masroor Hussain",
+      "department": "BAI",
+      "courseIds": [
+        "CS417-A",
+        "DS417-A",
+        "DS322-A"
+      ]
+    },
+    {
+      "id": "T010",
+      "name": "Dr. Ali Imran Sandhu",
+      "department": "BAI",
+      "courseIds": [
+        "EE321-A",
+        "AI319-A",
+        "AI221-A",
+        "AI321-A"
+      ]
+    },
+    {
+      "id": "T011",
+      "name": "Mr. Muhammad Qasim Riaz",
+      "department": "BCE",
+      "courseIds": [
+        "CS112-A",
+        "CS232-A"
+      ]
+    },
+    {
+      "id": "T012",
+      "name": "Dr. Muhammad Salman",
+      "department": "BES",
+      "courseIds": [
+        "CS378-D",
+        "CS478-A",
+        "CS413-C",
+        "CS478-E"
+      ]
+    },
+    {
+      "id": "T013",
+      "name": "Dr. Zoya",
+      "department": "BES",
+      "courseIds": [
+        "CS444-A",
+        "CS224-A",
+        "CS224-C"
+      ]
+    },
+    {
+      "id": "T014",
+      "name": "Mr. Muhammad Umer Saeed",
+      "department": "MGS",
+      "courseIds": [
+        "MS141-A",
+        "MS101-A",
+        "MS141-C",
+        "MS141-B"
+      ]
+    },
+    {
+      "id": "T015",
+      "name": "Mr. Muhammad Sarim Jalal",
+      "department": "MGS",
+      "courseIds": [
+        "MS130-A",
+        "MS203-B",
+        "MS203-A",
+        "MS232-A",
+        "MS130-B"
+      ]
+    },
+    {
+      "id": "T016",
+      "name": "Ms. Umm-e-Rubab Hashmi",
+      "department": "BDS",
+      "courseIds": [
+        "CS331-D",
+        "CS112L-J",
+        "DS325-D",
+        "SE202L-A"
+      ]
+    },
+    {
+      "id": "T017",
+      "name": "Engr. Anas Raza Aslam",
+      "department": "BDS",
+      "courseIds": [
+        "DS341L-A",
+        "CS112L-B"
+      ]
+    },
+    {
+      "id": "T018",
+      "name": "Dr. Massab Junaid",
+      "department": "BME",
+      "courseIds": [
+        "ME468-A",
+        "ME244L-A",
+        "ME244-A"
+      ]
+    },
+    {
+      "id": "T019",
+      "name": "Mr. Aqib Safi",
+      "department": "BEE",
+      "courseIds": [
+        "EE331L-F",
+        "EE231L-A"
+      ]
+    },
+    {
+      "id": "T020",
+      "name": "Mr. Rizwan Ali",
+      "department": "BEE",
+      "courseIds": [
+        "EE221L-F"
+      ]
+    },
+    {
+      "id": "T021",
+      "name": "Dr. Khalid Rehman",
+      "department": "BME",
+      "courseIds": [
+        "ME213-B",
+        "ME213-A"
+      ]
+    },
+    {
+      "id": "T022",
+      "name": "Mr. Muhammad Shahab Alam",
+      "department": "BME",
+      "courseIds": [
+        "ME202-B",
+        "ME405-A",
+        "ME202-A"
+      ]
+    },
+    {
+      "id": "T023",
+      "name": "Mr. Asim Shah",
+      "department": "BAI",
+      "courseIds": [
+        "AI341L-A",
+        "AI361L-A",
+        "AI319L-A"
+      ]
+    },
+    {
+      "id": "T024",
+      "name": "Mr. Muhammad Talha Ashfaq",
+      "department": "BAI",
+      "courseIds": [
+        "AI204-A",
+        "AI341-A",
+        "AI202-A"
+      ]
+    },
+    {
+      "id": "T025",
+      "name": "Dr. Sheraz Ahmed",
+      "department": "CVE",
+      "courseIds": [
+        "CV202L-B",
+        "CV241-A",
+        "CV202L-A",
+        "CV230-A"
+      ]
+    },
+    {
+      "id": "T026",
+      "name": "Ms. Maham Shehzadi",
+      "department": "BAI",
+      "courseIds": [
+        "AI321L-A",
+        "CS232L-C",
+        "AI221L-A"
+      ]
+    },
+    {
+      "id": "T027",
+      "name": "Mr. Abrar Ahmad",
+      "department": "MGS",
+      "courseIds": [
+        "HM102-A",
+        "HM102L-A",
+        "HM112-B",
+        "HM112-A",
+        "HM221-A",
+        "HM112-C"
+      ]
+    },
+    {
+      "id": "T028",
+      "name": "Mr. Muhammad Ahmad Zaka",
+      "department": "MGS",
+      "courseIds": [
+        "MS151-C",
+        "MS254-A",
+        "MS151-A",
+        "MS151-B"
+      ]
+    },
+    {
+      "id": "T029",
+      "name": "Mr. Ayman Habib",
+      "department": "MGS",
+      "courseIds": [
+        "MS434-A",
+        "MS434-B",
+        "MS312-A",
+        "HM324-A"
+      ]
+    },
+    {
+      "id": "T030",
+      "name": "Mr. Haroon Ur Rashid",
+      "department": "MGS",
+      "courseIds": [
+        "MS223-A",
+        "HM223-B",
+        "MS325-A",
+        "HM223-A"
+      ]
+    },
+    {
+      "id": "T031",
+      "name": "Dr. Arsalan Arif",
+      "department": "BME",
+      "courseIds": [
+        "ME406-A",
+        "ME447L-A"
+      ]
+    },
+    {
+      "id": "T032",
+      "name": "Dr. Muhammad Shakeel Afzal",
+      "department": "BME",
+      "courseIds": [
+        "ME446L-A",
+        "ME467-B",
+        "ME467-A"
+      ]
+    },
+    {
+      "id": "T033",
+      "name": "Engr. Syed Aizaz Haider",
+      "department": "CVE",
+      "courseIds": [
+        "CV231L-B",
+        "CV231L-A",
+        "CV436-A",
+        "CV231-A"
+      ]
+    },
+    {
+      "id": "T034",
+      "name": "Prof. Dr. Sirajul Haq",
+      "department": "BES",
+      "courseIds": [
+        "ES341-A",
+        "CS342-A"
+      ]
+    },
+    {
+      "id": "T035",
+      "name": "Dr. Sheharyar Pervaiz",
+      "department": "BES",
+      "courseIds": [
+        "MT102-H",
+        "ES446-A",
+        "ES221-A"
+      ]
+    },
+    {
+      "id": "T036",
+      "name": "Mr. Muhammad Ahmad Nawaz",
+      "department": "CYS",
+      "courseIds": [
+        "CY312-E",
+        "CE313-F",
+        "CY201-E",
+        "CE313-E"
+      ]
+    },
+    {
+      "id": "T037",
+      "name": "Dr. Muhammad Faisal Javed",
+      "department": "CVE",
+      "courseIds": [
+        "CV418-A",
+        "CV408-A"
+      ]
+    },
+    {
+      "id": "T038",
+      "name": "Mr. Zeeshan Asghar",
+      "department": "CVE",
+      "courseIds": [
+        "CV305-A",
+        "CV361L-B",
+        "CV361L-A",
+        "CV305-B",
+        "CV202-A"
+      ]
+    },
+    {
+      "id": "T039",
+      "name": "Dr. Muhammad Waseem",
+      "department": "CVE",
+      "courseIds": [
+        "CV473-A",
+        "CV425-A"
+      ]
+    },
+    {
+      "id": "T040",
+      "name": "Dr. Abid Imran",
+      "department": "BME",
+      "courseIds": [
+        "ME451-A",
+        "ME243L-A",
+        "ME243-A"
+      ]
+    },
+    {
+      "id": "T041",
+      "name": "Dr. Waleed Tairq Sethi",
+      "department": "BEE",
+      "courseIds": [
+        "EE361-C",
+        "EE472-A"
+      ]
+    },
+    {
+      "id": "T042",
+      "name": "Dr. Muhammad Usman",
+      "department": "BES",
+      "courseIds": [
+        "ES443-A",
+        "ES361-A"
+      ]
+    },
+    {
+      "id": "T043",
+      "name": "Dr. Usman Habib",
+      "department": "BES",
+      "courseIds": [
+        "ES466-A"
+      ]
+    },
+    {
+      "id": "T044",
+      "name": "Prof. Dr. Muhammad Sabir",
+      "department": "BME",
+      "courseIds": [
+        "MS291-B",
+        "MS291-A"
+      ]
+    },
+    {
+      "id": "T045",
+      "name": "Dr. Muhammad Omer Bin Saeed",
+      "department": "BCE",
+      "courseIds": [
+        "CS473-A",
+        "CE342-B"
+      ]
+    },
+    {
+      "id": "T046",
+      "name": "Dr. Ammar Arshad",
+      "department": "BEE",
+      "courseIds": [
+        "EE486-A"
+      ]
+    },
+    {
+      "id": "T047",
+      "name": "Dr. Rashid Ali",
+      "department": "MTE",
+      "courseIds": [
+        "MM455-A",
+        "MM222-A"
+      ]
+    },
+    {
+      "id": "T048",
+      "name": "Mr. Faheem Ahmed",
+      "department": "BME",
+      "courseIds": [
+        "ME471-A",
+        "IF102L-M",
+        "IF102L-J",
+        "IF102L-D",
+        "IF102L-A",
+        "IF102L-I",
+        "IF102L-K",
+        "IF102L-B",
+        "IF102L-G",
+        "IF102L-E",
+        "IF102L-F",
+        "IF102L-L",
+        "IF102L-H",
+        "IF102L-C"
+      ]
+    },
+    {
+      "id": "T049",
+      "name": "Mr. Muhammad waqar shaukat",
+      "department": "CHE",
+      "courseIds": [
+        "CH101-F",
+        "CH419-A",
+        "CH161-I"
+      ]
+    },
+    {
+      "id": "T050",
+      "name": "Engr. Qaiser Abbas",
+      "department": "CHE",
+      "courseIds": [
+        "CH101-H",
+        "CH462-A",
+        "CH252L-A"
+      ]
+    },
+    {
+      "id": "T051",
+      "name": "Dr. Ahmad Abbas",
+      "department": "BME",
+      "courseIds": [
+        "ME347L-A",
+        "ME232-B",
+        "ME232-A"
+      ]
+    },
+    {
+      "id": "T052",
+      "name": "Dr. Shakir Sardar",
+      "department": "MGS",
+      "courseIds": [
+        "MS211-B",
+        "EM434-A",
+        "MS211-A"
+      ]
+    },
+    {
+      "id": "T053",
+      "name": "Dr. Abid Ullah",
+      "department": "MGS",
+      "courseIds": [
+        "MS333-B",
+        "MS333-A",
+        "EM433-A"
+      ]
+    },
+    {
+      "id": "T054",
+      "name": "Dr. Syed Zameer Abbas",
+      "department": "MTE",
+      "courseIds": [
+        "MM451-A",
+        "MM352-A"
+      ]
+    },
+    {
+      "id": "T055",
+      "name": "Mr. Fida Ur Rahman",
+      "department": "BME",
+      "courseIds": [
+        "HM211-D",
+        "HM211-A",
+        "HM211-C",
+        "HM211-B"
+      ]
+    },
+    {
+      "id": "T056",
+      "name": "Dr. Mohsin Ali Marwat",
+      "department": "MTE",
+      "courseIds": [
+        "MM447L-A",
+        "MM499-A",
+        "MM392-A",
+        "MM447L-B"
+      ]
+    },
+    {
+      "id": "T057",
+      "name": "Dr. Hammad Amjad Khan",
+      "department": "CHE",
+      "courseIds": [
+        "CH241-A",
+        "CH471-A"
+      ]
+    },
+    {
+      "id": "T058",
+      "name": "Dr. Khurram Khan Jadoon",
+      "department": "BCE",
+      "courseIds": [
+        "DS462-A",
+        "CS416-C",
+        "CS354-A"
+      ]
+    },
+    {
+      "id": "T059",
+      "name": "Mr. Rao Uzair Ahmad",
+      "department": "BES",
+      "courseIds": [
+        "ES361L-A"
+      ]
+    },
+    {
+      "id": "T060",
+      "name": "Dr. Muhammad Ramzan Abdul Karim",
+      "department": "MTE",
+      "courseIds": [
+        "MM345L-A",
+        "MM365-A",
+        "MM345L-B"
+      ]
+    },
+    {
+      "id": "T061",
+      "name": "Ms. Rabbia Hassan",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-I",
+        "CS112-I",
+        "CS101-A"
+      ]
+    },
+    {
+      "id": "T062",
+      "name": "Prof. Dr. Muhammad Ashraf Tanoli",
+      "department": "CVE",
+      "courseIds": [
+        "CV361L-C",
+        "CV361L-D"
+      ]
+    },
+    {
+      "id": "T063",
+      "name": "Dr. Taj Muhammad",
+      "department": "BCE",
+      "courseIds": [
+        "CE222-C",
+        "CE323-A"
+      ]
+    },
+    {
+      "id": "T064",
+      "name": "Dr. Shahzad Ahmad",
+      "department": "BME",
+      "courseIds": [
+        "ME364-B",
+        "ME364-A",
+        "ME363-A"
+      ]
+    },
+    {
+      "id": "T065",
+      "name": "Dr. Muhammad Hanif",
+      "department": "BCE",
+      "courseIds": [
+        "DS411-A",
+        "CE454-B",
+        "CE363-B"
+      ]
+    },
+    {
+      "id": "T066",
+      "name": "Mr. Hassaan Tariq",
+      "department": "MGS",
+      "courseIds": [
+        "SC464-A",
+        "MS491-B",
+        "MS491-A"
+      ]
+    },
+    {
+      "id": "T067",
+      "name": "Dr. Sami Farooq",
+      "department": "MGS",
+      "courseIds": [
+        "SC463-A",
+        "MS472-A"
+      ]
+    },
+    {
+      "id": "T068",
+      "name": "Dr. Shahab Haider",
+      "department": "BCE",
+      "courseIds": [
+        "CS112-G",
+        "CS411-A",
+        "CY326-E"
+      ]
+    },
+    {
+      "id": "T069",
+      "name": "Dr. Adnan Akmal",
+      "department": "CVE",
+      "courseIds": [
+        "CV314-B",
+        "CV314-A",
+        "CV314L-B",
+        "CV314L-D"
+      ]
+    },
+    {
+      "id": "T070",
+      "name": "Dr. Muhammad Imran Khan",
+      "department": "MTE",
+      "courseIds": [
+        "MM232-A",
+        "MM497-A"
+      ]
+    },
+    {
+      "id": "T071",
+      "name": "Ms. Safia Baloch",
+      "department": "BCS",
+      "courseIds": [
+        "CE408L-B",
+        "CE408-B",
+        "CE308-A"
+      ]
+    },
+    {
+      "id": "T072",
+      "name": "Dr. Waqar Ahmad",
+      "department": "BCE",
+      "courseIds": [
+        "CE446-B"
+      ]
+    },
+    {
+      "id": "T073",
+      "name": "Dr. Minhaj Zaheer",
+      "department": "BES",
+      "courseIds": [
+        "CS439-A",
+        "ES447-A",
+        "MT102-D"
+      ]
+    },
+    {
+      "id": "T074",
+      "name": "Mr. Atteeq Uz Zaman",
+      "department": "MTE",
+      "courseIds": [
+        "MM101-B",
+        "MM244L-A",
+        "MM495-A"
+      ]
+    },
+    {
+      "id": "T075",
+      "name": "Mr. Muhammad Huzaifa Shah",
+      "department": "BCE",
+      "courseIds": [
+        "CS343-F",
+        "SE211-F"
+      ]
+    },
+    {
+      "id": "T076",
+      "name": "Dr. Shahid Alam",
+      "department": "BEE",
+      "courseIds": [
+        "EE313-A",
+        "EE413-C"
+      ]
+    },
+    {
+      "id": "T077",
+      "name": "Mr. Muhammad Usman Anjum",
+      "department": "BEE",
+      "courseIds": [
+        "EE413L-A"
+      ]
+    },
+    {
+      "id": "T078",
+      "name": "Mr. Abdullah",
+      "department": "MTE",
+      "courseIds": [
+        "MM233-A",
+        "MM141L-A",
+        "MM141L-J",
+        "MM243L-A",
+        "MM101-J",
+        "MM141L-B"
+      ]
+    },
+    {
+      "id": "T079",
+      "name": "Ms. Nayab Khan",
+      "department": "BES",
+      "courseIds": [
+        "MT101-A"
+      ]
+    },
+    {
+      "id": "T080",
+      "name": "Dr. Hamza Mohsin",
+      "department": "MTE",
+      "courseIds": [
+        "MM362-A",
+        "MM201-A"
+      ]
+    },
+    {
+      "id": "T081",
+      "name": "Dr. Zubair Ahmad",
+      "department": "BCE",
+      "courseIds": [
+        "CS452-E",
+        "CY321-E"
+      ]
+    },
+    {
+      "id": "T082",
+      "name": "Dr. Muhammad Irfan",
+      "department": "BEE",
+      "courseIds": [
+        "EE425-A",
+        "EE223-A"
+      ]
+    },
+    {
+      "id": "T083",
+      "name": "Engr. Muhammmad Sadiq",
+      "department": "BES",
+      "courseIds": [
+        "ES111-H",
+        "ES111-F",
+        "ES482-A"
+      ]
+    },
+    {
+      "id": "T084",
+      "name": "Dr. Babar Zaman",
+      "department": "BES",
+      "courseIds": [
+        "ES325-A",
+        "ES111-A"
+      ]
+    },
+    {
+      "id": "T085",
+      "name": "Ms. Noshaba Zulfiqar",
+      "department": "MGS",
+      "courseIds": [
+        "MS253-B",
+        "MS253-A",
+        "AF454-A"
+      ]
+    },
+    {
+      "id": "T086",
+      "name": "Dr. Muhammad Shariq",
+      "department": "MGS",
+      "courseIds": [
+        "MS358-A",
+        "AF453-A",
+        "MS447-A"
+      ]
+    },
+    {
+      "id": "T087",
+      "name": "Dr. Muhammad Shozab Mehdi",
+      "department": "CHE",
+      "courseIds": [
+        "CH412-A"
+      ]
+    },
+    {
+      "id": "T088",
+      "name": "Dr. Ahsan Jalal",
+      "department": "CHE",
+      "courseIds": [
+        "CH441-A",
+        "CH342-A",
+        "CH253L-A"
+      ]
+    },
+    {
+      "id": "T089",
+      "name": "Dr. Khurram Imran Khan",
+      "department": "CHE",
+      "courseIds": [
+        "CH331-A",
+        "CH452L-A",
+        "CH482-A"
+      ]
+    },
+    {
+      "id": "T090",
+      "name": "Mr. Syed Salman Shah",
+      "department": "BME",
+      "courseIds": [
+        "ME205-A",
+        "ME205-B"
+      ]
+    },
+    {
+      "id": "T091",
+      "name": "Dr. Sajjad Hussain",
+      "department": "CHE",
+      "courseIds": [
+        "CH201-A",
+        "CH101-G",
+        "CH161-F"
+      ]
+    },
+    {
+      "id": "T092",
+      "name": "Dr. Javaid Rabbani Khan",
+      "department": "CHE",
+      "courseIds": [
+        "CH212-A"
+      ]
+    },
+    {
+      "id": "T093",
+      "name": "Mr. Mohammad Hamza Nasir",
+      "department": "CHE",
+      "courseIds": [
+        "CH161-H",
+        "CH361-A",
+        "CH161-G",
+        "CH214-A"
+      ]
+    },
+    {
+      "id": "T094",
+      "name": "Dr. Dur-e-Zehra Baig",
+      "department": "BEE",
+      "courseIds": [
+        "EE351-C",
+        "EE452-A"
+      ]
+    },
+    {
+      "id": "T095",
+      "name": "Dr. Muhammad Qasim Zafar",
+      "department": "BME",
+      "courseIds": [
+        "ME316-B",
+        "ME453-A",
+        "ME316-A",
+        "ME482-A"
+      ]
+    },
+    {
+      "id": "T096",
+      "name": "Mr. Muhammad Sayyam Asif",
+      "department": "CVE",
+      "courseIds": [
+        "CV305L-B",
+        "CV361-A",
+        "CV305L-A",
+        "CV361-B"
+      ]
+    },
+    {
+      "id": "T097",
+      "name": "Engr. Wajahat Ali Khan",
+      "department": "BES",
+      "courseIds": [
+        "ES341L-A"
+      ]
+    },
+    {
+      "id": "T098",
+      "name": "Mr. Muhammad Adeel",
+      "department": "BEE",
+      "courseIds": [
+        "EE332L-A",
+        "EE332L-C"
+      ]
+    },
+    {
+      "id": "T099",
+      "name": "Mr. Asif Ahmad",
+      "department": "BES",
+      "courseIds": [
+        "MT102-I",
+        "MT102-F",
+        "MT203-A"
+      ]
+    },
+    {
+      "id": "T100",
+      "name": "Mr. Shahzad Ahmed",
+      "department": "CVE",
+      "courseIds": [
+        "CV351-B",
+        "CV351-A",
+        "CV452-A"
+      ]
+    },
+    {
+      "id": "T101",
+      "name": "Dr. Saima Aftab",
+      "department": "MGS",
+      "courseIds": [
+        "MS303-B",
+        "MS303-A"
+      ]
+    },
+    {
+      "id": "T102",
+      "name": "Mr. Umar Waleed",
+      "department": "BEE",
+      "courseIds": [
+        "EE212-A",
+        "EE212-B",
+        "EE332-C"
+      ]
+    },
+    {
+      "id": "T103",
+      "name": "Mr. Abdul Wahab",
+      "department": "CHE",
+      "courseIds": [
+        "CH353L-A",
+        "CH101-I",
+        "CH322-A"
+      ]
+    },
+    {
+      "id": "T104",
+      "name": "Dr. Hafiz Ahmed Waqas",
+      "department": "CVE",
+      "courseIds": [
+        "CV315-A"
+      ]
+    },
+    {
+      "id": "T105",
+      "name": "Mr. Muhammad Saqib",
+      "department": "BES",
+      "courseIds": [
+        "PH101-B",
+        "ES322-A"
+      ]
+    },
+    {
+      "id": "T106",
+      "name": "Mr. Hamza Abbas",
+      "department": "BME",
+      "courseIds": [
+        "ME212-A",
+        "ME212-B"
+      ]
+    },
+    {
+      "id": "T107",
+      "name": "Mr. Muhammad Huzaifa",
+      "department": "BES",
+      "courseIds": [
+        "ES322L-A"
+      ]
+    },
+    {
+      "id": "T108",
+      "name": "Mr. Mazhar Javed",
+      "department": "BES",
+      "courseIds": [
+        "ES371-A",
+        "ES111-D"
+      ]
+    },
+    {
+      "id": "T109",
+      "name": "Dr. Ahmad Kamal Hassan",
+      "department": "BEE",
+      "courseIds": [
+        "EE361-B",
+        "EE361-A"
+      ]
+    },
+    {
+      "id": "T110",
+      "name": "Prof. Dr. Nisar Ahmed",
+      "department": "BEE",
+      "courseIds": [
+        "EE351-A",
+        "EE351-B"
+      ]
+    },
+    {
+      "id": "T111",
+      "name": "Dr. Ali Turab Jafry",
+      "department": "BME",
+      "courseIds": [
+        "ME474-A"
+      ]
+    },
+    {
+      "id": "T112",
+      "name": "Dr. Hadeed Ahmed Sher",
+      "department": "BEE",
+      "courseIds": [
+        "EE332-B",
+        "EE332-A"
+      ]
+    },
+    {
+      "id": "T113",
+      "name": "Mr. Abdul Haseeb",
+      "department": "BEE",
+      "courseIds": [
+        "EE313L-A"
+      ]
+    },
+    {
+      "id": "T114",
+      "name": "Dr. Muhammad Furqan",
+      "department": "MGS",
+      "courseIds": [
+        "MS356-B",
+        "MS356-A"
+      ]
+    },
+    {
+      "id": "T115",
+      "name": "Dr. Zaiwar Ali",
+      "department": "BEE",
+      "courseIds": [
+        "EE421-A",
+        "EE421-B"
+      ]
+    },
+    {
+      "id": "T116",
+      "name": "Dr. Taqi Ahmad Cheema",
+      "department": "BME",
+      "courseIds": [
+        "ME333-A",
+        "ME333-B"
+      ]
+    },
+    {
+      "id": "T117",
+      "name": "Dr. Syed Taimoor Hassan Shah",
+      "department": "BME",
+      "courseIds": [
+        "ME315-A",
+        "ME315-B"
+      ]
+    },
+    {
+      "id": "T118",
+      "name": "Dr. Husnul Maab",
+      "department": "BEE",
+      "courseIds": [
+        "EE241-B",
+        "EE241-A"
+      ]
+    },
+    {
+      "id": "T119",
+      "name": "Dr. Omer Ahmed Qureshi",
+      "department": "BME",
+      "courseIds": [
+        "ME322-B",
+        "ME322-A"
+      ]
+    },
+    {
+      "id": "T120",
+      "name": "Dr. Memoon Sajid",
+      "department": "BEE",
+      "courseIds": [
+        "CE231-A",
+        "EE314-A",
+        "EE223-B"
+      ]
+    },
+    {
+      "id": "T121",
+      "name": "Mr. Muhammad Sajid Ali",
+      "department": "BCE",
+      "courseIds": [
+        "CS112-F",
+        "CS112-P",
+        "CS316-A"
+      ]
+    },
+    {
+      "id": "T122",
+      "name": "Dr. Muhammad Muqeet Rehman",
+      "department": "BEE",
+      "courseIds": [
+        "EE231-A",
+        "EE231-B"
+      ]
+    },
+    {
+      "id": "T123",
+      "name": "Dr. Muhammad Fawad Khan",
+      "department": "BCE",
+      "courseIds": [
+        "CY211-E",
+        "CY315-E"
+      ]
+    },
+    {
+      "id": "T124",
+      "name": "Ms. Hira Ahad",
+      "department": "BME",
+      "courseIds": [
+        "HM102L-H",
+        "HM102L-I",
+        "HM102-I",
+        "HM102L-J",
+        "HM102-H",
+        "HM102-J"
+      ]
+    },
+    {
+      "id": "T125",
+      "name": "Ms. Memoona Amjad",
+      "department": "SE",
+      "courseIds": [
+        "SE202L-F",
+        "CS112L-K"
+      ]
+    },
+    {
+      "id": "T126",
+      "name": "Ms. Himna Shahzad",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-N"
+      ]
+    },
+    {
+      "id": "T127",
+      "name": "Dr. Sajid Khan",
+      "department": "MGS",
+      "courseIds": [
+        "MS234-B",
+        "HM321-A",
+        "MS234-A"
+      ]
+    },
+    {
+      "id": "T128",
+      "name": "Ms. Naveen Gul Yousafzai",
+      "department": "MGS",
+      "courseIds": [
+        "MS233-B",
+        "MS130-C",
+        "MS130-D",
+        "MS233-A"
+      ]
+    },
+    {
+      "id": "T129",
+      "name": "Dr. Qamar Abbas",
+      "department": "BCS",
+      "courseIds": [
+        "CS112-H",
+        "CE313-C"
+      ]
+    },
+    {
+      "id": "T130",
+      "name": "Ms. Arooba Saeed",
+      "department": "CYS",
+      "courseIds": [
+        "CS112L-G",
+        "AI102L-G"
+      ]
+    },
+    {
+      "id": "T131",
+      "name": "Ms. Mah Rukh",
+      "department": "SE",
+      "courseIds": [
+        "CS232L-E",
+        "AI102L-K"
+      ]
+    },
+    {
+      "id": "T132",
+      "name": "Mr. Hafiz Syed Muhammad Muslim",
+      "department": "BCE",
+      "courseIds": [
+        "CS392-B",
+        "CS392-A"
+      ]
+    },
+    {
+      "id": "T133",
+      "name": "Mr. Waheed Ahmad",
+      "department": "BCS",
+      "courseIds": [
+        "CS424-A",
+        "CS392-C",
+        "CS392-A"
+      ]
+    },
+    {
+      "id": "T134",
+      "name": "Dr. Ghulam Abbas",
+      "department": "CYS",
+      "courseIds": [
+        "CE222-E"
+      ]
+    },
+    {
+      "id": "T135",
+      "name": "Engr. Irfan ullah",
+      "department": "BCE",
+      "courseIds": [
+        "CE231L-A",
+        "CE363L-B"
+      ]
+    },
+    {
+      "id": "T136",
+      "name": "Engr. Muhammad Shakaib Khan",
+      "department": "CYS",
+      "courseIds": [
+        "CE222L-E",
+        "CS112L-D"
+      ]
+    },
+    {
+      "id": "T137",
+      "name": "Mr. Khizar Khan",
+      "department": "BCS",
+      "courseIds": [
+        "CY402L-E",
+        "CS112L-H"
+      ]
+    },
+    {
+      "id": "T138",
+      "name": "Mr. Ali Husnain",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-E",
+        "CE342L-B"
+      ]
+    },
+    {
+      "id": "T139",
+      "name": "Mr. Ahsan Shah",
+      "department": "BCS",
+      "courseIds": [
+        "CS232-C",
+        "CS378-A",
+        "CS378-C"
+      ]
+    },
+    {
+      "id": "T140",
+      "name": "Mr. Israr Ahmad",
+      "department": "BCS",
+      "courseIds": [
+        "CS272-C",
+        "CS324-C"
+      ]
+    },
+    {
+      "id": "T141",
+      "name": "Dr. Nasir Amin",
+      "department": "BME",
+      "courseIds": [
+        "HM211-E",
+        "HM211-G",
+        "HM211-H",
+        "HM211-F"
+      ]
+    },
+    {
+      "id": "T142",
+      "name": "Engr. Muhammad Salman Saeed",
+      "department": "BDS",
+      "courseIds": [
+        "CS464-A",
+        "CE313-B"
+      ]
+    },
+    {
+      "id": "T143",
+      "name": "Dr. Adnan Noor",
+      "department": "BEE",
+      "courseIds": [
+        "EE428-A"
+      ]
+    },
+    {
+      "id": "T144",
+      "name": "Dr. Rashad Maqbool Jillani",
+      "department": "CYS",
+      "courseIds": [
+        "CY461-E",
+        "CE222-F"
+      ]
+    },
+    {
+      "id": "T145",
+      "name": "Mr. Salman Ashraf",
+      "department": "CYS",
+      "courseIds": [
+        "CS378-E",
+        "CS378-F"
+      ]
+    },
+    {
+      "id": "T146",
+      "name": "Ms. Laraib Afzal",
+      "department": "CYS",
+      "courseIds": [
+        "CS392-E",
+        "CS392-F",
+        "CY483-E"
+      ]
+    },
+    {
+      "id": "T147",
+      "name": "Mr. Said Nabi",
+      "department": "CYS",
+      "courseIds": [
+        "CS232-E",
+        "CS112-K",
+        "CS232-F"
+      ]
+    },
+    {
+      "id": "T148",
+      "name": "Ms. Hadia Abbas",
+      "department": "CYS",
+      "courseIds": [
+        "CY321L-E"
+      ]
+    },
+    {
+      "id": "T149",
+      "name": "Mr. Haseeb Ahsan",
+      "department": "BME",
+      "courseIds": [
+        "HM102-N",
+        "HM102L-N",
+        "HM102-G",
+        "HM102L-G"
+      ]
+    },
+    {
+      "id": "T150",
+      "name": "Dr. Salman Ahmed",
+      "department": "BCE",
+      "courseIds": [
+        "CS375-A"
+      ]
+    },
+    {
+      "id": "T151",
+      "name": "Ms. Basma Nasir",
+      "department": "BCE",
+      "courseIds": [
+        "CS232L-B",
+        "CS232L-A"
+      ]
+    },
+    {
+      "id": "T152",
+      "name": "Engr. Hafsa Nayyab",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-O",
+        "SE351L-F"
+      ]
+    },
+    {
+      "id": "T153",
+      "name": "Dr. Fahad Bin Muslim",
+      "department": "BCE",
+      "courseIds": [
+        "CE222-B"
+      ]
+    },
+    {
+      "id": "T154",
+      "name": "Dr. Ayaz Umer",
+      "department": "BCE",
+      "courseIds": [
+        "CS232-B",
+        "CS232-A"
+      ]
+    },
+    {
+      "id": "T155",
+      "name": "Mr. Syed Imran Mukhtiar",
+      "department": "BEE",
+      "courseIds": [
+        "EE314L-A"
+      ]
+    },
+    {
+      "id": "T156",
+      "name": "Mr. Muhammad Naeem",
+      "department": "BCS",
+      "courseIds": [
+        "SE202L-C",
+        "AI407L-A"
+      ]
+    },
+    {
+      "id": "T157",
+      "name": "Mr. Hafiz Syed Ahmed Qasim",
+      "department": "BAI",
+      "courseIds": [
+        "CS464-A",
+        "CS112-C",
+        "CS112-O"
+      ]
+    },
+    {
+      "id": "T158",
+      "name": "Dr. Zahid Ahmed",
+      "department": "BES",
+      "courseIds": [
+        "MT102-C",
+        "ES205-A"
+      ]
+    },
+    {
+      "id": "T159",
+      "name": "Dr. Noreen Shah",
+      "department": "BME",
+      "courseIds": [
+        "HM102-C",
+        "HM404-A",
+        "HM102L-B",
+        "HM102-B",
+        "HM102L-C"
+      ]
+    },
+    {
+      "id": "T160",
+      "name": "Mr. Muhammad Imad",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-A"
+      ]
+    },
+    {
+      "id": "T161",
+      "name": "Engr. Zaheer Ahmed",
+      "department": "BAI",
+      "courseIds": [
+        "CS112L-F"
+      ]
+    },
+    {
+      "id": "T162",
+      "name": "Mr. Samiullah Hussain",
+      "department": "SE",
+      "courseIds": [
+        "CE222L-F"
+      ]
+    },
+    {
+      "id": "T163",
+      "name": "Dr. Asad Mahmood",
+      "department": "BAI",
+      "courseIds": [
+        "CE222-A"
+      ]
+    },
+    {
+      "id": "T164",
+      "name": "Mr. Waheed Iqblal",
+      "department": "BCS",
+      "courseIds": [
+        "CE222L-C",
+        "AI102L-H"
+      ]
+    },
+    {
+      "id": "T165",
+      "name": "Ms. Anmol Sanaullah Khan",
+      "department": "BDS",
+      "courseIds": [
+        "DS351L-A"
+      ]
+    },
+    {
+      "id": "T166",
+      "name": "Engr. Aneeqa Ramzan",
+      "department": "BCE",
+      "courseIds": [
+        "CS112-D"
+      ]
+    },
+    {
+      "id": "T167",
+      "name": "Dr. Farah Saeed",
+      "department": "BDS",
+      "courseIds": [
+        "DS351-A",
+        "DS463-B"
+      ]
+    },
+    {
+      "id": "T168",
+      "name": "Mr. Atta Ur Rehman Jadoon",
+      "department": "BME",
+      "courseIds": [
+        "HM102L-F",
+        "HM102-D",
+        "HM102-F",
+        "HM102L-E",
+        "HM102-E",
+        "HM102L-D"
+      ]
+    },
+    {
+      "id": "T169",
+      "name": "Engr. Muhammad Abu Bakar",
+      "department": "BDS",
+      "courseIds": [
+        "CE222L-A"
+      ]
+    },
+    {
+      "id": "T170",
+      "name": "Mr. Adnan Haider",
+      "department": "BDS",
+      "courseIds": [
+        "AI102L-A"
+      ]
+    },
+    {
+      "id": "T171",
+      "name": "Ms. Noor Nayyer",
+      "department": "BAI",
+      "courseIds": [
+        "CS232L-F",
+        "AI102L-F"
+      ]
+    },
+    {
+      "id": "T172",
+      "name": "Dr. Ahmar Rashid",
+      "department": "BDS",
+      "courseIds": [
+        "DS221-A"
+      ]
+    },
+    {
+      "id": "T173",
+      "name": "Dr. Rubeena Slamat",
+      "department": "MGS",
+      "courseIds": [
+        "HM121-B",
+        "HM121-A",
+        "HM221-A",
+        "HM121-C"
+      ]
+    },
+    {
+      "id": "T174",
+      "name": "Dr. Adnan Shah",
+      "department": "SE",
+      "courseIds": [
+        "CS202-F"
+      ]
+    },
+    {
+      "id": "T175",
+      "name": "Ms. Iqra Mueed",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-C"
+      ]
+    },
+    {
+      "id": "T176",
+      "name": "Ms. Syeda Bakhtawar Rubab",
+      "department": "MGS",
+      "courseIds": [
+        "HM102L-K",
+        "HM102-K",
+        "HM102-L",
+        "HM102L-L",
+        "HM102-M",
+        "HM102L-M"
+      ]
+    },
+    {
+      "id": "T177",
+      "name": "Dr. Sarah Iqbal",
+      "department": "BAI",
+      "courseIds": [
+        "CE313-A"
+      ]
+    },
+    {
+      "id": "T178",
+      "name": "Prof. Dr. Qadeer ul Hasan",
+      "department": "BDS",
+      "courseIds": [
+        "CE313-A"
+      ]
+    },
+    {
+      "id": "T179",
+      "name": "Dr. Amin Ullah",
+      "department": "MGS",
+      "courseIds": [
+        "MS102-B",
+        "MS102-C",
+        "MS102-A"
+      ]
+    },
+    {
+      "id": "T180",
+      "name": "Mr. Amjad Khalil",
+      "department": "BCE",
+      "courseIds": [
+        "CS112L-M"
+      ]
+    },
+    {
+      "id": "T181",
+      "name": "Ms. Ayesha Jamshaid",
+      "department": "BCS",
+      "courseIds": [
+        "AI391L-A",
+        "AI102L-P"
+      ]
+    },
+    {
+      "id": "T182",
+      "name": "Mr. Muhammad Asadullah Amin",
+      "department": "BCS",
+      "courseIds": [
+        "CS112L-P"
+      ]
+    },
+    {
+      "id": "T183",
+      "name": "Dr. Suhaib",
+      "department": "MGS",
+      "courseIds": [
+        "MS492-A",
+        "MS361-A"
+      ]
+    },
+    {
+      "id": "T184",
+      "name": "Dr. Zia ul Haq Abbas",
+      "department": "BES",
+      "courseIds": [
+        "ES111-E"
+      ]
+    },
+    {
+      "id": "T185",
+      "name": "Dr. Danyal Ahmad",
+      "department": "BES",
+      "courseIds": [
+        "MT102-G",
+        "MT102-E"
+      ]
+    },
+    {
+      "id": "T186",
+      "name": "Dr. Muhammad Tahir Naseem",
+      "department": "BES",
+      "courseIds": [
+        "ES111-G",
+        "ES111-C"
+      ]
+    },
+    {
+      "id": "T187",
+      "name": "Ms. Samina Yasmin",
+      "department": "BEE",
+      "courseIds": [
+        "EE223L-A"
+      ]
+    },
+    {
+      "id": "T188",
+      "name": "Mr. Muhammad Muti Ur Rehman",
+      "department": "BES",
+      "courseIds": [
+        "ES111-B",
+        "ES111-I"
+      ]
+    },
+    {
+      "id": "T189",
+      "name": "Dr. Nasir Javed",
+      "department": "BES",
+      "courseIds": [
+        "MT102-B",
+        "PH101-A"
+      ]
+    },
+    {
+      "id": "T190",
+      "name": "Engr. Hamza Naeem",
+      "department": "BES",
+      "courseIds": [
+        "PH101L-B"
+      ]
+    },
+    {
+      "id": "T191",
+      "name": "Mr. Asad Khaliq",
+      "department": "BEE",
+      "courseIds": [
+        "EE361L-A"
+      ]
+    },
+    {
+      "id": "T192",
+      "name": "Mr. Basit Ali",
+      "department": "BEE",
+      "courseIds": [
+        "EE351L-A"
+      ]
+    },
+    {
+      "id": "T193",
+      "name": "Dr. Mahnoor Sarfraz",
+      "department": "BES",
+      "courseIds": [
+        "MT102-A"
+      ]
+    },
+    {
+      "id": "T194",
+      "name": "Dr. Shanza Rehan",
+      "department": "MTE",
+      "courseIds": [
+        "MM101-A"
+      ]
+    },
+    {
+      "id": "T195",
+      "name": "Mr. Hasan Ali Khan",
+      "department": "BES",
+      "courseIds": [
+        "PH101L-A"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "CS_LH1",
+      "name": "CS LH1",
+      "building": "FCSE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "CS_LH2",
+      "name": "CS LH2",
+      "building": "FCSE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "CS_LH3",
+      "name": "CS LH3",
+      "building": "FCSE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "CS_LH4",
+      "name": "CS LH4",
+      "building": "FCSE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "EE_LH1",
+      "name": "EE LH1",
+      "building": "FEE",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "EE_LH2",
+      "name": "EE LH2",
+      "building": "FEE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "EE_LH3",
+      "name": "EE LH3",
+      "building": "FEE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "EE_LH4",
+      "name": "EE LH4",
+      "building": "FEE",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "EE_MAIN",
+      "name": "EE Main",
+      "building": "FEE",
+      "type": "main_hall",
+      "capacity": 150
+    },
+    {
+      "id": "FEE_QH1",
+      "name": "FEE Quiz Hall ",
+      "building": "FEE",
+      "type": "lecture_hall",
+      "capacity": 120
+    },
+    {
+      "id": "ES_LH1",
+      "name": "ES LH1",
+      "building": "FES",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ES_LH2",
+      "name": "ES LH2",
+      "building": "FES",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ES_LH3",
+      "name": "ES LH3",
+      "building": "FES",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ES_LH4",
+      "name": "ES LH4",
+      "building": "FES",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ES_MAIN",
+      "name": "ES Main",
+      "building": "FES",
+      "type": "main_hall",
+      "capacity": 150
+    },
+    {
+      "id": "FES_QH1",
+      "name": "FES Quiz Hall ",
+      "building": "FES",
+      "type": "lecture_hall",
+      "capacity": 120
+    },
+    {
+      "id": "FES_PH_LAB",
+      "name": "FES - PH Lab",
+      "building": "FES",
+      "type": "lab",
+      "capacity": 100
+    },
+    {
+      "id": "FES_PH_LAB2",
+      "name": "FES - PH Lab 2",
+      "building": "FES",
+      "type": "lab",
+      "capacity": 100
+    },
+    {
+      "id": "FES_SE_LAB",
+      "name": "FES - SE Lab",
+      "building": "FES",
+      "type": "lab",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH1",
+      "name": "AcB LH1",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH2",
+      "name": "AcB LH2",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH3",
+      "name": "AcB LH3",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH4",
+      "name": "AcB LH4",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ACB_LH5",
+      "name": "AcB LH5",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ACB_LH6",
+      "name": "AcB LH6",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ACB_LH7",
+      "name": "AcB LH7",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH8",
+      "name": "AcB LH8",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ACB_LH9",
+      "name": "AcB LH9",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH10",
+      "name": "AcB LH10",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ACB_LH11",
+      "name": "AcB LH11",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_LH12",
+      "name": "AcB LH12",
+      "building": "ACB",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "ACB_MAIN1",
+      "name": "AcB Main1",
+      "building": "ACB",
+      "type": "main_hall",
+      "capacity": 150
+    },
+    {
+      "id": "ACB_MAIN2",
+      "name": "AcB Main2",
+      "building": "ACB",
+      "type": "main_hall",
+      "capacity": 200
+    },
+    {
+      "id": "ACB_MAIN3",
+      "name": "AcB Main3",
+      "building": "ACB",
+      "type": "main_hall",
+      "capacity": 200
+    },
+    {
+      "id": "ACB_AI_LAB",
+      "name": "ACB - AI Lab",
+      "building": "ACB",
+      "type": "lab",
+      "capacity": 50
+    },
+    {
+      "id": "ACB_CYS_LAB",
+      "name": "ACB - CYS Lab",
+      "building": "ACB",
+      "type": "lab",
+      "capacity": 40
+    },
+    {
+      "id": "ACB_DA_LAB",
+      "name": "ACB - DA Lab",
+      "building": "ACB",
+      "type": "lab",
+      "capacity": 50
+    },
+    {
+      "id": "BB_LH2",
+      "name": "BB LH2",
+      "building": "BB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "BB_EH1",
+      "name": "BB EH1",
+      "building": "BB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "BB_EH2",
+      "name": "BB EH2",
+      "building": "BB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "BB_EH3",
+      "name": "BB EH3",
+      "building": "BB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "BB_EH4",
+      "name": "BB EH4",
+      "building": "BB",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "BB_MAIN",
+      "name": "BB Main",
+      "building": "BB",
+      "type": "main_hall",
+      "capacity": 150
+    },
+    {
+      "id": "BB_PC_LAB",
+      "name": "BB PC Lab",
+      "building": "BB",
+      "type": "lab",
+      "capacity": 60
+    },
+    {
+      "id": "ME_LH1",
+      "name": "ME LH1",
+      "building": "FME",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ME_LH2",
+      "name": "ME LH2",
+      "building": "FME",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ME_LH3",
+      "name": "ME LH3",
+      "building": "FME",
+      "type": "lecture_hall",
+      "capacity": 80
+    },
+    {
+      "id": "ME_MAIN",
+      "name": "ME Main",
+      "building": "FME",
+      "type": "main_hall",
+      "capacity": 150
+    },
+    {
+      "id": "FME_QH1",
+      "name": "FME Quiz Hall ",
+      "building": "FME",
+      "type": "lecture_hall",
+      "capacity": 120
+    },
+    {
+      "id": "FME_LAB",
+      "name": "FME Lab",
+      "building": "FME",
+      "type": "lab",
+      "capacity": 130
+    },
+    {
+      "id": "MCE_LH1",
+      "name": "MCE LH1",
+      "building": "FMCE",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "MCE_LH2",
+      "name": "MCE LH2",
+      "building": "FMCE",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "MCE_LH3",
+      "name": "MCE LH3",
+      "building": "FMCE",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "MCE_LH4",
+      "name": "MCE LH4",
+      "building": "FMCE",
+      "type": "lecture_hall",
+      "capacity": 60
+    },
+    {
+      "id": "MCE_MAIN",
+      "name": "MCE Main",
+      "building": "FMCE",
+      "type": "main_hall",
+      "capacity": 150
+    },
+    {
+      "id": "FCME_QH1",
+      "name": "FCME Quiz Hall ",
+      "building": "FMCE",
+      "type": "lecture_hall",
+      "capacity": 120
+    },
+    {
+      "id": "FCME_MM_LAB",
+      "name": "FCME - MM Lab",
+      "building": "FMCE",
+      "type": "lab",
+      "capacity": 40
+    },
+    {
+      "id": "FCME_CH_LAB",
+      "name": "FCME - CH Lab",
+      "building": "FMCE",
+      "type": "lab",
+      "capacity": 40
+    },
+    {
+      "id": "FBS_LAB",
+      "name": "FBS Lab",
+      "building": "FBS",
+      "type": "lab",
+      "capacity": 120
+    },
+    {
+      "id": "TBA_ROOM",
+      "name": "TBA",
+      "building": "TBA",
+      "type": "lab",
+      "capacity": 999
+    }
+  ],
+  "sections": [
+    {
+      "id": "CVE-Y4-A",
+      "program": "CVE",
+      "courseIds": [
+        "CV418-A",
+        "CV452-A",
+        "CV408-A",
+        "CV425-A",
+        "CV473-A",
+        "CV443-A",
+        "CV202-A",
+        "CV436-A"
+      ]
+    },
+    {
+      "id": "MGS-Y4-A",
+      "program": "MGS",
+      "courseIds": [
+        "SC463-A",
+        "MS472-A",
+        "MS254-A",
+        "HM404-A",
+        "EM433-A",
+        "SC464-A",
+        "MS312-A",
+        "MS232-A",
+        "HM213-A",
+        "MS223-A",
+        "AF454-A",
+        "HM221-A",
+        "MS101-A",
+        "EM434-A",
+        "AF453-A"
+      ]
+    },
+    {
+      "id": "BCE-Y3-F",
+      "program": "BCE",
+      "courseIds": [
+        "CS316-F",
+        "CS343-F",
+        "CS323-F"
+      ]
+    },
+    {
+      "id": "BCE-Y1-N",
+      "program": "BCE",
+      "courseIds": [
+        "CS112-N",
+        "CS112L-N"
+      ]
+    },
+    {
+      "id": "BCS-Y4-C",
+      "program": "BCS",
+      "courseIds": [
+        "CS416-C",
+        "CS424L-C"
+      ]
+    },
+    {
+      "id": "BAI-Y4-A",
+      "program": "BAI",
+      "courseIds": [
+        "AI361-A",
+        "CS464-A",
+        "CS417-A",
+        "HM425-A",
+        "AI202-A",
+        "AI407L-A",
+        "AI361L-A",
+        "AI319-A",
+        "AI319L-A"
+      ]
+    },
+    {
+      "id": "BCE-Y3-A",
+      "program": "BCE",
+      "courseIds": [
+        "CE222L-A",
+        "CS375-A",
+        "CE323-A",
+        "CS354-A",
+        "CS316-A"
+      ]
+    },
+    {
+      "id": "BCE-Y1-I",
+      "program": "BCE",
+      "courseIds": [
+        "AI102-I"
+      ]
+    },
+    {
+      "id": "BAI-Y3-A",
+      "program": "BAI",
+      "courseIds": [
+        "AI341L-A",
+        "CS392-A",
+        "AI391L-A",
+        "CS378-A",
+        "AI341-A",
+        "AI202-A",
+        "AI321-A",
+        "CE313-A",
+        "AI321L-A"
+      ]
+    },
+    {
+      "id": "BCE-Y4-A",
+      "program": "BCE",
+      "courseIds": [
+        "CS411-A",
+        "CS444-A",
+        "CS112-A",
+        "CS473-A",
+        "DS462-A"
+      ]
+    },
+    {
+      "id": "BDS-Y4-A",
+      "program": "BDS",
+      "courseIds": [
+        "CS455-A",
+        "CS464-A",
+        "DS341L-A",
+        "DS411-A",
+        "DS417-A"
+      ]
+    },
+    {
+      "id": "BES-Y4-A",
+      "program": "BES",
+      "courseIds": [
+        "ES466-A",
+        "CS439-A",
+        "CS478-A",
+        "CS224-A",
+        "ES447-A",
+        "CS342-A",
+        "ES482-A",
+        "ES443-A",
+        "ES446-A"
+      ]
+    },
+    {
+      "id": "BDS-Y3-D",
+      "program": "BDS",
+      "courseIds": [
+        "CS331-D"
+      ]
+    },
+    {
+      "id": "BME-Y3-A",
+      "program": "BME",
+      "courseIds": [
+        "ME364-A",
+        "ME244L-A",
+        "ME322-A",
+        "ME347L-A",
+        "ME202-A",
+        "ME232-A",
+        "HM322-A",
+        "ME213-A",
+        "ME315-A",
+        "HM321-A",
+        "ME316-A",
+        "ME333-A",
+        "ME363-A"
+      ]
+    },
+    {
+      "id": "BEE-Y4-F",
+      "program": "BEE",
+      "courseIds": [
+        "EE331L-F",
+        "EE221L-F"
+      ]
+    },
+    {
+      "id": "BME-Y4-A",
+      "program": "BME",
+      "courseIds": [
+        "MS434-A",
+        "ME447L-A",
+        "ME446L-A",
+        "ME474-A",
+        "MS491-A",
+        "MS492-A",
+        "ME213-A",
+        "ME243L-A",
+        "MS291-A",
+        "MS447-A",
+        "ME471-A",
+        "HM211-A",
+        "ME406-A",
+        "ME451-A",
+        "ME405-A",
+        "ME467-A",
+        "ME453-A",
+        "ME468-A",
+        "ME482-A"
+      ]
+    },
+    {
+      "id": "CVE-Y3-A",
+      "program": "CVE",
+      "courseIds": [
+        "CV314-A",
+        "CV305-A",
+        "CV315-A",
+        "CV241-A",
+        "CV230-A",
+        "CV202L-A",
+        "CV351-A",
+        "CV361L-A",
+        "CV361-A",
+        "CV305L-A",
+        "CV314L-A"
+      ]
+    },
+    {
+      "id": "BDS-Y4-D",
+      "program": "BDS",
+      "courseIds": [
+        "CS378-D",
+        "DS325-D"
+      ]
+    },
+    {
+      "id": "BES-Y2-A",
+      "program": "BES",
+      "courseIds": [
+        "ES205-A",
+        "ES221-A",
+        "MT203-A"
+      ]
+    },
+    {
+      "id": "CYS-Y4-E",
+      "program": "CYS",
+      "courseIds": [
+        "CY312-E",
+        "CY483-E",
+        "CY461-E",
+        "CY402L-E",
+        "CS478-E"
+      ]
+    },
+    {
+      "id": "BEE-Y4-A",
+      "program": "BEE",
+      "courseIds": [
+        "EE413L-A",
+        "EE486-A",
+        "EE452-A",
+        "EE421-A",
+        "EE428-A",
+        "EE472-A",
+        "EE425-A"
+      ]
+    },
+    {
+      "id": "MTE-Y4-A",
+      "program": "MTE",
+      "courseIds": [
+        "MS434-A",
+        "MM447L-A",
+        "MM495-A",
+        "MM455-A",
+        "MM497-A",
+        "MM451-A",
+        "MM499-A"
+      ]
+    },
+    {
+      "id": "BME-Y1-L",
+      "program": "BME",
+      "courseIds": [
+        "IF102L-L"
+      ]
+    },
+    {
+      "id": "CHE-Y4-A",
+      "program": "CHE",
+      "courseIds": [
+        "CH419-A",
+        "CH452L-A",
+        "CH482-A",
+        "CH471-A",
+        "CH441-A",
+        "CH412-A",
+        "CH462-A"
+      ]
+    },
+    {
+      "id": "BME-Y1-K",
+      "program": "BME",
+      "courseIds": [
+        "IF102L-K"
+      ]
+    },
+    {
+      "id": "MTE-Y4-B",
+      "program": "MTE",
+      "courseIds": [
+        "MM447L-B"
+      ]
+    },
+    {
+      "id": "BES-Y3-A",
+      "program": "BES",
+      "courseIds": [
+        "ES361-A",
+        "ES322-A",
+        "ES322L-A",
+        "ES361L-A",
+        "ES325-A",
+        "ES371-A",
+        "ES341L-A",
+        "ES341-A"
+      ]
+    },
+    {
+      "id": "MTE-Y3-A",
+      "program": "MTE",
+      "courseIds": [
+        "MM392-A",
+        "MM352-A",
+        "MM345L-A",
+        "MM365-A",
+        "MM362-A"
+      ]
+    },
+    {
+      "id": "BCE-Y1-A",
+      "program": "BCE",
+      "courseIds": [
+        "CS112-A",
+        "CS101-A",
+        "CS112L-A"
+      ]
+    },
+    {
+      "id": "CVE-Y3-C",
+      "program": "CVE",
+      "courseIds": [
+        "CV361L-C",
+        "CV314L-C"
+      ]
+    },
+    {
+      "id": "CVE-Y3-D",
+      "program": "CVE",
+      "courseIds": [
+        "CV361L-D",
+        "CV314L-D"
+      ]
+    },
+    {
+      "id": "BME-Y1-M",
+      "program": "BME",
+      "courseIds": [
+        "IF102L-M"
+      ]
+    },
+    {
+      "id": "BCE-Y4-B",
+      "program": "BCE",
+      "courseIds": [
+        "CE408L-B",
+        "CE446-B",
+        "CE454-B",
+        "CE408-B",
+        "DS463-B"
+      ]
+    },
+    {
+      "id": "BCE-Y3-E",
+      "program": "BCE",
+      "courseIds": [
+        "CY315-E",
+        "CY326-E"
+      ]
+    },
+    {
+      "id": "MTE-Y3-B",
+      "program": "MTE",
+      "courseIds": [
+        "MM345L-B"
+      ]
+    },
+    {
+      "id": "BCS-Y4-B",
+      "program": "BCS",
+      "courseIds": [
+        "CE408-B"
+      ]
+    },
+    {
+      "id": "CVE-Y3-B",
+      "program": "CVE",
+      "courseIds": [
+        "CV361L-B",
+        "CV305L-B",
+        "CV351-B",
+        "CV315-B",
+        "CV314L-B",
+        "CV361-B",
+        "CV305-B",
+        "CV314-B"
+      ]
+    },
+    {
+      "id": "BDS-Y3-A",
+      "program": "BDS",
+      "courseIds": [
+        "DS351L-A",
+        "DS351-A",
+        "DS364-A",
+        "DS322-A",
+        "CS392-A",
+        "CE313-A",
+        "CE308-A"
+      ]
+    },
+    {
+      "id": "MTE-Y2-A",
+      "program": "MTE",
+      "courseIds": [
+        "MM233-A",
+        "MM232-A",
+        "MM244L-A",
+        "MM243L-A",
+        "MM201-A",
+        "MM222-A"
+      ]
+    },
+    {
+      "id": "BEE-Y4-C",
+      "program": "BEE",
+      "courseIds": [
+        "EE413-C"
+      ]
+    },
+    {
+      "id": "BES-Y1-A",
+      "program": "BES",
+      "courseIds": [
+        "PH101-A",
+        "MT102-A",
+        "MT101-A",
+        "PH101L-A",
+        "ES111-A"
+      ]
+    },
+    {
+      "id": "BCE-Y4-E",
+      "program": "BCE",
+      "courseIds": [
+        "CS452-E"
+      ]
+    },
+    {
+      "id": "BME-Y2-B",
+      "program": "BME",
+      "courseIds": [
+        "ME232-B",
+        "HM211-B",
+        "ME212-B",
+        "ME213-B",
+        "MS291-B",
+        "ME202-B",
+        "ME205-B"
+      ]
+    },
+    {
+      "id": "CVE-Y2-B",
+      "program": "CVE",
+      "courseIds": [
+        "CV231L-B",
+        "CV202L-B"
+      ]
+    },
+    {
+      "id": "CHE-Y2-A",
+      "program": "CHE",
+      "courseIds": [
+        "CH201-A",
+        "CH253L-A",
+        "CH252L-A",
+        "CH212-A",
+        "CH214-A",
+        "CH241-A"
+      ]
+    },
+    {
+      "id": "BEE-Y3-C",
+      "program": "BEE",
+      "courseIds": [
+        "EE351-C",
+        "EE361-C",
+        "EE332L-C",
+        "EE332-C"
+      ]
+    },
+    {
+      "id": "CHE-Y3-A",
+      "program": "CHE",
+      "courseIds": [
+        "CH342-A",
+        "CH353L-A",
+        "CH322-A",
+        "CH361-A",
+        "CH331-A"
+      ]
+    },
+    {
+      "id": "MGS-Y3-A",
+      "program": "MGS",
+      "courseIds": [
+        "HM324-A",
+        "MS333-A",
+        "MS356-A",
+        "MS303-A",
+        "MS325-A",
+        "MS361-A",
+        "MS358-A"
+      ]
+    },
+    {
+      "id": "CVE-Y2-A",
+      "program": "CVE",
+      "courseIds": [
+        "CV241-A",
+        "CV231-A",
+        "CV230-A",
+        "CV202L-A",
+        "CV231L-A",
+        "CV202-A",
+        "CV213-A"
+      ]
+    },
+    {
+      "id": "BME-Y3-B",
+      "program": "BME",
+      "courseIds": [
+        "ME364-B",
+        "ME333-B",
+        "ME315-B",
+        "HM322-B",
+        "ME316-B",
+        "ME322-B"
+      ]
+    },
+    {
+      "id": "BEE-Y3-B",
+      "program": "BEE",
+      "courseIds": [
+        "EE332-B",
+        "EE361-B",
+        "EE351-B"
+      ]
+    },
+    {
+      "id": "BME-Y2-A",
+      "program": "BME",
+      "courseIds": [
+        "HM211-A",
+        "ME202-A",
+        "ME232-A",
+        "ME212-A",
+        "ME205-A",
+        "ME213-A",
+        "ME243-A",
+        "MS291-A",
+        "ME244-A"
+      ]
+    },
+    {
+      "id": "BEE-Y3-A",
+      "program": "BEE",
+      "courseIds": [
+        "EE361L-A",
+        "EE313L-A",
+        "EE332-A",
+        "EE314-A",
+        "EE361-A",
+        "EE321-A",
+        "EE314L-A",
+        "EE313-A",
+        "EE351L-A",
+        "EE332L-A",
+        "EE351-A"
+      ]
+    },
+    {
+      "id": "BEE-Y4-B",
+      "program": "BEE",
+      "courseIds": [
+        "EE421-B"
+      ]
+    },
+    {
+      "id": "MGS-Y3-B",
+      "program": "MGS",
+      "courseIds": [
+        "MS303-B",
+        "MS356-B",
+        "MS333-B"
+      ]
+    },
+    {
+      "id": "BEE-Y2-B",
+      "program": "BEE",
+      "courseIds": [
+        "EE212-B",
+        "EE223-B",
+        "EE241-B",
+        "EE231-B"
+      ]
+    },
+    {
+      "id": "BEE-Y2-A",
+      "program": "BEE",
+      "courseIds": [
+        "EE212-A",
+        "EE223L-A",
+        "EE231-A",
+        "EE223-A",
+        "EE241-A",
+        "HM221-A",
+        "EE231L-A"
+      ]
+    },
+    {
+      "id": "MTE-Y1-J",
+      "program": "MTE",
+      "courseIds": [
+        "MM141L-J",
+        "MM101-J"
+      ]
+    },
+    {
+      "id": "MGS-Y2-B",
+      "program": "MGS",
+      "courseIds": [
+        "MS253-B",
+        "MS234-B",
+        "MS233-B",
+        "HM223-B",
+        "MS211-B",
+        "MS203-B"
+      ]
+    },
+    {
+      "id": "BCE-Y1-J",
+      "program": "BCE",
+      "courseIds": [
+        "CS112-J",
+        "AI102-J",
+        "CS112L-J"
+      ]
+    },
+    {
+      "id": "BME-Y1-J",
+      "program": "BME",
+      "courseIds": [
+        "HM102L-J",
+        "HM102-J",
+        "IF102L-J"
+      ]
+    },
+    {
+      "id": "SE-Y1-K",
+      "program": "SE",
+      "courseIds": [
+        "CS112L-K",
+        "CS112-K",
+        "AI102L-K"
+      ]
+    },
+    {
+      "id": "BCE-Y3-B",
+      "program": "BCE",
+      "courseIds": [
+        "CE363-B",
+        "CS361-B",
+        "CE342-B",
+        "CE342L-B",
+        "CE363L-B",
+        "CS392-B",
+        "CE313-B"
+      ]
+    },
+    {
+      "id": "BCS-Y3-C",
+      "program": "BCS",
+      "courseIds": [
+        "CS324-C",
+        "CS378-C",
+        "CS392-C",
+        "CE313-C"
+      ]
+    },
+    {
+      "id": "CYS-Y1-G",
+      "program": "CYS",
+      "courseIds": [
+        "CS112L-G",
+        "CS112-G",
+        "AI102L-G"
+      ]
+    },
+    {
+      "id": "CYS-Y3-E",
+      "program": "CYS",
+      "courseIds": [
+        "CS392-E",
+        "CY321-E",
+        "CE313-E",
+        "CS378-E",
+        "CY321L-E"
+      ]
+    },
+    {
+      "id": "CYS-Y2-E",
+      "program": "CYS",
+      "courseIds": [
+        "CY211-E",
+        "CS232-E",
+        "CS232L-E",
+        "CE222L-E",
+        "CE222-E",
+        "CY201-E"
+      ]
+    },
+    {
+      "id": "BCE-Y1-B",
+      "program": "BCE",
+      "courseIds": [
+        "CS112L-B",
+        "CS112-B"
+      ]
+    },
+    {
+      "id": "BCS-Y1-H",
+      "program": "BCS",
+      "courseIds": [
+        "CS112-H",
+        "CS112L-H",
+        "AI102L-H"
+      ]
+    },
+    {
+      "id": "BME-Y2-G",
+      "program": "BME",
+      "courseIds": [
+        "HM211-G"
+      ]
+    },
+    {
+      "id": "BME-Y1-N",
+      "program": "BME",
+      "courseIds": [
+        "HM102-N",
+        "HM102L-N"
+      ]
+    },
+    {
+      "id": "BME-Y4-B",
+      "program": "BME",
+      "courseIds": [
+        "MS491-B",
+        "ME467-B",
+        "MS434-B"
+      ]
+    },
+    {
+      "id": "BCE-Y2-A",
+      "program": "BCE",
+      "courseIds": [
+        "CE231-A",
+        "CE231L-A"
+      ]
+    },
+    {
+      "id": "BCE-Y2-B",
+      "program": "BCE",
+      "courseIds": [
+        "CE222-B",
+        "CE222L-B",
+        "CS232L-B",
+        "CS232-B"
+      ]
+    },
+    {
+      "id": "BCE-Y1-O",
+      "program": "BCE",
+      "courseIds": [
+        "CS112L-O",
+        "CS112-O"
+      ]
+    },
+    {
+      "id": "MGS-Y2-A",
+      "program": "MGS",
+      "courseIds": [
+        "HM223-A",
+        "MS211-A",
+        "MS234-A",
+        "MS203-A",
+        "MS253-A",
+        "MS233-A"
+      ]
+    },
+    {
+      "id": "BES-Y1-F",
+      "program": "BES",
+      "courseIds": [
+        "ES111-F",
+        "MT102-F"
+      ]
+    },
+    {
+      "id": "BAI-Y2-A",
+      "program": "BAI",
+      "courseIds": [
+        "AI204-A",
+        "CS232-A",
+        "CE222-A",
+        "CS232L-A",
+        "AI221-A",
+        "AI221L-A",
+        "CE222L-A"
+      ]
+    },
+    {
+      "id": "BCS-Y2-C",
+      "program": "BCS",
+      "courseIds": [
+        "CE222L-C",
+        "SE202L-C",
+        "CS224-C",
+        "CE222-C",
+        "CS272-C",
+        "CS232-C",
+        "CS232L-C"
+      ]
+    },
+    {
+      "id": "BME-Y1-C",
+      "program": "BME",
+      "courseIds": [
+        "IF102L-C",
+        "MS130-C",
+        "HM102L-C",
+        "HM102-C"
+      ]
+    },
+    {
+      "id": "BME-Y2-E",
+      "program": "BME",
+      "courseIds": [
+        "HM211-E"
+      ]
+    },
+    {
+      "id": "BAI-Y1-F",
+      "program": "BAI",
+      "courseIds": [
+        "CS112L-F",
+        "AI102L-F",
+        "CS112-F"
+      ]
+    },
+    {
+      "id": "BCS-Y4-A",
+      "program": "BCS",
+      "courseIds": [
+        "CS424-A",
+        "CS424L-A",
+        "CS464-A"
+      ]
+    },
+    {
+      "id": "SE-Y2-F",
+      "program": "SE",
+      "courseIds": [
+        "CS232L-F",
+        "SE211-F",
+        "CS202-F",
+        "CE222L-F",
+        "SE202L-F",
+        "CE222-F",
+        "CS232-F"
+      ]
+    },
+    {
+      "id": "BCE-Y4-C",
+      "program": "BCE",
+      "courseIds": [
+        "CS413-C"
+      ]
+    },
+    {
+      "id": "BES-Y1-D",
+      "program": "BES",
+      "courseIds": [
+        "ES111-D",
+        "MT102-D"
+      ]
+    },
+    {
+      "id": "SE-Y3-F",
+      "program": "SE",
+      "courseIds": [
+        "CE313-F",
+        "CS392-F",
+        "CS378-F",
+        "SE351-F",
+        "SE351L-F"
+      ]
+    },
+    {
+      "id": "BME-Y2-H",
+      "program": "BME",
+      "courseIds": [
+        "HM211-H"
+      ]
+    },
+    {
+      "id": "BCE-Y1-D",
+      "program": "BCE",
+      "courseIds": [
+        "CS112-D",
+        "CS112L-D"
+      ]
+    },
+    {
+      "id": "CHE-Y1-F",
+      "program": "CHE",
+      "courseIds": [
+        "CH101-F",
+        "CH161-F"
+      ]
+    },
+    {
+      "id": "BME-Y1-I",
+      "program": "BME",
+      "courseIds": [
+        "IF102L-I",
+        "HM102-I",
+        "HM102L-I"
+      ]
+    },
+    {
+      "id": "BCE-Y1-C",
+      "program": "BCE",
+      "courseIds": [
+        "CS112-C",
+        "CS112L-C"
+      ]
+    },
+    {
+      "id": "BME-Y1-F",
+      "program": "BME",
+      "courseIds": [
+        "HM102L-F",
+        "IF102L-F",
+        "HM102-F"
+      ]
+    },
+    {
+      "id": "CHE-Y1-I",
+      "program": "CHE",
+      "courseIds": [
+        "CH161-I",
+        "CH101-I"
+      ]
+    },
+    {
+      "id": "BDS-Y1-I",
+      "program": "BDS",
+      "courseIds": [
+        "CS112L-I",
+        "CS112-I"
+      ]
+    },
+    {
+      "id": "BDS-Y2-A",
+      "program": "BDS",
+      "courseIds": [
+        "CS232-A",
+        "CE222-A",
+        "DS221-A",
+        "SE202L-A",
+        "CS232L-A",
+        "DS211-A",
+        "CE222L-A"
+      ]
+    },
+    {
+      "id": "BDS-Y1-A",
+      "program": "BDS",
+      "courseIds": [
+        "AI102L-A"
+      ]
+    },
+    {
+      "id": "MGS-Y1-B",
+      "program": "MGS",
+      "courseIds": [
+        "MS102-B",
+        "MS151-B",
+        "HM121-B",
+        "HM112-B",
+        "MS141-B"
+      ]
+    },
+    {
+      "id": "BME-Y2-F",
+      "program": "BME",
+      "courseIds": [
+        "HM211-F"
+      ]
+    },
+    {
+      "id": "MGS-Y1-L",
+      "program": "MGS",
+      "courseIds": [
+        "HM102-L",
+        "HM102L-L"
+      ]
+    },
+    {
+      "id": "MGS-Y1-A",
+      "program": "MGS",
+      "courseIds": [
+        "MS141-A",
+        "MS102-A",
+        "HM121-A",
+        "MS151-A",
+        "HM112-A"
+      ]
+    },
+    {
+      "id": "BME-Y2-D",
+      "program": "BME",
+      "courseIds": [
+        "HM211-D"
+      ]
+    },
+    {
+      "id": "BCE-Y1-M",
+      "program": "BCE",
+      "courseIds": [
+        "CS112L-M"
+      ]
+    },
+    {
+      "id": "BCS-Y1-P",
+      "program": "BCS",
+      "courseIds": [
+        "CS112L-P",
+        "CS112-P",
+        "AI102L-P"
+      ]
+    },
+    {
+      "id": "BME-Y1-D",
+      "program": "BME",
+      "courseIds": [
+        "HM102L-D",
+        "HM102-D",
+        "MS130-D",
+        "IF102L-D"
+      ]
+    },
+    {
+      "id": "MGS-Y1-C",
+      "program": "MGS",
+      "courseIds": [
+        "MS141-C",
+        "MS151-C",
+        "HM121-C",
+        "MS102-C",
+        "HM112-C"
+      ]
+    },
+    {
+      "id": "MGS-Y1-K",
+      "program": "MGS",
+      "courseIds": [
+        "HM102L-K",
+        "HM102-K"
+      ]
+    },
+    {
+      "id": "BME-Y2-C",
+      "program": "BME",
+      "courseIds": [
+        "HM211-C"
+      ]
+    },
+    {
+      "id": "MGS-Y1-M",
+      "program": "MGS",
+      "courseIds": [
+        "HM102-M",
+        "HM102L-M"
+      ]
+    },
+    {
+      "id": "BES-Y1-E",
+      "program": "BES",
+      "courseIds": [
+        "ES111-E",
+        "MT102-E"
+      ]
+    },
+    {
+      "id": "BCE-Y1-E",
+      "program": "BCE",
+      "courseIds": [
+        "CS112L-E",
+        "CS112-E"
+      ]
+    },
+    {
+      "id": "BME-Y1-E",
+      "program": "BME",
+      "courseIds": [
+        "HM102L-E",
+        "IF102L-E",
+        "HM102-E"
+      ]
+    },
+    {
+      "id": "CHE-Y1-G",
+      "program": "CHE",
+      "courseIds": [
+        "CH101-G",
+        "CH161-G"
+      ]
+    },
+    {
+      "id": "BME-Y1-G",
+      "program": "BME",
+      "courseIds": [
+        "IF102L-G",
+        "HM102-G",
+        "HM102L-G"
+      ]
+    },
+    {
+      "id": "BES-Y1-G",
+      "program": "BES",
+      "courseIds": [
+        "ES111-G",
+        "MT102-G"
+      ]
+    },
+    {
+      "id": "BME-Y1-B",
+      "program": "BME",
+      "courseIds": [
+        "HM102L-B",
+        "IF102L-B",
+        "HM102-B",
+        "MS130-B"
+      ]
+    },
+    {
+      "id": "MTE-Y1-B",
+      "program": "MTE",
+      "courseIds": [
+        "MM141L-B",
+        "MM101-B"
+      ]
+    },
+    {
+      "id": "BES-Y1-I",
+      "program": "BES",
+      "courseIds": [
+        "MT102-I",
+        "ES111-I"
+      ]
+    },
+    {
+      "id": "BES-Y1-B",
+      "program": "BES",
+      "courseIds": [
+        "MT102-B",
+        "PH101-B",
+        "PH101L-B",
+        "ES111-B"
+      ]
+    },
+    {
+      "id": "BES-Y1-C",
+      "program": "BES",
+      "courseIds": [
+        "MT102-C",
+        "ES111-C"
+      ]
+    },
+    {
+      "id": "BES-Y1-H",
+      "program": "BES",
+      "courseIds": [
+        "ES111-H",
+        "MT102-H"
+      ]
+    },
+    {
+      "id": "BME-Y1-H",
+      "program": "BME",
+      "courseIds": [
+        "HM102-H",
+        "HM102L-H",
+        "IF102L-H"
+      ]
+    },
+    {
+      "id": "CHE-Y1-H",
+      "program": "CHE",
+      "courseIds": [
+        "CH161-H",
+        "CH101-H"
+      ]
+    },
+    {
+      "id": "BME-Y1-A",
+      "program": "BME",
+      "courseIds": [
+        "MS130-A",
+        "HM102-A",
+        "HM102L-A",
+        "IF102L-A"
+      ]
+    },
+    {
+      "id": "MTE-Y1-A",
+      "program": "MTE",
+      "courseIds": [
+        "MM101-A",
+        "MM141L-A"
+      ]
+    }
+  ],
+  "timeSlots": [
+    {
+      "id": "MON_S1",
+      "day": "Monday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "slotIndex": 1,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S2",
+      "day": "Monday",
+      "startTime": "09:00",
+      "endTime": "09:50",
+      "slotIndex": 2,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S3",
+      "day": "Monday",
+      "startTime": "10:30",
+      "endTime": "11:20",
+      "slotIndex": 3,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S4",
+      "day": "Monday",
+      "startTime": "11:30",
+      "endTime": "12:20",
+      "slotIndex": 4,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S5",
+      "day": "Monday",
+      "startTime": "12:30",
+      "endTime": "13:20",
+      "slotIndex": 5,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S6",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "15:20",
+      "slotIndex": 6,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S7",
+      "day": "Monday",
+      "startTime": "15:30",
+      "endTime": "16:20",
+      "slotIndex": 7,
+      "dayType": "regular"
+    },
+    {
+      "id": "MON_S8",
+      "day": "Monday",
+      "startTime": "16:30",
+      "endTime": "17:20",
+      "slotIndex": 8,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S1",
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "slotIndex": 1,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S2",
+      "day": "Tuesday",
+      "startTime": "09:00",
+      "endTime": "09:50",
+      "slotIndex": 2,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S3",
+      "day": "Tuesday",
+      "startTime": "10:30",
+      "endTime": "11:20",
+      "slotIndex": 3,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S4",
+      "day": "Tuesday",
+      "startTime": "11:30",
+      "endTime": "12:20",
+      "slotIndex": 4,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S5",
+      "day": "Tuesday",
+      "startTime": "12:30",
+      "endTime": "13:20",
+      "slotIndex": 5,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S6",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "15:20",
+      "slotIndex": 6,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S7",
+      "day": "Tuesday",
+      "startTime": "15:30",
+      "endTime": "16:20",
+      "slotIndex": 7,
+      "dayType": "regular"
+    },
+    {
+      "id": "TUE_S8",
+      "day": "Tuesday",
+      "startTime": "16:30",
+      "endTime": "17:20",
+      "slotIndex": 8,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S1",
+      "day": "Wednesday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "slotIndex": 1,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S2",
+      "day": "Wednesday",
+      "startTime": "09:00",
+      "endTime": "09:50",
+      "slotIndex": 2,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S3",
+      "day": "Wednesday",
+      "startTime": "10:30",
+      "endTime": "11:20",
+      "slotIndex": 3,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S4",
+      "day": "Wednesday",
+      "startTime": "11:30",
+      "endTime": "12:20",
+      "slotIndex": 4,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S5",
+      "day": "Wednesday",
+      "startTime": "12:30",
+      "endTime": "13:20",
+      "slotIndex": 5,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S6",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "15:20",
+      "slotIndex": 6,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S7",
+      "day": "Wednesday",
+      "startTime": "15:30",
+      "endTime": "16:20",
+      "slotIndex": 7,
+      "dayType": "regular"
+    },
+    {
+      "id": "WED_S8",
+      "day": "Wednesday",
+      "startTime": "16:30",
+      "endTime": "17:20",
+      "slotIndex": 8,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S1",
+      "day": "Thursday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "slotIndex": 1,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S2",
+      "day": "Thursday",
+      "startTime": "09:00",
+      "endTime": "09:50",
+      "slotIndex": 2,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S3",
+      "day": "Thursday",
+      "startTime": "10:30",
+      "endTime": "11:20",
+      "slotIndex": 3,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S4",
+      "day": "Thursday",
+      "startTime": "11:30",
+      "endTime": "12:20",
+      "slotIndex": 4,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S5",
+      "day": "Thursday",
+      "startTime": "12:30",
+      "endTime": "13:20",
+      "slotIndex": 5,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S6",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "15:20",
+      "slotIndex": 6,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S7",
+      "day": "Thursday",
+      "startTime": "15:30",
+      "endTime": "16:20",
+      "slotIndex": 7,
+      "dayType": "regular"
+    },
+    {
+      "id": "THU_S8",
+      "day": "Thursday",
+      "startTime": "16:30",
+      "endTime": "17:20",
+      "slotIndex": 8,
+      "dayType": "regular"
+    },
+    {
+      "id": "FRI_S1",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "08:50",
+      "slotIndex": 1,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S2",
+      "day": "Friday",
+      "startTime": "09:00",
+      "endTime": "09:50",
+      "slotIndex": 2,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S3",
+      "day": "Friday",
+      "startTime": "10:00",
+      "endTime": "10:50",
+      "slotIndex": 3,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S4",
+      "day": "Friday",
+      "startTime": "11:00",
+      "endTime": "11:50",
+      "slotIndex": 4,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S5",
+      "day": "Friday",
+      "startTime": "12:00",
+      "endTime": "12:50",
+      "slotIndex": 5,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S6",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "15:20",
+      "slotIndex": 6,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S7",
+      "day": "Friday",
+      "startTime": "15:30",
+      "endTime": "16:20",
+      "slotIndex": 7,
+      "dayType": "friday"
+    },
+    {
+      "id": "FRI_S8",
+      "day": "Friday",
+      "startTime": "16:30",
+      "endTime": "17:20",
+      "slotIndex": 8,
+      "dayType": "friday"
+    },
+    {
+      "id": "LAB-MO-1",
+      "day": "Monday",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "slotIndex": 10,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-MO-2",
+      "day": "Monday",
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "slotIndex": 11,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-MO-3",
+      "day": "Monday",
+      "startTime": "14:30",
+      "endTime": "17:30",
+      "slotIndex": 12,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-TU-1",
+      "day": "Tuesday",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "slotIndex": 10,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-TU-2",
+      "day": "Tuesday",
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "slotIndex": 11,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-TU-3",
+      "day": "Tuesday",
+      "startTime": "14:30",
+      "endTime": "17:30",
+      "slotIndex": 12,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-WE-1",
+      "day": "Wednesday",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "slotIndex": 10,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-WE-2",
+      "day": "Wednesday",
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "slotIndex": 11,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-WE-3",
+      "day": "Wednesday",
+      "startTime": "14:30",
+      "endTime": "17:30",
+      "slotIndex": 12,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-TH-1",
+      "day": "Thursday",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "slotIndex": 10,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-TH-2",
+      "day": "Thursday",
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "slotIndex": 11,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-TH-3",
+      "day": "Thursday",
+      "startTime": "14:30",
+      "endTime": "17:30",
+      "slotIndex": 12,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-FR-1",
+      "day": "Friday",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "slotIndex": 10,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-FR-2",
+      "day": "Friday",
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "slotIndex": 11,
+      "dayType": "lab"
+    },
+    {
+      "id": "LAB-FR-3",
+      "day": "Friday",
+      "startTime": "14:30",
+      "endTime": "17:30",
+      "slotIndex": 12,
+      "dayType": "lab"
+    }
+  ]
+}
