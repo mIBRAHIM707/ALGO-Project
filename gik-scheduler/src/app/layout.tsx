@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "@/components/Sidebar";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 
@@ -22,16 +21,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="flex h-screen overflow-hidden bg-background font-sans antialiased text-foreground">
-            <Sidebar />
-            <div className="flex-1 flex flex-col overflow-hidden">
-               <header className="h-16 border-b flex items-center justify-end px-6">
-                 <ThemeToggle />
-               </header>
-               <main className="flex-1 overflow-y-auto">
-                 {children}
-               </main>
-            </div>
+          <div style={{ display:"flex", flexDirection:"column", height:"100vh", overflow:"hidden" }}>
+            <Navbar />
+            {/* 56px offset for fixed navbar */}
+            <div style={{ height:"56px", flexShrink:0 }} />
+            <main style={{ flex:1, overflow:"hidden" }}>
+              {children}
+            </main>
             <Toaster />
           </div>
         </ThemeProvider>

@@ -1,12 +1,9 @@
 "use client";
 
 import { useStore } from "@/lib/store";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState, useMemo } from "react";
-import { AlertCircle, FileSpreadsheetIcon, PrinterIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { FileSpreadsheetIcon, PrinterIcon, ArrowRightIcon, CalendarIcon } from "lucide-react";
 
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 const MAX_SLOTS = 8;
@@ -14,219 +11,442 @@ const LAB_ROW_SPAN = 3;
 
 export default function SchedulePage() {
   const { schedule, data } = useStore();
-  const [filterSection, setFilterSection] = useState<string>('ALL');
-  
+  const [filterSection, setFilterSection] = useState<string>("ALL");
+  const [phase, setPhase] = useState(0);
+  const [gridVisible, setGridVisible] = useState(false);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const blob1Ref = useRef<HTMLDivElement>(null);
+  const blob2Ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timers = [
+      setTimeout(() => setPhase(1), 80),
+      setTimeout(() => setPhase(2), 280),
+      setTimeout(() => setPhase(3), 460),
+      setTimeout(() => setGridVisible(true), 600),
+    ];
+    return () => timers.forEach(clearTimeout);
+  }, []);
+
+  useEffect(() => {
+    const handleMouse = (e: MouseEvent) => {
+      if (!heroRef.current) return;
+      const rect = heroRef.current.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      if (blob1Ref.current) blob1Ref.current.style.transform = `translate(${x * 25}px, ${y * 15}px)`;
+      if (blob2Ref.current) blob2Ref.current.style.transform = `translate(${x * -18}px, ${y * 12}px)`;
+    };
+    window.addEventListener("mousemove", handleMouse);
+    return () => window.removeEventListener("mousemove", handleMouse);
+  }, []);
+
   const hasSchedule = schedule && schedule.length > 0;
 
-  // Filter list of available sections that were generated into the schedule
   const availableSections = useMemo(() => {
-     if (!hasSchedule) return [];
-     const set = new Set(schedule.map(s => s.sectionId));
-     return Array.from(set).sort();
+    if (!hasSchedule) return [];
+    const set = new Set(schedule.map((s: any) => s.sectionId));
+    return Array.from(set).sort() as string[];
   }, [schedule, hasSchedule]);
 
-  if (!hasSchedule) {
-    return (
-      <div className="h-full flex items-center justify-center p-8">
-         <Card className="max-w-md w-full text-center p-6 bg-muted/20">
-           <AlertCircle className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
-           <CardTitle className="mb-2">No Schedule Found</CardTitle>
-           <p className="text-muted-foreground text-sm mb-4">
-             Run the generation algorithm on the dashboard page first to construct the schedule constraints graph.
-           </p>
-         </Card>
-      </div>
-    );
-  }
-
-  // Export to CSV function
   const handleExportCSV = () => {
     if (!schedule.length) return;
-    
     const headers = ["Day", "Time", "Section", "Course", "Teacher", "Room"].join(",");
-    const rows = schedule.map(a => {
-        const ts = data.timeSlots.find(t => t.id === a.timeSlotId);
-        const c = data.courses.find(c => c.id === a.courseId);
-        const t = data.teachers.find(t => t.id === a.teacherId);
-        const r = data.rooms.find(r => r.id === a.roomId);
-        
-        return `${ts?.day || "Unknown"},${ts?.startTime}-${ts?.endTime},${a.sectionId},"${c?.title || a.courseId}","${t?.name || "TBA"}","${r?.name || a.roomId}"`;
+    const rows = schedule.map((a: any) => {
+      const ts = data.timeSlots.find((t: any) => t.id === a.timeSlotId);
+      const c = data.courses.find((c: any) => c.id === a.courseId);
+      const t = data.teachers.find((t: any) => t.id === a.teacherId);
+      const r = data.rooms.find((r: any) => r.id === a.roomId);
+      return `${ts?.day || ""},${ts?.startTime}-${ts?.endTime},${a.sectionId},"${c?.title || a.courseId}","${t?.name || "TBA"}","${r?.name || a.roomId}"`;
     }).join("\n");
-
-    const blob = new Blob([headers + "\n" + rows], { type: 'text/csv;charset=utf-8;' });
+    const blob = new Blob([headers + "\n" + rows], { type: "text/csv;charset=utf-8;" });
     const link = document.createElement("a");
-    const url = URL.createObjectURL(blob);
-    link.setAttribute("href", url);
+    link.setAttribute("href", URL.createObjectURL(blob));
     link.setAttribute("download", `gik-schedule-${filterSection}.csv`);
-    link.style.visibility = 'hidden';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  const handlePrint = () => {
-    window.print();
+    document.body.appendChild(link); link.click(); document.body.removeChild(link);
   };
 
   const blockedCells = new Set<string>();
-
-  // Rendering Helper for the Grid
   const getCellData = (day: string, slotIndex: number) => {
-    // Determine overlapping matches for a given cell (by Section if filtered, else grouped)
-    // We only show rendering for a specific section when viewing "All", it gets chaotic
-    // Usually a Timetable is viewed per section or per teacher. 
-    // We will render it per "Section" primarily.
-    
-    // Find TimeSlots matching this day AND index
-    const matchingTS = data.timeSlots.filter(t => t.day === day && t.slotIndex === slotIndex);
-    const tsIds = matchingTS.map(t => t.id);
-
-    const matches = schedule.filter(a => {
-       if (filterSection !== 'ALL' && a.sectionId !== filterSection) return false;
-       return tsIds.includes(a.timeSlotId);
+    const tsIds = data.timeSlots.filter((t: any) => t.day === day && t.slotIndex === slotIndex).map((t: any) => t.id);
+    return schedule.filter((a: any) => {
+      if (filterSection !== "ALL" && a.sectionId !== filterSection) return false;
+      return tsIds.includes(a.timeSlotId);
     });
-
-    return matches;
   };
 
+  const marqueeWords = ["Weekly Schedule", "·", "CSP Algorithm", "·", "MRV Heuristic", "·", `${hasSchedule ? schedule.length : 0} Sessions`, "·", "Hard Constraints", "·", "GIK Institute", "·", "Spring 2025", "·"];
+
   return (
-    <div className="p-8 h-full flex flex-col gap-6 overflow-y-auto">
-       {/* Toolbar */}
-       <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4 border-b pb-6">
-            <div>
-              <h1 className="text-3xl font-bold tracking-tight">Structured Timeline</h1>
-              <p className="text-muted-foreground mt-1">Export, filter, and view the multi-dimensional schedule matrix.</p>
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+        @keyframes pulseDot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.3;transform:scale(0.6)} }
+        @keyframes gridPulse { 0%,100%{opacity:0.04} 50%{opacity:0.07} }
+        @keyframes marquee { 0%{transform:translateX(0%)} 100%{transform:translateX(-50%)} }
+        @keyframes charReveal {
+          from { opacity:0; transform:translateY(70%) skewY(5deg); }
+          to   { opacity:1; transform:translateY(0) skewY(0); }
+        }
+        @keyframes gridFadeIn {
+          from { opacity:0; transform:translateY(10px); }
+          to   { opacity:1; transform:translateY(0); }
+        }
+        @keyframes blobFloat {
+          0%,100%{filter:blur(50px)} 50%{filter:blur(60px)}
+        }
+
+        .char-wrap { display:inline-block; overflow:hidden; }
+        .char-inner { display:inline-block; opacity:0; }
+        .char-inner.show { animation: charReveal 0.55s cubic-bezier(0.22,1,0.36,1) forwards; }
+
+        .marquee-track { display:flex; animation:marquee 30s linear infinite; width:max-content; }
+
+        .toolbar-btn {
+          display:inline-flex; align-items:center; gap:7px;
+          background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.09);
+          border-radius:10px; padding:8px 16px;
+          font-size:12px; font-weight:500; color:rgba(255,255,255,0.55);
+          font-family:'DM Sans',sans-serif; cursor:pointer;
+          transition:all 0.18s ease;
+        }
+        .toolbar-btn:hover { background:rgba(255,255,255,0.09); color:rgba(255,255,255,0.9); border-color:rgba(255,255,255,0.16); }
+
+        /* Grid */
+        .timetable-wrap {
+          animation: gridFadeIn 0.6s ease 0.4s both;
+        }
+
+        .day-col-header {
+          padding:13px 10px;
+          text-align:center;
+          border-bottom:1px solid rgba(255,255,255,0.06);
+          border-right:1px solid rgba(255,255,255,0.05);
+          font-family:'Syne',sans-serif;
+          font-size:12px; font-weight:700;
+          color:rgba(255,255,255,0.5);
+          letter-spacing:0.04em;
+          text-transform:uppercase;
+          background:rgba(255,255,255,0.02);
+          position:relative;
+        }
+
+        .slot-cell {
+          padding:12px 6px;
+          border-bottom:1px solid rgba(255,255,255,0.04);
+          border-right:1px solid rgba(255,255,255,0.05);
+          background:rgba(255,255,255,0.015);
+          display:flex; flex-direction:column; align-items:center; justify-content:center;
+          gap:3px; text-align:center;
+          position:sticky; left:0; z-index:5;
+          backdrop-filter:blur(12px);
+        }
+
+        .grid-cell {
+          padding:7px;
+          border-bottom:1px solid rgba(255,255,255,0.04);
+          border-right:1px solid rgba(255,255,255,0.04);
+          min-height:120px;
+          vertical-align:top;
+          transition:background 0.15s ease;
+          position:relative;
+        }
+        .grid-cell:hover { background:rgba(255,255,255,0.015); }
+
+        /* THE CARD — white, clean */
+        .course-card {
+          border-radius:8px;
+          padding:9px 10px;
+          margin-bottom:5px;
+          background:#ffffff;
+          border:1px solid rgba(0,0,0,0.06);
+          transition:box-shadow 0.15s ease, transform 0.15s ease;
+          cursor:default;
+          position:relative;
+        }
+        .course-card:hover {
+          transform:translateY(-1px);
+          box-shadow:0 4px 18px rgba(0,0,0,0.22);
+        }
+        .card-lab    { border-top:2px solid #FAA625; }
+        .card-lecture { border-top:2px solid #183FE1; }
+
+        .card-top {
+          display:flex; justify-content:space-between; align-items:center;
+          margin-bottom:5px;
+        }
+        .card-id {
+          font-family:'Syne',sans-serif;
+          font-size:10px; font-weight:700;
+          color:#183FE1;
+          letter-spacing:0.04em;
+        }
+        .card-type-lab {
+          font-size:9px; font-weight:700;
+          color:#FAA625; letter-spacing:0.04em;
+          text-transform:uppercase;
+        }
+        .card-type-section {
+          font-size:9px; font-weight:600;
+          color:#999;
+          letter-spacing:0.03em;
+        }
+        .card-title {
+          font-size:11.5px; font-weight:600;
+          color:#0f0f0f;
+          line-height:1.35; margin-bottom:7px;
+          font-family:'DM Sans',sans-serif;
+          display:-webkit-box;
+          -webkit-line-clamp:2;
+          -webkit-box-orient:vertical;
+          overflow:hidden;
+        }
+        .card-footer {
+          display:flex; justify-content:space-between; align-items:center;
+          padding-top:5px;
+          border-top:1px solid rgba(0,0,0,0.06);
+        }
+        .card-room {
+          font-size:10px; font-weight:700;
+          color:#333;
+          font-family:'Syne',sans-serif; letter-spacing:0.03em;
+        }
+        .card-teacher {
+          font-size:10px; color:#888;
+          text-align:right; max-width:100px;
+          overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+          font-family:'DM Sans',sans-serif;
+        }
+
+        .empty-dot-cell {
+          width:100%; min-height:120px;
+          display:flex; align-items:center; justify-content:center;
+        }
+
+        .empty-state-wrap {
+          flex:1; display:flex; align-items:center; justify-content:center; padding:40px;
+        }
+        .empty-state-box {
+          background:rgba(255,255,255,0.03);
+          border:1px solid rgba(255,255,255,0.07);
+          border-radius:20px; padding:48px 40px;
+          text-align:center; max-width:400px; width:100%;
+        }
+      `}</style>
+
+      <div style={{ display:"flex", flexDirection:"column", height:"100vh", background:"#0a0c16", fontFamily:"'DM Sans',sans-serif", overflow:"hidden" }}>
+
+        {/* ══════ HERO — same as other pages ══════ */}
+        <div ref={heroRef} style={{ position:"relative", background:"#0c0f1a", overflow:"hidden", flexShrink:0 }}>
+
+          <div style={{ position:"absolute", inset:0, backgroundImage:"linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)", backgroundSize:"52px 52px", animation:"gridPulse 5s ease-in-out infinite" }} />
+          <div ref={blob1Ref} style={{ position:"absolute", width:320, height:320, borderRadius:"50%", background:"radial-gradient(circle,rgba(24,63,225,0.22) 0%,transparent 70%)", top:-90, right:80, filter:"blur(50px)", transition:"transform 0.9s cubic-bezier(0.22,1,0.36,1)", animation:"blobFloat 9s ease-in-out infinite" }} />
+          <div ref={blob2Ref} style={{ position:"absolute", width:220, height:220, borderRadius:"50%", background:"radial-gradient(circle,rgba(165,255,81,0.13) 0%,transparent 70%)", bottom:-30, left:200, filter:"blur(35px)", transition:"transform 0.9s cubic-bezier(0.22,1,0.36,1)", animation:"blobFloat 12s ease-in-out infinite reverse" }} />
+
+          <div style={{ position:"relative", zIndex:2, padding:"24px 44px 0" }}>
+
+            {/* Badge row */}
+            <div style={{ display:"flex", alignItems:"center", gap:"8px", marginBottom:"14px", opacity:phase>=1?1:0, transform:phase>=1?"none":"translateY(8px)", transition:"opacity 0.5s ease, transform 0.5s ease" }}>
+              <span style={{ width:6, height:6, borderRadius:"50%", background:"#A5FF51", display:"inline-block", animation:"pulseDot 1.8s ease-in-out infinite" }} />
+              <span style={{ fontSize:"11px", fontWeight:500, color:"rgba(255,255,255,0.3)", letterSpacing:"0.09em", textTransform:"uppercase" as const }}>Structured Timeline</span>
+              <span style={{ width:1, height:10, background:"rgba(255,255,255,0.1)", display:"inline-block", margin:"0 4px" }} />
+              <span style={{ fontSize:"11px", color:"rgba(255,255,255,0.18)", letterSpacing:"0.05em" }}>Spring 2025</span>
             </div>
 
-            <div className="flex items-center gap-4 w-full md:w-auto flex-wrap">
-               <Select value={filterSection} onValueChange={(val) => setFilterSection(val || "ALL")}>
-                 <SelectTrigger className="w-[180px]">
-                   <SelectValue placeholder="Filter By Section" />
-                 </SelectTrigger>
-                 <SelectContent>
-                   <SelectItem value="ALL">All Sections Overview</SelectItem>
-                   {availableSections.map(sec => (
-                     <SelectItem key={sec} value={sec}>Section: {sec}</SelectItem>
-                   ))}
-                 </SelectContent>
-               </Select>
+            {/* Title + toolbar */}
+            <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-end", marginBottom:"20px" }}>
+              <div>
+                <h1 style={{ fontSize:"36px", fontWeight:800, fontFamily:"'Syne',sans-serif", letterSpacing:"-0.04em", lineHeight:1.05, margin:"0 0 8px", display:"flex", flexWrap:"wrap" as const }}>
+                  {"Weekly ".split("").map((ch, i) => (
+                    <span key={i} className="char-wrap">
+                      <span className={`char-inner ${phase>=2?"show":""}`} style={{ animationDelay:`${i*0.028}s`, color:"#fff" }}>{ch===" "?"\u00A0":ch}</span>
+                    </span>
+                  ))}
+                  {"Schedule".split("").map((ch, i) => (
+                    <span key={i+20} className="char-wrap">
+                      <span className={`char-inner ${phase>=2?"show":""}`} style={{ animationDelay:`${(i+7)*0.028}s`, color:"#A5FF51" }}>{ch}</span>
+                    </span>
+                  ))}
+                </h1>
+                <p style={{ fontSize:"13px", color:"rgba(255,255,255,0.3)", margin:0, borderLeft:"2px solid rgba(255,255,255,0.1)", paddingLeft:"12px", opacity:phase>=3?1:0, transform:phase>=3?"none":"translateY(8px)", transition:"opacity 0.5s ease, transform 0.5s ease" }}>
+                  Filter, export, and view the multi-dimensional schedule matrix.
+                </p>
+              </div>
 
-               <Button variant="outline" className="shadow-xs" onClick={handleExportCSV}>
-                   <FileSpreadsheetIcon className="mr-2 h-4 w-4 text-green-600" />
-                   Export CSV
-               </Button>
-               <Button variant="outline" className="shadow-xs" onClick={handlePrint}>
-                   <PrinterIcon className="mr-2 h-4 w-4" />
-                   Print View
-               </Button>
-            </div>
-       </div>
-
-       {/* Weekly Timetable Matrix */}
-       <div className="flex-1 w-full overflow-x-auto border rounded-xl shadow-sm bg-card mt-2">
-            <div className="min-w-[1000px] w-full grid grid-cols-[100px_repeat(5,_1fr)] print:w-full">
-                
-                {/* Header Row */}
-                <div className="bg-muted/50 p-4 border-b border-r font-semibold flex items-center justify-center text-sm sticky left-0 z-10 text-muted-foreground">
-                    Slots
+              {hasSchedule && (
+                <div style={{ display:"flex", alignItems:"center", gap:"10px", opacity:phase>=3?1:0, transform:phase>=3?"none":"translateX(16px)", transition:"opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s" }}>
+                  <Select value={filterSection} onValueChange={val => setFilterSection(val||"ALL")}>
+                    <SelectTrigger style={{ width:"170px", background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", color:"rgba(255,255,255,0.65)", borderRadius:"10px", fontFamily:"'DM Sans',sans-serif", fontSize:"13px" }}>
+                      <SelectValue placeholder="All Sections" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="ALL">All Sections</SelectItem>
+                      {availableSections.map((sec:string) => <SelectItem key={sec} value={sec}>{sec}</SelectItem>)}
+                    </SelectContent>
+                  </Select>
+                  <button className="toolbar-btn" onClick={handleExportCSV}><FileSpreadsheetIcon size={13} color="#A5FF51" />Export CSV</button>
+                  <button className="toolbar-btn" onClick={() => window.print()}><PrinterIcon size={13} />Print</button>
                 </div>
-                {DAYS.map(day => (
-                    <div key={day} className="bg-muted/30 p-4 border-b border-r font-bold text-center capitalize tracking-tight text-primary">
-                        {day}
-                    </div>
-                ))}
-
-                {/* Grid Generation */}
-                {Array.from({ length: MAX_SLOTS }).map((_, index) => {
-                    const slotNum = index + 1;
-                    return (
-                       <div className="contents group" key={`slot-${slotNum}`}>
-                           <div className="p-4 border-b border-r bg-muted/10 font-medium text-sm flex flex-col items-center justify-center sticky left-0 z-10 text-muted-foreground transition-colors group-hover:bg-muted/20 text-center gap-1">
-                               <span>Slot {slotNum}</span>
-                               <span className="text-[10px] opacity-70">
-                                   {(() => {
-                                       const ts = data.timeSlots.find(t => t.slotIndex === slotNum);
-                                       return ts ? `${ts.startTime} - ${ts.endTime}` : '';
-                                   })()}
-                               </span>
-                           </div>
-                           {DAYS.map(day => {
-                               const blockedKey = `${day}-${slotNum}`;
-                               if (blockedCells.has(blockedKey)) {
-                                 return null;
-                               }
-
-                               const assignments = getCellData(day, slotNum);
-                               const hasLab = assignments.some(a => a.isLab);
-                               const remainingRows = MAX_SLOTS - slotNum + 1;
-                               const rowSpan = hasLab ? Math.min(LAB_ROW_SPAN, remainingRows) : 1;
-
-                               if (hasLab) {
-                                 for (let offset = 1; offset < rowSpan; offset++) {
-                                   blockedCells.add(`${day}-${slotNum + offset}`);
-                                 }
-                               }
-                               
-                               return (
-                                  <div
-                                    key={`${day}-${slotNum}`}
-                                    className="p-2 border-b border-r align-top relative min-h-[120px] transition-colors group-hover:bg-muted/5"
-                                    style={rowSpan > 1 ? { gridRow: `span ${rowSpan} / span ${rowSpan}` } : undefined}
-                                  >
-                                      {assignments.length > 0 ? (
-                                        // Show details if matching
-                                        <div className="flex flex-col gap-2 relative z-0 h-full"> 
-                                            {assignments.map((assignment, idx) => {
-                                                const course = data.courses.find(c => c.id === assignment.courseId);
-                                                const room = data.rooms.find(r => r.id === assignment.roomId);
-                                                const teacher = data.teachers.find(t => t.id === assignment.teacherId);
-                                                
-                                                // Limit visual clutter in "ALL" view
-                                                if (filterSection === 'ALL' && idx > 2) {
-                                                   if (idx === assignments.length - 1) {
-                                                      return <span key="more" className="text-xs text-muted-foreground italic text-center w-full block mt-auto pt-2">+ {assignments.length - 3} more overlap(s)</span>
-                                                   }
-                                                   return null;
-                                                }
-
-                                                return (
-                                                  <Card
-                                                    key={`${assignment.courseId}-${idx}`}
-                                                    className="p-3 shadow-none border bg-background/50 hover:bg-accent/40 hover:border-primary/40 transition-colors"
-                                                  >
-                                                     <div className="flex justify-between items-start w-full">
-                                                        <Badge variant="outline" className="font-mono text-[10px] bg-primary/5">{course?.id || assignment.courseId}</Badge>
-                                                        <div className="flex items-center gap-1">
-                                                          {assignment.isLab && <Badge variant="default" className="text-[10px]">Lab 3hr</Badge>}
-                                                          {assignment.isLab && rowSpan < LAB_ROW_SPAN && <Badge variant="destructive" className="text-[10px]">⚠️ Lab truncated</Badge>}
-                                                          {filterSection === 'ALL' && <Badge variant="secondary" className="text-[10px]">{assignment.sectionId}</Badge>}
-                                                        </div>
-                                                     </div>
-                                                     <div className="text-xs font-semibold leading-tight line-clamp-2 mt-1.5 mb-2">
-                                                        {course?.title || "Unknown Course"}
-                                                     </div>
-                                                     <div className="flex flex-col gap-1.5">
-                                                        <div className="text-[11px] text-muted-foreground flex justify-between items-center bg-muted/40 px-1.5 py-0.5 rounded">
-                                                            <span className="font-medium text-foreground w-1/3 truncate" title="Room">{room?.name || assignment.roomId}</span>
-                                                            <span className="w-2/3 text-right truncate pl-2" title="Teacher">{teacher?.name || "TBA"}</span>
-                                                        </div>
-                                                     </div>
-                                                  </Card>
-                                                )
-                                            })}
-                                        </div>
-                                      ) : (
-                                        // Empty cell styling
-                                        <div className="w-full h-full flex items-center justify-center text-muted-foreground/30 text-xs">-</div>
-                                      )}
-                                  </div>
-                               )
-                           })}
-                       </div>
-                    )
-                })}
+              )}
             </div>
-       </div>
-    </div>
+
+            {/* Stats bar */}
+            {hasSchedule && (
+              <div style={{ display:"flex", gap:"0", paddingBottom:"16px", borderBottom:"1px solid rgba(255,255,255,0.06)", opacity:phase>=3?1:0, transition:"opacity 0.5s ease 0.2s" }}>
+                {[
+                  { label:"Total Assignments", value:schedule.length, color:"#fff" },
+                  { label:"Sections", value:availableSections.length, color:"#A5FF51" },
+                  { label:"Days", value:DAYS.length, color:"rgba(255,255,255,0.6)" },
+                  { label:"Time Slots", value:MAX_SLOTS, color:"rgba(255,255,255,0.6)" },
+                ].map((s, i) => (
+                  <div key={i} style={{ paddingRight:"28px", marginRight:"28px", borderRight: i<3?"1px solid rgba(255,255,255,0.07)":"none" }}>
+                    <div style={{ fontSize:"10px", color:"rgba(255,255,255,0.22)", letterSpacing:"0.07em", textTransform:"uppercase" as const, marginBottom:"3px" }}>{s.label}</div>
+                    <div style={{ fontSize:"22px", fontWeight:800, color:s.color, fontFamily:"'Syne',sans-serif", letterSpacing:"-0.04em", lineHeight:1 }}>{s.value}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Marquee */}
+          {hasSchedule && (
+            <div style={{ overflow:"hidden", padding:"9px 0", borderTop:"1px solid rgba(255,255,255,0.04)", opacity:phase>=3?1:0, transition:"opacity 0.5s ease 0.3s" }}>
+              <div className="marquee-track">
+                {[...Array(2)].map((_,ri) => (
+                  <div key={ri} style={{ display:"flex", alignItems:"center" }}>
+                    {marqueeWords.map((word, j) => (
+                      <span key={j} style={{ fontSize:"10px", fontWeight:word==="·"?400:600, letterSpacing:"0.08em", textTransform:"uppercase" as const, color:word==="·"?"rgba(255,255,255,0.1)":"rgba(255,255,255,0.22)", padding:"0 20px", whiteSpace:"nowrap" as const }}>{word}</span>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* ══════ EMPTY STATE ══════ */}
+        {!hasSchedule && (
+          <div className="empty-state-wrap">
+            <div className="empty-state-box" style={{ opacity:gridVisible?1:0, transform:gridVisible?"none":"translateY(16px)", transition:"opacity 0.6s ease, transform 0.6s ease" }}>
+              <div style={{ width:48, height:48, borderRadius:"12px", background:"rgba(255,255,255,0.04)", border:"1px solid rgba(255,255,255,0.08)", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 18px" }}>
+                <CalendarIcon size={20} color="rgba(255,255,255,0.25)" />
+              </div>
+              <div style={{ fontSize:"18px", fontWeight:700, color:"#fff", fontFamily:"'Syne',sans-serif", letterSpacing:"-0.02em", marginBottom:"8px" }}>No Schedule Yet</div>
+              <p style={{ fontSize:"13px", color:"rgba(255,255,255,0.3)", lineHeight:1.65, marginBottom:"22px" }}>Run the algorithm from the Dashboard to generate the weekly timetable.</p>
+              <a href="/" style={{ display:"inline-flex", alignItems:"center", gap:"8px", background:"#183FE1", color:"#fff", borderRadius:"10px", padding:"10px 20px", fontSize:"13px", fontWeight:600, fontFamily:"'DM Sans',sans-serif", textDecoration:"none" }}>
+                Go to Dashboard <ArrowRightIcon size={13} />
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* ══════ TIMETABLE GRID ══════ */}
+        {hasSchedule && (
+          <div style={{ flex:1, overflow:"auto", padding:"20px 24px 28px" }}>
+            <div
+              className="timetable-wrap"
+              style={{
+                minWidth:"860px",
+                display:"grid",
+                gridTemplateColumns:"82px repeat(5,1fr)",
+                borderRadius:"14px",
+                overflow:"hidden",
+                border:"1px solid rgba(255,255,255,0.07)",
+                background:"#0d1020",
+              }}
+            >
+              {/* Corner header */}
+              <div style={{ background:"rgba(255,255,255,0.02)", borderBottom:"1px solid rgba(255,255,255,0.06)", borderRight:"1px solid rgba(255,255,255,0.05)", display:"flex", alignItems:"center", justifyContent:"center", position:"sticky", left:0, zIndex:10, backdropFilter:"blur(12px)" }}>
+                <span style={{ fontSize:"10px", fontWeight:600, color:"rgba(255,255,255,0.18)", letterSpacing:"0.08em", textTransform:"uppercase" as const }}>Slot</span>
+              </div>
+
+              {/* Day headers */}
+              {DAYS.map(day => (
+                <div key={day} className="day-col-header">
+                  {day}
+                </div>
+              ))}
+
+              {/* Grid rows */}
+              {Array.from({ length:MAX_SLOTS }).map((_,index) => {
+                const slotNum = index + 1;
+                const tsRef = data.timeSlots.find((t:any) => t.slotIndex===slotNum);
+
+                return (
+                  <div className="contents" key={`slot-${slotNum}`}>
+
+                    {/* Slot label */}
+                    <div className="slot-cell">
+                      <span style={{ fontSize:"11px", fontWeight:700, color:"rgba(255,255,255,0.45)", fontFamily:"'Syne',sans-serif" }}>S{slotNum}</span>
+                      {tsRef && (
+                        <span style={{ fontSize:"9px", color:"rgba(255,255,255,0.2)", lineHeight:1.5, textAlign:"center" as const }}>
+                          {tsRef.startTime}<br/>{tsRef.endTime}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Day cells */}
+                    {DAYS.map(day => {
+                      const blockedKey = `${day}-${slotNum}`;
+                      if (blockedCells.has(blockedKey)) return null;
+
+                      const assignments = getCellData(day, slotNum);
+                      const hasLab = assignments.some((a:any) => a.isLab);
+                      const remainingRows = MAX_SLOTS - slotNum + 1;
+                      const rowSpan = hasLab ? Math.min(LAB_ROW_SPAN, remainingRows) : 1;
+
+                      if (hasLab) {
+                        for (let off=1; off<rowSpan; off++) blockedCells.add(`${day}-${slotNum+off}`);
+                      }
+
+                      return (
+                        <div
+                          key={`${day}-${slotNum}`}
+                          className="grid-cell"
+                          style={rowSpan>1?{gridRow:`span ${rowSpan}`,minHeight:`${120*rowSpan}px`}:undefined}
+                        >
+                          {assignments.length > 0 ? (
+                            <div style={{ display:"flex", flexDirection:"column" as const, gap:"4px", height:"100%" }}>
+                              {assignments.map((a:any, idx:number) => {
+                                const course = data.courses.find((c:any) => c.id===a.courseId);
+                                const room   = data.rooms.find((r:any) => r.id===a.roomId);
+                                const teacher = data.teachers.find((t:any) => t.id===a.teacherId);
+
+                                return (
+                                  <div key={`${a.courseId}-${idx}`} className={`course-card ${a.isLab?"card-lab":"card-lecture"}`}>
+                                    <div className="card-top">
+                                      <span className="card-id">{course?.id || a.courseId}</span>
+                                      <div style={{ display:"flex", gap:"5px", alignItems:"center" }}>
+                                        {a.isLab && <span className="card-type-lab">Lab</span>}
+                                        {filterSection==="ALL" && <span className="card-type-section">{a.sectionId}</span>}
+                                      </div>
+                                    </div>
+                                    <div className="card-title">{course?.title || "Unknown Course"}</div>
+                                    <div className="card-footer">
+                                      <span className="card-room">{room?.name || a.roomId}</span>
+                                      <span className="card-teacher">{teacher?.name || "TBA"}</span>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          ) : (
+                            <div className="empty-dot-cell">
+                              <div style={{ width:3, height:3, borderRadius:"50%", background:"rgba(255,255,255,0.06)" }} />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+      </div>
+    </>
   );
 }
