@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Database, CalendarDays, BarChart3 } from "lucide-react";
 
 const routes = [
-  { label: "Dashboard", icon: LayoutDashboard, href: "/" },
-  { label: "Data Input", icon: Database, href: "/input" },
-  { label: "Schedule", icon: CalendarDays, href: "/schedule" },
-  { label: "Stats & Analytics", icon: BarChart3, href: "/stats" },
+  { label: "Dashboard", href: "/" },
+  { label: "Data Input", href: "/input" },
+  { label: "Schedule", href: "/schedule" },
+  { label: "Stats & Analytics", href: "/stats" },
 ];
 
 export function Navbar() {
@@ -29,7 +28,6 @@ export function Navbar() {
           display: flex;
           align-items: center;
           padding: 0 32px;
-          gap: 0;
         }
 
         .navbar-logo {
@@ -39,100 +37,58 @@ export function Navbar() {
           color: #fff;
           letter-spacing: -0.03em;
           text-decoration: none;
-          margin-right: 40px;
-          display: flex;
-          align-items: center;
-          gap: 8px;
           flex-shrink: 0;
-        }
-
-        .navbar-logo-dot {
-          width: 8px; height: 8px;
-          border-radius: 50%;
-          background: #A5FF51;
-          display: inline-block;
-          animation: navPulse 1.8s ease-in-out infinite;
-        }
-
-        @keyframes navPulse {
-          0%,100% { opacity:1; transform:scale(1); }
-          50% { opacity:0.4; transform:scale(0.65); }
         }
 
         .navbar-divider {
           width: 1px; height: 22px;
           background: rgba(255,255,255,0.1);
-          margin-right: 32px;
+          margin: 0 32px;
           flex-shrink: 0;
         }
 
         .navbar-links {
           display: flex;
           align-items: center;
-          gap: 2px;
+          justify-content: center;
+          gap: 4px;
           flex: 1;
         }
 
         .nav-link {
-          display: flex;
-          align-items: center;
-          gap: 7px;
-          padding: 7px 14px;
+          padding: 7px 18px;
           border-radius: 8px;
           font-family: 'DM Sans', sans-serif;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
-          color: rgba(255,255,255,0.45);
+          color: rgba(255,255,255,0.5);
           text-decoration: none;
           transition: color 0.18s ease, background 0.18s ease;
           white-space: nowrap;
           position: relative;
+          letter-spacing: 0.01em;
         }
         .nav-link:hover {
-          color: rgba(255,255,255,0.85);
+          color: rgba(255,255,255,0.9);
           background: rgba(255,255,255,0.06);
         }
         .nav-link.active {
           color: #fff;
-          background: rgba(255,255,255,0.09);
           font-weight: 600;
         }
         .nav-link.active::after {
           content: '';
           position: absolute;
-          bottom: -9px; left: 14px; right: 14px;
+          bottom: -10px; left: 18px; right: 18px;
           height: 2px;
           background: #A5FF51;
           border-radius: 2px;
         }
-
-        .nav-link svg {
-          flex-shrink: 0;
-          opacity: 0.5;
-          transition: opacity 0.18s ease;
-        }
-        .nav-link:hover svg,
-        .nav-link.active svg {
-          opacity: 1;
-        }
-
-        /* Offset page content below fixed navbar */
-        .navbar-offset {
-          height: 56px;
-          flex-shrink: 0;
-        }
       `}</style>
 
       <nav className="navbar-root">
-        {/* Logo */}
-        <a href="/" className="navbar-logo">
-          <span className="navbar-logo-dot" />
-          GIK Scheduler
-        </a>
-
+        <a href="/" className="navbar-logo">GIK Scheduler</a>
         <div className="navbar-divider" />
-
-        {/* Nav links */}
         <div className="navbar-links">
           {routes.map((route) => {
             const isActive = pathname === route.href;
@@ -142,19 +98,14 @@ export function Navbar() {
                 href={route.href}
                 className={`nav-link ${isActive ? "active" : ""}`}
               >
-                <route.icon size={14} />
                 {route.label}
               </Link>
             );
           })}
         </div>
-
-        {/* Right side tag */}
-        <div style={{ display:"flex", alignItems:"center", gap:"8px", flexShrink:0 }}>
-          <span style={{ fontSize:"11px", fontWeight:500, color:"rgba(255,255,255,0.2)", letterSpacing:"0.06em", textTransform:"uppercase", fontFamily:"'DM Sans',sans-serif" }}>
-            Spring 2025
-          </span>
-        </div>
+        <span style={{ fontSize:"11px", fontWeight:500, color:"rgba(255,255,255,0.2)", letterSpacing:"0.06em", textTransform:"uppercase" as const, fontFamily:"'DM Sans',sans-serif", flexShrink:0 }}>
+          Spring 2025
+        </span>
       </nav>
     </>
   );

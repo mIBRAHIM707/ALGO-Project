@@ -208,8 +208,8 @@ export default function DashboardPage() {
         .visual-card-c {
           position: absolute;
           background: #FAA625;
-          border-radius: 14px;
-          padding: 14px 18px;
+          border-radius: 20px;
+          padding: 22px 26px;
           animation: cardFloatC 9s ease-in-out infinite;
         }
         .visual-card-d {
@@ -217,8 +217,8 @@ export default function DashboardPage() {
           background: rgba(255,255,255,0.07);
           border: 1px solid rgba(255,255,255,0.12);
           backdrop-filter: blur(12px);
-          border-radius: 14px;
-          padding: 14px 18px;
+          border-radius: 20px;
+          padding: 22px 26px;
           animation: cardFloatD 6s ease-in-out infinite;
         }
 
@@ -315,41 +315,41 @@ export default function DashboardPage() {
 
             {/* Right: Floating card cluster */}
             <div style={{
-              flexShrink: 0, width: "300px", height: "260px", position: "relative",
+              flexShrink: 0, width: "380px", height: "320px", position: "relative",
               opacity: visible ? 1 : 0,
               transform: visible ? "none" : "translateX(30px) scale(0.95)",
               transition: "opacity 0.9s ease 0.4s, transform 0.9s ease 0.4s",
             }}>
               {/* Blue large card - top left */}
-              <div className="visual-card-a" style={{ top: 0, left: 0, width: "160px", animationDelay: "0s" }}>
+              <div className="visual-card-a" style={{ top: 0, left: 0, width: "165px", animationDelay: "0s" }}>
                 <div style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" as const, color: "rgba(255,255,255,0.55)", marginBottom: "8px" }}>Courses</div>
                 <div style={{ fontSize: "50px", fontWeight: 800, color: "#fff", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em", lineHeight: 1 }}>{data.courses.length}</div>
                 <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)", marginTop: "6px" }}>All programs</div>
               </div>
 
               {/* Green card - top right */}
-              <div className="visual-card-b" style={{ top: 16, right: 0, animationDelay: "1.5s" }}>
+              <div className="visual-card-b" style={{ top: 0, right: 0, animationDelay: "1.5s" }}>
                 <div style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase" as const, color: "rgba(0,0,0,0.45)", marginBottom: "5px" }}>Faculty</div>
                 <div style={{ fontSize: "38px", fontWeight: 800, color: "#0a0a0a", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em", lineHeight: 1 }}>{data.teachers.length}</div>
               </div>
 
               {/* Orange card - bottom left */}
-              <div className="visual-card-c" style={{ bottom: 20, left: 24, animationDelay: "0.8s" }}>
-                <div style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase" as const, color: "rgba(0,0,0,0.45)", marginBottom: "4px" }}>Rooms</div>
-                <div style={{ fontSize: "32px", fontWeight: 800, color: "#0a0a0a", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em", lineHeight: 1 }}>{data.rooms.length}</div>
+              <div className="visual-card-c" style={{ bottom: 0, left: 0, animationDelay: "0.8s" }}>
+                <div style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase" as const, color: "rgba(0,0,0,0.45)", marginBottom: "8px" }}>Rooms</div>
+                <div style={{ fontSize: "38px", fontWeight: 800, color: "#0a0a0a", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em", lineHeight: 1 }}>{data.rooms.length}</div>
               </div>
 
               {/* Glass card - bottom right */}
-              <div className="visual-card-d" style={{ bottom: 0, right: 8, animationDelay: "2s" }}>
-                <div style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase" as const, color: "rgba(255,255,255,0.35)", marginBottom: "4px" }}>Sections</div>
-                <div style={{ fontSize: "32px", fontWeight: 800, color: "#fff", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em", lineHeight: 1 }}>{data.sections.length}</div>
+              <div className="visual-card-d" style={{ bottom: 0, right: 0, animationDelay: "2s" }}>
+                <div style={{ fontSize: "10px", fontWeight: 600, letterSpacing: "0.07em", textTransform: "uppercase" as const, color: "rgba(255,255,255,0.35)", marginBottom: "8px" }}>Sections</div>
+                <div style={{ fontSize: "38px", fontWeight: 800, color: "#fff", fontFamily: "'Syne', sans-serif", letterSpacing: "-0.04em", lineHeight: 1 }}>{data.sections.length}</div>
               </div>
 
               {/* Decorative dot grid */}
-              <svg style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", opacity: 0.06, pointerEvents: "none", zIndex: -1 }} width="300" height="260">
+              <svg style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", opacity: 0.06, pointerEvents: "none", zIndex: -1 }} width="380" height="320">
                 {Array.from({ length: 6 }, (_, row) =>
                   Array.from({ length: 7 }, (_, col) => (
-                    <circle key={`${row}-${col}`} cx={col * 48 + 12} cy={row * 44 + 12} r="2.5" fill="white" />
+                    <circle key={`${row}-${col}`} cx={col * 54 + 12} cy={row * 52 + 12} r="2.5" fill="white" />
                   ))
                 )}
               </svg>
