@@ -147,9 +147,9 @@ export class CSPEngine {
     const variables: VarNode[] = [];
     
     // Find max slotIndex among regular (non-lab) timeslots per day
-    const allSlotIndices = this.data.timeSlots
-      .filter(ts => ts.dayType !== 'lab')
-      .map(ts => ts.slotIndex);
+    const regularTimeSlots = this.data.timeSlots.filter(ts => ts.dayType !== 'lab');
+    const labTimeSlots = this.data.timeSlots.filter(ts => ts.dayType === 'lab');
+    const allSlotIndices = regularTimeSlots.map(ts => ts.slotIndex);
     const maxSlotIndex = Math.max(...allSlotIndices);
 
     // Collect unique courseIds across ALL sections (deduplicate shared courses)
@@ -184,15 +184,27 @@ export class CSPEngine {
         .sort((a, b) => a.capacity - b.capacity);
       const rooms = validRooms.length > 0 ? validRooms : [...this.data.rooms];
 
-      const baseDomain: Value[] = [];
-      for (const ts of this.data.timeSlots) {
+      const regularDomain: Value[] = [];
+      const labDomain: Value[] = [];
+
+      for (const ts of regularTimeSlots) {
         if (isLabCourse && ts.slotIndex >= maxSlotIndex - 1) continue;
         for (const r of rooms) {
-          baseDomain.push({ timeSlot: ts, room: r });
+          regularDomain.push({ timeSlot: ts, room: r });
         }
       }
 
-      this.shuffle(baseDomain);
+      if (!isLabCourse) {
+        for (const ts of labTimeSlots) {
+          for (const r of rooms) {
+            labDomain.push({ timeSlot: ts, room: r });
+          }
+        }
+      }
+
+      this.shuffle(regularDomain);
+      this.shuffle(labDomain);
+      const baseDomain = [...regularDomain, ...labDomain];
       const sessions = isLabCourse ? 1 : course.creditHours;
       const primarySection = courseToFirstSection.get(courseId) || 'UNKNOWN';
 

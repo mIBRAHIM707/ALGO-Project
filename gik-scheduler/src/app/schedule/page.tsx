@@ -12,6 +12,8 @@ const LAB_ROW_SPAN = 3;
 export default function SchedulePage() {
   const { schedule, data } = useStore();
   const [filterSection, setFilterSection] = useState<string>("ALL");
+  const [filterProgram, setFilterProgram] = useState<string>("ALL");
+  const [filterYear, setFilterYear] = useState<string>("ALL");
   const [phase, setPhase] = useState(0);
   const [gridVisible, setGridVisible] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
@@ -49,6 +51,33 @@ export default function SchedulePage() {
     return Array.from(set).sort() as string[];
   }, [schedule, hasSchedule]);
 
+  const availablePrograms = useMemo(() => {
+    const set = new Set(availableSections.map(sec => sec.split('-')[0]));
+    return Array.from(set).sort();
+  }, [availableSections]);
+
+  const availableYears = useMemo(() => {
+    // Collect all unique years regardless of the selected program
+    const set = new Set(availableSections.map(sec => sec.split('-')[1]?.replace('Y', '')));
+    return Array.from(set).filter(Boolean).sort();
+  }, [availableSections]);
+
+  const filteredSectionsList = useMemo(() => {
+    // Filter sections based on program and year to populate the third dropdown
+    return availableSections.filter(sec => {
+      if (filterProgram !== "ALL" && !sec.startsWith(filterProgram + "-")) return false;
+      if (filterYear !== "ALL" && !sec.includes(`-Y${filterYear}-`)) return false;
+      return true;
+    });
+  }, [availableSections, filterProgram, filterYear]);
+
+  // Auto-reset section filter if it doesn't align with program or year
+  useEffect(() => {
+    if (filterSection !== "ALL" && !filteredSectionsList.includes(filterSection)) {
+      setFilterSection("ALL");
+    }
+  }, [filterProgram, filterYear, filteredSectionsList, filterSection]);
+
   const handleExportCSV = () => {
     if (!schedule.length) return;
     const headers = ["Day", "Time", "Section", "Course", "Teacher", "Room"].join(",");
@@ -71,6 +100,8 @@ export default function SchedulePage() {
     const tsIds = data.timeSlots.filter((t: any) => t.day === day && t.slotIndex === slotIndex).map((t: any) => t.id);
     return schedule.filter((a: any) => {
       if (filterSection !== "ALL" && a.sectionId !== filterSection) return false;
+      if (filterProgram !== "ALL" && !a.sectionId.startsWith(filterProgram + "-")) return false;
+      if (filterYear !== "ALL" && !a.sectionId.includes(`-Y${filterYear}-`)) return false;
       return tsIds.includes(a.timeSlotId);
     });
   };
@@ -275,18 +306,50 @@ export default function SchedulePage() {
               </div>
 
               {hasSchedule && (
-                <div style={{ display:"flex", alignItems:"center", gap:"10px", opacity:phase>=3?1:0, transform:phase>=3?"none":"translateX(16px)", transition:"opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s" }}>
-                  <Select value={filterSection} onValueChange={val => setFilterSection(val||"ALL")}>
-                    <SelectTrigger style={{ width:"170px", background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", color:"rgba(255,255,255,0.65)", borderRadius:"10px", fontFamily:"'DM Sans',sans-serif", fontSize:"13px" }}>
-                      <SelectValue placeholder="All Sections" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="ALL">All Sections</SelectItem>
-                      {availableSections.map((sec:string) => <SelectItem key={sec} value={sec}>{sec}</SelectItem>)}
-                    </SelectContent>
-                  </Select>
-                  <button className="toolbar-btn" onClick={handleExportCSV}><FileSpreadsheetIcon size={13} color="#A5FF51" />Export CSV</button>
-                  <button className="toolbar-btn" onClick={() => window.print()}><PrinterIcon size={13} />Print</button>
+                <div style={{ display:"flex", alignItems:"flex-end", gap:"12px", opacity:phase>=3?1:0, transform:phase>=3?"none":"translateX(16px)", transition:"opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s" }}>
+                  <div style={{ display:"flex", flexDirection:"column", gap:"5px" }}>
+                    <span style={{ fontSize:"10px", fontWeight:700, color:"rgba(255,255,255,0.4)", letterSpacing:"0.05em", textTransform:"uppercase", fontFamily:"'Syne',sans-serif", marginLeft:"4px" }}>Program</span>
+                    <Select value={filterProgram} onValueChange={val => setFilterProgram(val || "ALL")}>
+                      <SelectTrigger style={{ width:"130px", background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", color:"rgba(255,255,255,0.65)", borderRadius:"10px", fontFamily:"'DM Sans',sans-serif", fontSize:"13px" }}>
+                        <SelectValue placeholder="All Programs" />
+                      </SelectTrigger>
+                      <SelectContent alignItemWithTrigger={false}>
+                        <SelectItem value="ALL">All Programs</SelectItem>
+                        {availablePrograms.map(prog => <SelectItem key={prog} value={prog}>{prog}</SelectItem>)}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div style={{ display:"flex", flexDirection:"column", gap:"5px" }}>
+                    <span style={{ fontSize:"10px", fontWeight:700, color:"rgba(255,255,255,0.4)", letterSpacing:"0.05em", textTransform:"uppercase", fontFamily:"'Syne',sans-serif", marginLeft:"4px" }}>Year</span>
+                    <Select value={filterYear} onValueChange={val => setFilterYear(val || "ALL")}>
+                      <SelectTrigger style={{ width:"110px", background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", color:"rgba(255,255,255,0.65)", borderRadius:"10px", fontFamily:"'DM Sans',sans-serif", fontSize:"13px" }}>
+                        <SelectValue placeholder="All Years" />
+                      </SelectTrigger>
+                      <SelectContent alignItemWithTrigger={false}>
+                        <SelectItem value="ALL">All Years</SelectItem>
+                        {availableYears.map(year => <SelectItem key={year} value={year}>Year {year}</SelectItem>)}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div style={{ display:"flex", flexDirection:"column", gap:"5px" }}>
+                    <span style={{ fontSize:"10px", fontWeight:700, color:"rgba(255,255,255,0.4)", letterSpacing:"0.05em", textTransform:"uppercase", fontFamily:"'Syne',sans-serif", marginLeft:"4px" }}>Section</span>
+                    <Select value={filterSection} onValueChange={val => setFilterSection(val||"ALL")}>
+                      <SelectTrigger style={{ width:"150px", background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", color:"rgba(255,255,255,0.65)", borderRadius:"10px", fontFamily:"'DM Sans',sans-serif", fontSize:"13px" }}>
+                        <SelectValue placeholder="All Sections" />
+                      </SelectTrigger>
+                      <SelectContent alignItemWithTrigger={false}>
+                        <SelectItem value="ALL">All Sections</SelectItem>
+                        {filteredSectionsList.map((sec:string) => <SelectItem key={sec} value={sec}>{sec}</SelectItem>)}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div style={{ display:"flex", gap:"8px" }}>
+                    <button className="toolbar-btn" onClick={handleExportCSV}><FileSpreadsheetIcon size={13} color="#A5FF51" />Export CSV</button>
+                    <button className="toolbar-btn" onClick={() => window.print()}><PrinterIcon size={13} />Print</button>
+                  </div>
                 </div>
               )}
             </div>
@@ -392,6 +455,7 @@ export default function SchedulePage() {
                       if (blockedCells.has(blockedKey)) return null;
 
                       const assignments = getCellData(day, slotNum);
+                      const isMultiAssignment = assignments.length > 1;
                       const hasLab = assignments.some((a:any) => a.isLab);
                       const remainingRows = MAX_SLOTS - slotNum + 1;
                       const rowSpan = hasLab ? Math.min(LAB_ROW_SPAN, remainingRows) : 1;
@@ -414,11 +478,15 @@ export default function SchedulePage() {
                                 const teacher = data.teachers.find((t:any) => t.id===a.teacherId);
 
                                 return (
-                                  <div key={`${a.courseId}-${idx}`} className={`course-card ${a.isLab?"card-lab":"card-lecture"}`}>
+                                  <div
+                                    key={`${a.courseId}-${idx}`}
+                                    className={`course-card ${a.isLab?"card-lab":"card-lecture"}`}
+                                    style={a.isLab && !isMultiAssignment ? { display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%", width: "100%", boxSizing: "border-box" } : undefined}
+                                  >
                                     <div className="card-top">
                                       <span className="card-id">{course?.id || a.courseId}</span>
                                       <div style={{ display:"flex", gap:"5px", alignItems:"center" }}>
-                                        {a.isLab && <span className="card-type-lab">Lab</span>}
+                                        {a.isLab && <span className="card-type-lab">Lab 3h</span>}
                                         {filterSection==="ALL" && <span className="card-type-section">{a.sectionId}</span>}
                                       </div>
                                     </div>
